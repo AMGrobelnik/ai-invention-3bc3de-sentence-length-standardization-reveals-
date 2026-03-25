@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "description": "Typological Metadata for UD Languages (WALS + UD Case Richness)",
+    "sources": [
+      "WALS CLDF (81A word order, 49A case count)",
+      "Universal Dependencies (case morphological features)"
+    ],
+    "total_languages": 186,
+    "total_datasets": 3,
+    "selected_datasets": [
+      "full_typological_profiles",
+      "word_order_prediction",
+      "ud_case_richness"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "full_typological_profiles",
+      "examples": [
+        {
+          "input": "{\"language_iso\": \"ab\", \"language_name\": \"ab\", \"language_family\": null, \"case_count_49A\": null, \"ud_case_richness\": 0, \"ud_case_values\": [], \"latitude\": null, \"longitude\": null, \"glottocode\": null}",
+          "output": "ud_case_richness=0",
+          "metadata_row_index": 0,
+          "metadata_task_type": "typological_profile",
+          "metadata_language_code_ud": "ab",
+          "metadata_ud_treebank_ids": [
+            "ab_abnc"
+          ],
+          "metadata_has_wals": false
+        },
+        {
+          "input": "{\"language_iso\": \"abq\", \"language_name\": \"abq\", \"language_family\": null, \"case_count_49A\": null, \"ud_case_richness\": 0, \"ud_case_values\": [], \"latitude\": null, \"longitude\": null, \"glottocode\": null}",
+          "output": "ud_case_richness=0",
+          "metadata_row_index": 1,
+          "metadata_task_type": "typological_profile",
+          "metadata_language_code_ud": "abq",
+          "metadata_ud_treebank_ids": [
+            "abq_atb"
+          ],
+          "metadata_has_wals": false
+        },
+        {
+          "input": "{\"language_iso\": \"afr\", \"language_name\": \"af\", \"language_family\": null, \"case_count_49A\": null, \"ud_case_richness\": 3, \"ud_case_values\": [\"Acc\", \"Acc,Nom\", \"Nom\"], \"latitude\": null, \"longitude\": null, \"glottocode\": null}",
+          "output": "ud_case_richness=3",
+          "metadata_row_index": 2,
+          "metadata_task_type": "typological_profile",
+          "metadata_language_code_ud": "af",
+          "metadata_ud_treebank_ids": [
+            "af_afribooms"
+          ],
+          "metadata_has_wals": false
+        }
+      ]
+    },
+    {
+      "dataset": "word_order_prediction",
+      "examples": [
+        {
+          "input": "{\"language_iso\": \"amh\", \"language_name\": \"Amharic\", \"language_family\": \"Afro-Asiatic\", \"case_count_49A\": \"2 cases\", \"ud_case_richness\": 0, \"ud_case_values\": [], \"latitude\": 10.0, \"longitude\": 38.0, \"glottocode\": \"amha1245\"}",
+          "output": "SOV",
+          "metadata_row_index": 7,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 7,
+          "metadata_wals_code": "amh",
+          "metadata_language_code_ud": "am"
+        },
+        {
+          "input": "{\"language_iso\": \"apu\", \"language_name\": \"Apurinã\", \"language_family\": \"Arawakan\", \"case_count_49A\": \"Exclusively borderline case-marking\", \"ud_case_richness\": 0, \"ud_case_values\": [], \"latitude\": -9.0, \"longitude\": -67.0, \"glottocode\": \"apur1254\"}",
+          "output": "SVO",
+          "metadata_row_index": 9,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 7,
+          "metadata_wals_code": "apu",
+          "metadata_language_code_ud": "apu"
+        },
+        {
+          "input": "{\"language_iso\": \"arh\", \"language_name\": \"Ika\", \"language_family\": \"Chibchan\", \"case_count_49A\": \"6-7 cases\", \"ud_case_richness\": 0, \"ud_case_values\": [], \"latitude\": 10.6666666667, \"longitude\": -73.75, \"glottocode\": \"arhu1242\"}",
+          "output": "SOV",
+          "metadata_row_index": 12,
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 7,
+          "metadata_wals_code": "ika",
+          "metadata_language_code_ud": "arh"
+        }
+      ]
+    },
+    {
+      "dataset": "ud_case_richness",
+      "examples": [
+        {
+          "input": "{\"language_iso\": \"afr\", \"language_name\": \"af\", \"language_family\": null, \"word_order_81A\": null, \"case_count_49A\": null, \"latitude\": null, \"longitude\": null}",
+          "output": "{\"ud_case_richness\": 3, \"case_values\": [\"Acc\", \"Acc,Nom\", \"Nom\"]}",
+          "metadata_row_index": 2,
+          "metadata_task_type": "regression",
+          "metadata_language_code_ud": "af",
+          "metadata_ud_treebank_ids": [
+            "af_afribooms"
+          ]
+        },
+        {
+          "input": "{\"language_iso\": \"ara\", \"language_name\": \"ar\", \"language_family\": null, \"word_order_81A\": null, \"case_count_49A\": null, \"latitude\": null, \"longitude\": null}",
+          "output": "{\"ud_case_richness\": 3, \"case_values\": [\"Acc\", \"Gen\", \"Nom\"]}",
+          "metadata_row_index": 11,
+          "metadata_task_type": "regression",
+          "metadata_language_code_ud": "ar",
+          "metadata_ud_treebank_ids": [
+            "ar_padt",
+            "ar_pud"
+          ]
+        },
+        {
+          "input": "{\"language_iso\": \"bel\", \"language_name\": \"Belorussian\", \"language_family\": \"Indo-European\", \"word_order_81A\": \"No dominant order\", \"case_count_49A\": null, \"latitude\": 54.0, \"longitude\": 28.0}",
+          "output": "{\"ud_case_richness\": 7, \"case_values\": [\"Acc\", \"Dat\", \"Gen\", \"Ins\", \"Loc\", \"Nom\", \"Voc\"]}",
+          "metadata_row_index": 17,
+          "metadata_task_type": "regression",
+          "metadata_language_code_ud": "be",
+          "metadata_ud_treebank_ids": [
+            "be_hse"
+          ]
+        }
+      ]
+    }
+  ]
+}

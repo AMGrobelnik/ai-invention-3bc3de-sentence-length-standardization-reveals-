@@ -1,0 +1,3922 @@
+[
+  {
+    "language_iso": "ab",
+    "language_code_ud": "ab",
+    "language_name": "ab",
+    "ud_treebank_ids": [
+      "ab_abnc"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "abq",
+    "language_code_ud": "abq",
+    "language_name": "abq",
+    "ud_treebank_ids": [
+      "abq_atb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "afr",
+    "language_code_ud": "af",
+    "language_name": "af",
+    "ud_treebank_ids": [
+      "af_afribooms"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Nom",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "aii",
+    "language_code_ud": "aii",
+    "language_name": "aii",
+    "ud_treebank_ids": [
+      "aii_as"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ajp",
+    "language_code_ud": "ajp",
+    "language_name": "ajp",
+    "ud_treebank_ids": [
+      "ajp_madar"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "akk",
+    "language_code_ud": "akk",
+    "language_name": "akk",
+    "ud_treebank_ids": [
+      "akk_pisandub",
+      "akk_riao"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "aln",
+    "language_code_ud": "aln",
+    "language_name": "aln",
+    "ud_treebank_ids": [
+      "aln_gps"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "amh",
+    "language_code_ud": "am",
+    "language_name": "Amharic",
+    "ud_treebank_ids": [
+      "am_att"
+    ],
+    "wals_code": "amh",
+    "word_order_81A": "SOV",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Afro-Asiatic",
+    "glottocode": "amha1245",
+    "latitude": 10.0,
+    "longitude": 38.0
+  },
+  {
+    "language_iso": "ang",
+    "language_code_ud": "ang",
+    "language_name": "ang",
+    "ud_treebank_ids": [
+      "ang_cairo"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "apu",
+    "language_code_ud": "apu",
+    "language_name": "Apurinã",
+    "ud_treebank_ids": [
+      "apu_ufpa"
+    ],
+    "wals_code": "apu",
+    "word_order_81A": "SVO",
+    "case_count_49A": "Exclusively borderline case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Arawakan",
+    "glottocode": "apur1254",
+    "latitude": -9.0,
+    "longitude": -67.0
+  },
+  {
+    "language_iso": "aqz",
+    "language_code_ud": "aqz",
+    "language_name": "aqz",
+    "ud_treebank_ids": [
+      "aqz_tudet"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ara",
+    "language_code_ud": "ar",
+    "language_name": "ar",
+    "ud_treebank_ids": [
+      "ar_padt",
+      "ar_pud"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "arh",
+    "language_code_ud": "arh",
+    "language_name": "Ika",
+    "ud_treebank_ids": [
+      "arh_chibergis"
+    ],
+    "wals_code": "ika",
+    "word_order_81A": "SOV",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Chibchan",
+    "glottocode": "arhu1242",
+    "latitude": 10.6666666667,
+    "longitude": -73.75
+  },
+  {
+    "language_iso": "arr",
+    "language_code_ud": "arr",
+    "language_name": "Karó (Arára)",
+    "ud_treebank_ids": [
+      "arr_tudet"
+    ],
+    "wals_code": "kaa",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Tupian",
+    "glottocode": "karo1305",
+    "latitude": -10.3333333333,
+    "longitude": -62.0
+  },
+  {
+    "language_iso": "az",
+    "language_code_ud": "az",
+    "language_name": "az",
+    "ud_treebank_ids": [
+      "az_tuecl"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "azz",
+    "language_code_ud": "azz",
+    "language_name": "azz",
+    "ud_treebank_ids": [
+      "azz_itml"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "bar",
+    "language_code_ud": "bar",
+    "language_name": "bar",
+    "ud_treebank_ids": [
+      "bar_maibaam"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "bel",
+    "language_code_ud": "be",
+    "language_name": "Belorussian",
+    "ud_treebank_ids": [
+      "be_hse"
+    ],
+    "wals_code": "blr",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "bela1254",
+    "latitude": 54.0,
+    "longitude": 28.0
+  },
+  {
+    "language_iso": "bej",
+    "language_code_ud": "bej",
+    "language_name": "Beja",
+    "ud_treebank_ids": [
+      "bej_autogramm"
+    ],
+    "wals_code": "bej",
+    "word_order_81A": "SOV",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Afro-Asiatic",
+    "glottocode": "beja1238",
+    "latitude": 18.0,
+    "longitude": 36.0
+  },
+  {
+    "language_iso": "bul",
+    "language_code_ud": "bg",
+    "language_name": "Bulgarian",
+    "ud_treebank_ids": [
+      "bg_btb"
+    ],
+    "wals_code": "bul",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "bulg1262",
+    "latitude": 42.5,
+    "longitude": 25.0
+  },
+  {
+    "language_iso": "bho",
+    "language_code_ud": "bho",
+    "language_name": "Bhojpuri",
+    "ud_treebank_ids": [
+      "bho_bhtb"
+    ],
+    "wals_code": "bho",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "bhoj1244",
+    "latitude": 26.0,
+    "longitude": 84.0
+  },
+  {
+    "language_iso": "bam",
+    "language_code_ud": "bm",
+    "language_name": "Bambara",
+    "ud_treebank_ids": [
+      "bm_crb"
+    ],
+    "wals_code": "bam",
+    "word_order_81A": "SOV",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Mande",
+    "glottocode": "bamb1269",
+    "latitude": 12.5,
+    "longitude": -7.5
+  },
+  {
+    "language_iso": "ben",
+    "language_code_ud": "bn",
+    "language_name": "Bengali",
+    "ud_treebank_ids": [
+      "bn_bru"
+    ],
+    "wals_code": "ben",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "beng1280",
+    "latitude": 24.0,
+    "longitude": 90.0
+  },
+  {
+    "language_iso": "bor",
+    "language_code_ud": "bor",
+    "language_name": "bor",
+    "ud_treebank_ids": [
+      "bor_bdt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "bre",
+    "language_code_ud": "br",
+    "language_name": "Breton",
+    "ud_treebank_ids": [
+      "br_keb"
+    ],
+    "wals_code": "bre",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "bret1244",
+    "latitude": 48.0,
+    "longitude": -3.0
+  },
+  {
+    "language_iso": "bxr",
+    "language_code_ud": "bxr",
+    "language_name": "bxr",
+    "ud_treebank_ids": [
+      "bxr_bdt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 5,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "cat",
+    "language_code_ud": "ca",
+    "language_name": "Catalan",
+    "ud_treebank_ids": [
+      "ca_ancora"
+    ],
+    "wals_code": "ctl",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Dat",
+      "Dat",
+      "Gen",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "stan1289",
+    "latitude": 41.75,
+    "longitude": 2.0
+  },
+  {
+    "language_iso": "ceb",
+    "language_code_ud": "ceb",
+    "language_name": "Cebuano",
+    "ud_treebank_ids": [
+      "ceb_gja"
+    ],
+    "wals_code": "ceb",
+    "word_order_81A": "VSO",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Austronesian",
+    "glottocode": "cebu1242",
+    "latitude": 10.0,
+    "longitude": 124.0
+  },
+  {
+    "language_iso": "ckb",
+    "language_code_ud": "ckb",
+    "language_name": "Kurdish (Central)",
+    "ud_treebank_ids": [
+      "ckb_mukri"
+    ],
+    "wals_code": "krd",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "cent1972",
+    "latitude": 36.0,
+    "longitude": 44.0
+  },
+  {
+    "language_iso": "ckt",
+    "language_code_ud": "ckt",
+    "language_name": "Chukchi",
+    "ud_treebank_ids": [
+      "ckt_hse"
+    ],
+    "wals_code": "chk",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": "10 or more cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Chukotko-Kamchatkan",
+    "glottocode": "chuk1273",
+    "latitude": 67.0,
+    "longitude": -173.0
+  },
+  {
+    "language_iso": "cop",
+    "language_code_ud": "cop",
+    "language_name": "Coptic",
+    "ud_treebank_ids": [
+      "cop_bohairic",
+      "cop_scriptorium"
+    ],
+    "wals_code": "cop",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Afro-Asiatic",
+    "glottocode": "copt1239",
+    "latitude": 26.0,
+    "longitude": 32.0
+  },
+  {
+    "language_iso": "cpg",
+    "language_code_ud": "cpg",
+    "language_name": "cpg",
+    "ud_treebank_ids": [
+      "cpg_amgic",
+      "cpg_tuecl"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ces",
+    "language_code_ud": "cs",
+    "language_name": "Czech",
+    "ud_treebank_ids": [
+      "cs_cac",
+      "cs_cltt",
+      "cs_fictree",
+      "cs_pdtc",
+      "cs_poetry",
+      "cs_pud"
+    ],
+    "wals_code": "cze",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "czec1258",
+    "latitude": 50.0,
+    "longitude": 15.0
+  },
+  {
+    "language_iso": "ctn",
+    "language_code_ud": "ctn",
+    "language_name": "ctn",
+    "ud_treebank_ids": [
+      "ctn_ctntb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "chu",
+    "language_code_ud": "cu",
+    "language_name": "cu",
+    "ud_treebank_ids": [
+      "cu_proiel"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Dat,Gen",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "cym",
+    "language_code_ud": "cy",
+    "language_name": "Welsh (Colloquial)",
+    "ud_treebank_ids": [
+      "cy_ccg"
+    ],
+    "wals_code": "wec",
+    "word_order_81A": "VSO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "wels1247",
+    "latitude": 52.75,
+    "longitude": -3.5833
+  },
+  {
+    "language_iso": "dan",
+    "language_code_ud": "da",
+    "language_name": "Danish",
+    "ud_treebank_ids": [
+      "da_ddt"
+    ],
+    "wals_code": "dsh",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "dani1285",
+    "latitude": 56.0,
+    "longitude": 10.0
+  },
+  {
+    "language_iso": "deu",
+    "language_code_ud": "de",
+    "language_name": "German",
+    "ud_treebank_ids": [
+      "de_gsd",
+      "de_hdt",
+      "de_lit",
+      "de_pud"
+    ],
+    "wals_code": "ger",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": "4 cases",
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "stan1295",
+    "latitude": 52.0,
+    "longitude": 10.0
+  },
+  {
+    "language_iso": "egy",
+    "language_code_ud": "egy",
+    "language_name": "egy",
+    "ud_treebank_ids": [
+      "egy_ujaen"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 19,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "All",
+      "Ben",
+      "Cau",
+      "Cmp",
+      "Com",
+      "Dis",
+      "Ela",
+      "Equ",
+      "Ess",
+      "Gen",
+      "Ill",
+      "Ins",
+      "Lat",
+      "Loc",
+      "Sub",
+      "Sup",
+      "Tem"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ell",
+    "language_code_ud": "el",
+    "language_name": "Greek (Modern)",
+    "ud_treebank_ids": [
+      "el_cretan",
+      "el_gdt",
+      "el_gud",
+      "el_lesbian",
+      "el_messinian"
+    ],
+    "wals_code": "grk",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": "3 cases",
+    "ud_case_richness": 5,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "mode1248",
+    "latitude": 39.0,
+    "longitude": 22.0
+  },
+  {
+    "language_iso": "eme",
+    "language_code_ud": "eme",
+    "language_name": "Émérillon",
+    "ud_treebank_ids": [
+      "eme_tudet"
+    ],
+    "wals_code": "eme",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Tupian",
+    "glottocode": "emer1243",
+    "latitude": 3.16666666667,
+    "longitude": -52.4166666667
+  },
+  {
+    "language_iso": "eng",
+    "language_code_ud": "en",
+    "language_name": "English",
+    "ud_treebank_ids": [
+      "en_atis",
+      "en_childes",
+      "en_ctetex",
+      "en_eslspok",
+      "en_ewt",
+      "en_gentle",
+      "en_gum",
+      "en_gumreddit",
+      "en_lines",
+      "en_littleprince",
+      "en_partut",
+      "en_pronouns",
+      "en_pud"
+    ],
+    "wals_code": "eng",
+    "word_order_81A": "SVO",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "stan1293",
+    "latitude": 52.0,
+    "longitude": 0.0
+  },
+  {
+    "language_iso": "eo",
+    "language_code_ud": "eo",
+    "language_name": "eo",
+    "ud_treebank_ids": [
+      "eo_cairo",
+      "eo_prago"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "spa",
+    "language_code_ud": "es",
+    "language_name": "Spanish",
+    "ud_treebank_ids": [
+      "es_ancora",
+      "es_coser",
+      "es_gsd",
+      "es_pud"
+    ],
+    "wals_code": "spa",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Dat",
+      "Acc,Nom",
+      "Com",
+      "Dat",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "stan1288",
+    "latitude": 40.0,
+    "longitude": -4.0
+  },
+  {
+    "language_iso": "ess",
+    "language_code_ud": "ess",
+    "language_name": "Yupik (Siberian)",
+    "ud_treebank_ids": [
+      "ess_sli"
+    ],
+    "wals_code": "yus",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Eskimo-Aleut",
+    "glottocode": "cent2128",
+    "latitude": 65.0,
+    "longitude": -173.0
+  },
+  {
+    "language_iso": "est",
+    "language_code_ud": "et",
+    "language_name": "et",
+    "ud_treebank_ids": [
+      "et_edt",
+      "et_ewt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 16,
+    "ud_case_values": [
+      "Abe",
+      "Abl",
+      "Acc",
+      "Add",
+      "Ade",
+      "All",
+      "Com",
+      "Ela",
+      "Ess",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Nom",
+      "Par",
+      "Ter",
+      "Tra"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "eus",
+    "language_code_ud": "eu",
+    "language_name": "Basque",
+    "ud_treebank_ids": [
+      "eu_bdt"
+    ],
+    "wals_code": "bsq",
+    "word_order_81A": "SOV",
+    "case_count_49A": "10 or more cases",
+    "ud_case_richness": 15,
+    "ud_case_values": [
+      "Abl",
+      "Abs",
+      "All",
+      "Ben",
+      "Cau",
+      "Com",
+      "Dat",
+      "Erg",
+      "Ess",
+      "Gen",
+      "Ine",
+      "Ins",
+      "Lat",
+      "Loc",
+      "Par"
+    ],
+    "language_family": "Basque",
+    "glottocode": "basq1248",
+    "latitude": 43.0,
+    "longitude": -3.0
+  },
+  {
+    "language_iso": "fas",
+    "language_code_ud": "fa",
+    "language_name": "fa",
+    "ud_treebank_ids": [
+      "fa_perdt",
+      "fa_seraji"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Loc",
+      "Tem",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "fin",
+    "language_code_ud": "fi",
+    "language_name": "Finnish",
+    "ud_treebank_ids": [
+      "fi_ftb",
+      "fi_ood",
+      "fi_pud",
+      "fi_tdt"
+    ],
+    "wals_code": "fin",
+    "word_order_81A": "SVO",
+    "case_count_49A": "10 or more cases",
+    "ud_case_richness": 16,
+    "ud_case_values": [
+      "Abe",
+      "Abl",
+      "Acc",
+      "Ade",
+      "All",
+      "Com",
+      "Ela",
+      "Ess",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Ins",
+      "Lat",
+      "Nom",
+      "Par",
+      "Tra"
+    ],
+    "language_family": "Uralic",
+    "glottocode": "finn1318",
+    "latitude": 62.0,
+    "longitude": 25.0
+  },
+  {
+    "language_iso": "fao",
+    "language_code_ud": "fo",
+    "language_name": "fo",
+    "ud_treebank_ids": [
+      "fo_farpahc",
+      "fo_oft"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "fra",
+    "language_code_ud": "fr",
+    "language_name": "French",
+    "ud_treebank_ids": [
+      "fr_alts",
+      "fr_fqb",
+      "fr_gsd",
+      "fr_parisstories",
+      "fr_partut",
+      "fr_poitevindivital",
+      "fr_pud",
+      "fr_rhapsodie",
+      "fr_sequoia"
+    ],
+    "wals_code": "fre",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "stan1290",
+    "latitude": 48.0,
+    "longitude": 2.0
+  },
+  {
+    "language_iso": "frm",
+    "language_code_ud": "frm",
+    "language_name": "frm",
+    "ud_treebank_ids": [
+      "frm_altm",
+      "frm_profiterole"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "fro",
+    "language_code_ud": "fro",
+    "language_name": "fro",
+    "ud_treebank_ids": [
+      "fro_altm",
+      "fro_profiterole"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "gle",
+    "language_code_ud": "ga",
+    "language_name": "Irish",
+    "ud_treebank_ids": [
+      "ga_cadhan",
+      "ga_idt",
+      "ga_twittirish"
+    ],
+    "wals_code": "iri",
+    "word_order_81A": "VSO",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Dat",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "iris1253",
+    "latitude": 53.0,
+    "longitude": -8.0
+  },
+  {
+    "language_iso": "gla",
+    "language_code_ud": "gd",
+    "language_name": "Gaelic (Scots)",
+    "ud_treebank_ids": [
+      "gd_arcosg"
+    ],
+    "wals_code": "gae",
+    "word_order_81A": "VSO",
+    "case_count_49A": null,
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Dat",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "scot1245",
+    "latitude": 57.0,
+    "longitude": -4.0
+  },
+  {
+    "language_iso": "glg",
+    "language_code_ud": "gl",
+    "language_name": "gl",
+    "ud_treebank_ids": [
+      "gl_ctg",
+      "gl_pud",
+      "gl_treegal"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "grn",
+    "language_code_ud": "gn",
+    "language_name": "gn",
+    "ud_treebank_ids": [
+      "gn_oldtudet"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "got",
+    "language_code_ud": "got",
+    "language_name": "got",
+    "ud_treebank_ids": [
+      "got_proiel"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 5,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "grc",
+    "language_code_ud": "grc",
+    "language_name": "grc",
+    "ud_treebank_ids": [
+      "grc_perseus",
+      "grc_proiel",
+      "grc_ptnk"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 9,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Gen,Nom",
+      "Acc,Nom",
+      "Acc,Nom,Voc",
+      "Dat",
+      "Gen",
+      "Nom",
+      "Nom,Voc",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "gsw",
+    "language_code_ud": "gsw",
+    "language_name": "gsw",
+    "ud_treebank_ids": [
+      "gsw_divital",
+      "gsw_uzh"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "gu",
+    "language_code_ud": "gu",
+    "language_name": "gu",
+    "ud_treebank_ids": [
+      "gu_gujtb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "gub",
+    "language_code_ud": "gub",
+    "language_name": "Guajajara",
+    "ud_treebank_ids": [
+      "gub_tudet"
+    ],
+    "wals_code": "gjj",
+    "word_order_81A": "VSO",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Tupian",
+    "glottocode": "guaj1255",
+    "latitude": -5.0,
+    "longitude": -46.0
+  },
+  {
+    "language_iso": "gun",
+    "language_code_ud": "gun",
+    "language_name": "gun",
+    "ud_treebank_ids": [
+      "gun_dooley",
+      "gun_thomas"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "glv",
+    "language_code_ud": "gv",
+    "language_name": "gv",
+    "ud_treebank_ids": [
+      "gv_cadhan"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 1,
+    "ud_case_values": [
+      "Gen"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "gwi",
+    "language_code_ud": "gwi",
+    "language_name": "gwi",
+    "ud_treebank_ids": [
+      "gwi_tuecl"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "gya",
+    "language_code_ud": "gya",
+    "language_name": "gya",
+    "ud_treebank_ids": [
+      "gya_autogramm"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ha",
+    "language_code_ud": "ha",
+    "language_name": "ha",
+    "ud_treebank_ids": [
+      "ha_northernautogramm",
+      "ha_southernautogramm",
+      "ha_westernautogramm"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "hbo",
+    "language_code_ud": "hbo",
+    "language_name": "hbo",
+    "ud_treebank_ids": [
+      "hbo_ptnk"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 1,
+    "ud_case_values": [
+      "Loc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "heb",
+    "language_code_ud": "he",
+    "language_name": "Hebrew (Modern)",
+    "ud_treebank_ids": [
+      "he_htb",
+      "he_iahltknesset",
+      "he_iahltwiki"
+    ],
+    "wals_code": "heb",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Tem"
+    ],
+    "language_family": "Afro-Asiatic",
+    "glottocode": "hebr1245",
+    "latitude": 31.5,
+    "longitude": 34.8333333333
+  },
+  {
+    "language_iso": "hin",
+    "language_code_ud": "hi",
+    "language_name": "Hindi",
+    "ud_treebank_ids": [
+      "hi_hdtb",
+      "hi_pud"
+    ],
+    "wals_code": "hin",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Dat",
+      "Acc,Erg",
+      "Acc,Gen",
+      "Acc,Ine",
+      "Acc,Ins",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "hind1269",
+    "latitude": 25.0,
+    "longitude": 77.0
+  },
+  {
+    "language_iso": "hit",
+    "language_code_ud": "hit",
+    "language_name": "hit",
+    "ud_treebank_ids": [
+      "hit_hittb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "hrv",
+    "language_code_ud": "hr",
+    "language_name": "hr",
+    "ud_treebank_ids": [
+      "hr_set"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "hsb",
+    "language_code_ud": "hsb",
+    "language_name": "hsb",
+    "ud_treebank_ids": [
+      "hsb_ufal"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ht",
+    "language_code_ud": "ht",
+    "language_name": "ht",
+    "ud_treebank_ids": [
+      "ht_adolphe",
+      "ht_autogramm"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "hun",
+    "language_code_ud": "hu",
+    "language_name": "Hungarian",
+    "ud_treebank_ids": [
+      "hu_szeged"
+    ],
+    "wals_code": "hun",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": "10 or more cases",
+    "ud_case_richness": 22,
+    "ud_case_values": [
+      "Abl",
+      "Abs",
+      "Acc",
+      "Ade",
+      "All",
+      "Cau",
+      "Dat",
+      "Del",
+      "Dis",
+      "Ela",
+      "Ess",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Sbl",
+      "Sup",
+      "Tem",
+      "Ter",
+      "Tra"
+    ],
+    "language_family": "Uralic",
+    "glottocode": "hung1274",
+    "latitude": 47.0,
+    "longitude": 20.0
+  },
+  {
+    "language_iso": "hye",
+    "language_code_ud": "hy",
+    "language_name": "Armenian (Eastern)",
+    "ud_treebank_ids": [
+      "hy_armtdp",
+      "hy_bsut"
+    ],
+    "wals_code": "arm",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": "5 cases",
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "nucl1235",
+    "latitude": 40.0,
+    "longitude": 45.0
+  },
+  {
+    "language_iso": "hyw",
+    "language_code_ud": "hyw",
+    "language_name": "Armenian (Western)",
+    "ud_treebank_ids": [
+      "hyw_armtdp"
+    ],
+    "wals_code": "arw",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "homs1234",
+    "latitude": 38.5,
+    "longitude": 43.5
+  },
+  {
+    "language_iso": "ind",
+    "language_code_ud": "id",
+    "language_name": "Indonesian",
+    "ud_treebank_ids": [
+      "id_csui",
+      "id_gsd",
+      "id_pud"
+    ],
+    "wals_code": "ind",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Austronesian",
+    "glottocode": "stin1234",
+    "latitude": 0.0,
+    "longitude": 106.0
+  },
+  {
+    "language_iso": "isl",
+    "language_code_ud": "is",
+    "language_name": "Icelandic",
+    "ud_treebank_ids": [
+      "is_gc",
+      "is_icepahc",
+      "is_modern",
+      "is_pud"
+    ],
+    "wals_code": "ice",
+    "word_order_81A": "SVO",
+    "case_count_49A": "4 cases",
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "icel1247",
+    "latitude": 65.0,
+    "longitude": -17.0
+  },
+  {
+    "language_iso": "ita",
+    "language_code_ud": "it",
+    "language_name": "Italian",
+    "ud_treebank_ids": [
+      "it_isdt",
+      "it_kiparlaforest",
+      "it_markit",
+      "it_old",
+      "it_parlamint",
+      "it_partut",
+      "it_postwita",
+      "it_pud",
+      "it_twittiro",
+      "it_valico",
+      "it_vit"
+    ],
+    "wals_code": "ita",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "ital1282",
+    "latitude": 43.0,
+    "longitude": 12.0
+  },
+  {
+    "language_iso": "jpn",
+    "language_code_ud": "ja",
+    "language_name": "Japanese",
+    "ud_treebank_ids": [
+      "ja_bccwjluw",
+      "ja_gsd",
+      "ja_gsdluw",
+      "ja_pud",
+      "ja_pudluw"
+    ],
+    "wals_code": "jpn",
+    "word_order_81A": "SOV",
+    "case_count_49A": "8-9 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Japanese",
+    "glottocode": "nucl1643",
+    "latitude": 37.0,
+    "longitude": 140.0
+  },
+  {
+    "language_iso": "jaa",
+    "language_code_ud": "jaa",
+    "language_name": "jaa",
+    "ud_treebank_ids": [
+      "jaa_jarawara"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "jv",
+    "language_code_ud": "jv",
+    "language_name": "jv",
+    "ud_treebank_ids": [
+      "jv_csui"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "kat",
+    "language_code_ud": "ka",
+    "language_name": "Georgian",
+    "ud_treebank_ids": [
+      "ka_glc",
+      "ka_gnc"
+    ],
+    "wals_code": "geo",
+    "word_order_81A": "SOV",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Dat",
+      "Erg",
+      "Ess",
+      "Gen",
+      "Ins",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Kartvelian",
+    "glottocode": "nucl1302",
+    "latitude": 42.0,
+    "longitude": 44.0
+  },
+  {
+    "language_iso": "kfm",
+    "language_code_ud": "kfm",
+    "language_name": "kfm",
+    "ud_treebank_ids": [
+      "kfm_aha"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "kaz",
+    "language_code_ud": "kk",
+    "language_name": "kk",
+    "ud_treebank_ids": [
+      "kk_ktb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "kmr",
+    "language_code_ud": "kmr",
+    "language_name": "kmr",
+    "ud_treebank_ids": [
+      "kmr_kurmanji"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Con",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "kor",
+    "language_code_ud": "ko",
+    "language_name": "Korean",
+    "ud_treebank_ids": [
+      "ko_gsd",
+      "ko_kaist",
+      "ko_ksl",
+      "ko_littleprince",
+      "ko_pud"
+    ],
+    "wals_code": "kor",
+    "word_order_81A": "SOV",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Korean",
+    "glottocode": "kore1280",
+    "latitude": 37.5,
+    "longitude": 128.0
+  },
+  {
+    "language_iso": "koi",
+    "language_code_ud": "koi",
+    "language_name": "koi",
+    "ud_treebank_ids": [
+      "koi_uh"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 9,
+    "ud_case_values": [
+      "Acc",
+      "Cmp",
+      "Dat",
+      "Egr",
+      "Ela",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "kpv",
+    "language_code_ud": "kpv",
+    "language_name": "Komi-Zyrian",
+    "ud_treebank_ids": [
+      "kpv_ikdp",
+      "kpv_lattice"
+    ],
+    "wals_code": "kzy",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 9,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Egr",
+      "Ela",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Uralic",
+    "glottocode": "komi1268",
+    "latitude": 65.0,
+    "longitude": 55.0
+  },
+  {
+    "language_iso": "krl",
+    "language_code_ud": "krl",
+    "language_name": "krl",
+    "ud_treebank_ids": [
+      "krl_kkpp"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ky",
+    "language_code_ud": "ky",
+    "language_name": "ky",
+    "ud_treebank_ids": [
+      "ky_ktmu",
+      "ky_tuecl"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 13,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Acc,Dat",
+      "Acc,Gen",
+      "Acc,Ins",
+      "Acc,Loc",
+      "Dat",
+      "Equ",
+      "Gen",
+      "Gen,Loc",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "lat",
+    "language_code_ud": "la",
+    "language_name": "la",
+    "ud_treebank_ids": [
+      "la_circse",
+      "la_ittb",
+      "la_llct",
+      "la_perseus",
+      "la_proiel",
+      "la_udante"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Acc,Nom",
+      "Dat",
+      "Gen",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "lb",
+    "language_code_ud": "lb",
+    "language_name": "lb",
+    "ud_treebank_ids": [
+      "lb_luxbank"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "lij",
+    "language_code_ud": "lij",
+    "language_name": "lij",
+    "ud_treebank_ids": [
+      "lij_glt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "lit",
+    "language_code_ud": "lt",
+    "language_name": "Lithuanian",
+    "ud_treebank_ids": [
+      "lt_alksnis",
+      "lt_hse"
+    ],
+    "wals_code": "lit",
+    "word_order_81A": "SVO",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ill",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "lith1251",
+    "latitude": 55.0,
+    "longitude": 24.0
+  },
+  {
+    "language_iso": "ltg",
+    "language_code_ud": "ltg",
+    "language_name": "ltg",
+    "ud_treebank_ids": [
+      "ltg_cairo"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "lav",
+    "language_code_ud": "lv",
+    "language_name": "Latvian",
+    "ud_treebank_ids": [
+      "lv_cairo",
+      "lv_lvtb"
+    ],
+    "wals_code": "lat",
+    "word_order_81A": "SVO",
+    "case_count_49A": "5 cases",
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "latv1249",
+    "latitude": 57.0,
+    "longitude": 24.0
+  },
+  {
+    "language_iso": "lzh",
+    "language_code_ud": "lzh",
+    "language_name": "lzh",
+    "ud_treebank_ids": [
+      "lzh_kyoto",
+      "lzh_tuecl"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 2,
+    "ud_case_values": [
+      "Loc",
+      "Tem"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "mdf",
+    "language_code_ud": "mdf",
+    "language_name": "mdf",
+    "ud_treebank_ids": [
+      "mdf_jr"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 9,
+    "ud_case_values": [
+      "Abl",
+      "Dat",
+      "Ela",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Loc",
+      "Nom",
+      "Tem"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "mkd",
+    "language_code_ud": "mk",
+    "language_name": "Macedonian",
+    "ud_treebank_ids": [
+      "mk_mtb"
+    ],
+    "wals_code": "mcd",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "mace1250",
+    "latitude": 41.6666666667,
+    "longitude": 21.75
+  },
+  {
+    "language_iso": "mal",
+    "language_code_ud": "ml",
+    "language_name": "Malayalam",
+    "ud_treebank_ids": [
+      "ml_ufal"
+    ],
+    "wals_code": "mym",
+    "word_order_81A": "SOV",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Dravidian",
+    "glottocode": "mala1464",
+    "latitude": 10.0,
+    "longitude": 76.5
+  },
+  {
+    "language_iso": "mpu",
+    "language_code_ud": "mpu",
+    "language_name": "mpu",
+    "ud_treebank_ids": [
+      "mpu_tudet"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "mar",
+    "language_code_ud": "mr",
+    "language_name": "Marathi",
+    "ud_treebank_ids": [
+      "mr_ufal"
+    ],
+    "wals_code": "mhi",
+    "word_order_81A": "SOV",
+    "case_count_49A": "5 cases",
+    "ud_case_richness": 9,
+    "ud_case_values": [
+      "Abl",
+      "Abs",
+      "Acc",
+      "Com",
+      "Dat",
+      "Erg",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "mara1378",
+    "latitude": 19.0,
+    "longitude": 76.0
+  },
+  {
+    "language_iso": "mlt",
+    "language_code_ud": "mt",
+    "language_name": "mt",
+    "ud_treebank_ids": [
+      "mt_mudt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "myu",
+    "language_code_ud": "myu",
+    "language_name": "Mundurukú",
+    "ud_treebank_ids": [
+      "myu_tudet"
+    ],
+    "wals_code": "muu",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Tupian",
+    "glottocode": "mund1330",
+    "latitude": -7.0,
+    "longitude": -58.0
+  },
+  {
+    "language_iso": "myv",
+    "language_code_ud": "myv",
+    "language_name": "Mordvin (Erzya)",
+    "ud_treebank_ids": [
+      "myv_jr"
+    ],
+    "wals_code": "moe",
+    "word_order_81A": "SVO",
+    "case_count_49A": "10 or more cases",
+    "ud_case_richness": 15,
+    "ud_case_values": [
+      "Abe",
+      "Abl",
+      "Cmp",
+      "Com",
+      "Dat",
+      "Ela",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Lat",
+      "Loc",
+      "Nom",
+      "Prl",
+      "Tem",
+      "Tra"
+    ],
+    "language_family": "Uralic",
+    "glottocode": "erzy1239",
+    "latitude": 53.0,
+    "longitude": 45.5
+  },
+  {
+    "language_iso": "nap",
+    "language_code_ud": "nap",
+    "language_name": "nap",
+    "ud_treebank_ids": [
+      "nap_rb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "naq",
+    "language_code_ud": "naq",
+    "language_name": "Nama",
+    "ud_treebank_ids": [
+      "naq_kdt"
+    ],
+    "wals_code": "kho",
+    "word_order_81A": "SOV",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Khoe-Kwadi",
+    "glottocode": "nama1264",
+    "latitude": -25.5,
+    "longitude": 18.0
+  },
+  {
+    "language_iso": "nds",
+    "language_code_ud": "nds",
+    "language_name": "nds",
+    "ud_treebank_ids": [
+      "nds_lsdc"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 5,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Dat",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "nhi",
+    "language_code_ud": "nhi",
+    "language_name": "nhi",
+    "ud_treebank_ids": [
+      "nhi_itml"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "nld",
+    "language_code_ud": "nl",
+    "language_name": "Dutch",
+    "ud_treebank_ids": [
+      "nl_alpino",
+      "nl_lassysmall"
+    ],
+    "wals_code": "dut",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "dutc1256",
+    "latitude": 52.5,
+    "longitude": 6.0
+  },
+  {
+    "language_iso": "nmf",
+    "language_code_ud": "nmf",
+    "language_name": "Naga (Tangkhul)",
+    "ud_treebank_ids": [
+      "nmf_suansu"
+    ],
+    "wals_code": "ngt",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Abl",
+      "Dat",
+      "Erg",
+      "Gen",
+      "GenAbl",
+      "Top"
+    ],
+    "language_family": "Sino-Tibetan",
+    "glottocode": "tang1336",
+    "latitude": 25.0,
+    "longitude": 94.5
+  },
+  {
+    "language_iso": "nor",
+    "language_code_ud": "no",
+    "language_name": "Norwegian",
+    "ud_treebank_ids": [
+      "no_bokmaal",
+      "no_nynorsk"
+    ],
+    "wals_code": "nor",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "norw1258",
+    "latitude": 61.0,
+    "longitude": 8.0
+  },
+  {
+    "language_iso": "nyq",
+    "language_code_ud": "nyq",
+    "language_name": "nyq",
+    "ud_treebank_ids": [
+      "nyq_aha"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "oc",
+    "language_code_ud": "oc",
+    "language_name": "oc",
+    "ud_treebank_ids": [
+      "oc_ttb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "olo",
+    "language_code_ud": "olo",
+    "language_name": "olo",
+    "ud_treebank_ids": [
+      "olo_kkpp"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 11,
+    "ud_case_values": [
+      "Abe",
+      "Abl",
+      "Acc",
+      "All",
+      "Ela",
+      "Ess",
+      "Gen",
+      "Ill",
+      "Ine",
+      "Nom",
+      "Par"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ori",
+    "language_code_ud": "or",
+    "language_name": "or",
+    "ud_treebank_ids": [
+      "or_odtb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "orv",
+    "language_code_ud": "orv",
+    "language_name": "orv",
+    "ud_treebank_ids": [
+      "orv_birchbark",
+      "orv_rnc",
+      "orv_ruthenian",
+      "orv_torot"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 9,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Gen",
+      "Acc,Nom",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ota",
+    "language_code_ud": "ota",
+    "language_name": "ota",
+    "ud_treebank_ids": [
+      "ota_boun",
+      "ota_dudu"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Equ",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "otk",
+    "language_code_ud": "otk",
+    "language_name": "otk",
+    "ud_treebank_ids": [
+      "otk_clausal"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "pad",
+    "language_code_ud": "pad",
+    "language_name": "Paumarí",
+    "ud_treebank_ids": [
+      "pad_tuecl"
+    ],
+    "wals_code": "pau",
+    "word_order_81A": "SVO",
+    "case_count_49A": "3 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Arauan",
+    "glottocode": "paum1247",
+    "latitude": -6.0,
+    "longitude": -64.0
+  },
+  {
+    "language_iso": "pay",
+    "language_code_ud": "pay",
+    "language_name": "pay",
+    "ud_treebank_ids": [
+      "pay_chibergis"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "pcm",
+    "language_code_ud": "pcm",
+    "language_name": "pcm",
+    "ud_treebank_ids": [
+      "pcm_nsc"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "pol",
+    "language_code_ud": "pl",
+    "language_name": "Polish",
+    "ud_treebank_ids": [
+      "pl_lfg",
+      "pl_mpdt",
+      "pl_pdb",
+      "pl_pud"
+    ],
+    "wals_code": "pol",
+    "word_order_81A": "SVO",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "poli1260",
+    "latitude": 52.0,
+    "longitude": 20.0
+  },
+  {
+    "language_iso": "pro",
+    "language_code_ud": "pro",
+    "language_name": "pro",
+    "ud_treebank_ids": [
+      "pro_corag"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "pus",
+    "language_code_ud": "ps",
+    "language_name": "ps",
+    "ud_treebank_ids": [
+      "ps_sikaram"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "por",
+    "language_code_ud": "pt",
+    "language_name": "Portuguese",
+    "ud_treebank_ids": [
+      "pt_bosque",
+      "pt_dantestocks",
+      "pt_gsd",
+      "pt_petrogold",
+      "pt_porttinari",
+      "pt_pud"
+    ],
+    "wals_code": "por",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "port1283",
+    "latitude": 39.0,
+    "longitude": -8.0
+  },
+  {
+    "language_iso": "qaf",
+    "language_code_ud": "qaf",
+    "language_name": "qaf",
+    "ud_treebank_ids": [
+      "qaf_arabizi"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "qfn",
+    "language_code_ud": "qfn",
+    "language_name": "qfn",
+    "ud_treebank_ids": [
+      "qfn_fame"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "qpm",
+    "language_code_ud": "qpm",
+    "language_name": "qpm",
+    "ud_treebank_ids": [
+      "qpm_philotis"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 4,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "qtd",
+    "language_code_ud": "qtd",
+    "language_name": "qtd",
+    "ud_treebank_ids": [
+      "qtd_sagt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Equ",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "qte",
+    "language_code_ud": "qte",
+    "language_name": "qte",
+    "ud_treebank_ids": [
+      "qte_tect"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "qti",
+    "language_code_ud": "qti",
+    "language_name": "qti",
+    "ud_treebank_ids": [
+      "qti_butr"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "quc",
+    "language_code_ud": "quc",
+    "language_name": "quc",
+    "ud_treebank_ids": [
+      "quc_iu"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ron",
+    "language_code_ud": "ro",
+    "language_name": "Romanian",
+    "ud_treebank_ids": [
+      "ro_art",
+      "ro_moldoro",
+      "ro_nonstandard",
+      "ro_rrt",
+      "ro_simonero",
+      "ro_tuecl"
+    ],
+    "wals_code": "rom",
+    "word_order_81A": "SVO",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Nom",
+      "Dat",
+      "Dat,Gen",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "roma1327",
+    "latitude": 46.0,
+    "longitude": 25.0
+  },
+  {
+    "language_iso": "rus",
+    "language_code_ud": "ru",
+    "language_name": "Russian",
+    "ud_treebank_ids": [
+      "ru_gsd",
+      "ru_poetry",
+      "ru_pud",
+      "ru_syntagrus",
+      "ru_taiga"
+    ],
+    "wals_code": "rus",
+    "word_order_81A": "SVO",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Par",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "russ1263",
+    "latitude": 56.0,
+    "longitude": 38.0
+  },
+  {
+    "language_iso": "san",
+    "language_code_ud": "sa",
+    "language_name": "sa",
+    "ud_treebank_ids": [
+      "sa_ufal",
+      "sa_vedic"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sab",
+    "language_code_ud": "sab",
+    "language_name": "sab",
+    "ud_treebank_ids": [
+      "sab_chibergis"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sah",
+    "language_code_ud": "sah",
+    "language_name": "Yakut",
+    "ud_treebank_ids": [
+      "sah_yktdt"
+    ],
+    "wals_code": "ykt",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Altaic",
+    "glottocode": "yaku1245",
+    "latitude": 62.0,
+    "longitude": 130.0
+  },
+  {
+    "language_iso": "say",
+    "language_code_ud": "say",
+    "language_name": "say",
+    "ud_treebank_ids": [
+      "say_autogramm"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "scn",
+    "language_code_ud": "scn",
+    "language_name": "scn",
+    "ud_treebank_ids": [
+      "scn_stb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sd",
+    "language_code_ud": "sd",
+    "language_name": "sd",
+    "ud_treebank_ids": [
+      "sd_isra"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 5,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Gen",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sdh",
+    "language_code_ud": "sdh",
+    "language_name": "sdh",
+    "ud_treebank_ids": [
+      "sdh_garrusi"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sga",
+    "language_code_ud": "sga",
+    "language_name": "sga",
+    "ud_treebank_ids": [
+      "sga_dipsgg",
+      "sga_dipwbg"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sin",
+    "language_code_ud": "si",
+    "language_name": "Sinhala",
+    "ud_treebank_ids": [
+      "si_stb"
+    ],
+    "wals_code": "snh",
+    "word_order_81A": "SOV",
+    "case_count_49A": "5 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Indo-European",
+    "glottocode": "sinh1246",
+    "latitude": 7.0,
+    "longitude": 80.5
+  },
+  {
+    "language_iso": "sjo",
+    "language_code_ud": "sjo",
+    "language_name": "sjo",
+    "ud_treebank_ids": [
+      "sjo_xdt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "slk",
+    "language_code_ud": "sk",
+    "language_name": "sk",
+    "ud_treebank_ids": [
+      "sk_snk"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "slv",
+    "language_code_ud": "sl",
+    "language_name": "Slovene",
+    "ud_treebank_ids": [
+      "sl_ssj",
+      "sl_sst"
+    ],
+    "wals_code": "slo",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "slov1268",
+    "latitude": 46.0,
+    "longitude": 15.0
+  },
+  {
+    "language_iso": "sme",
+    "language_code_ud": "sme",
+    "language_name": "Saami (Northern)",
+    "ud_treebank_ids": [
+      "sme_giella"
+    ],
+    "wals_code": "sno",
+    "word_order_81A": "SVO",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Abe",
+      "Acc",
+      "Com",
+      "Ess",
+      "Gen",
+      "Ill",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Uralic",
+    "glottocode": "nort2671",
+    "latitude": 69.0,
+    "longitude": 24.0
+  },
+  {
+    "language_iso": "sms",
+    "language_code_ud": "sms",
+    "language_name": "sms",
+    "ud_treebank_ids": [
+      "sms_giellagas"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Abe",
+      "Acc",
+      "Gen",
+      "Ill",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "soj",
+    "language_code_ud": "soj",
+    "language_name": "soj",
+    "ud_treebank_ids": [
+      "soj_aha"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "sqi",
+    "language_code_ud": "sq",
+    "language_name": "Albanian",
+    "ud_treebank_ids": [
+      "sq_staf",
+      "sq_tsa"
+    ],
+    "wals_code": "alb",
+    "word_order_81A": "SVO",
+    "case_count_49A": "4 cases",
+    "ud_case_richness": 5,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "",
+    "latitude": 41.0,
+    "longitude": 20.0
+  },
+  {
+    "language_iso": "srp",
+    "language_code_ud": "sr",
+    "language_name": "sr",
+    "ud_treebank_ids": [
+      "sr_set"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "ssp",
+    "language_code_ud": "ssp",
+    "language_name": "ssp",
+    "ud_treebank_ids": [
+      "ssp_lse"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "swe",
+    "language_code_ud": "sv",
+    "language_name": "Swedish",
+    "ud_treebank_ids": [
+      "sv_lines",
+      "sv_old",
+      "sv_pud",
+      "sv_swell",
+      "sv_talbanken"
+    ],
+    "wals_code": "swe",
+    "word_order_81A": "SVO",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "swed1254",
+    "latitude": 60.0,
+    "longitude": 15.0
+  },
+  {
+    "language_iso": "swl",
+    "language_code_ud": "swl",
+    "language_name": "swl",
+    "ud_treebank_ids": [
+      "swl_sslc"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "tam",
+    "language_code_ud": "ta",
+    "language_name": "Tamil",
+    "ud_treebank_ids": [
+      "ta_mwtt",
+      "ta_ttb"
+    ],
+    "wals_code": "tml",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Com",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Dravidian",
+    "glottocode": "tami1289",
+    "latitude": 11.0,
+    "longitude": 78.5
+  },
+  {
+    "language_iso": "tel",
+    "language_code_ud": "te",
+    "language_name": "Telugu",
+    "ud_treebank_ids": [
+      "te_mtg"
+    ],
+    "wals_code": "tel",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Dravidian",
+    "glottocode": "telu1262",
+    "latitude": 16.0,
+    "longitude": 79.0
+  },
+  {
+    "language_iso": "tha",
+    "language_code_ud": "th",
+    "language_name": "Thai",
+    "ud_treebank_ids": [
+      "th_pud",
+      "th_tud"
+    ],
+    "wals_code": "tha",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Tai-Kadai",
+    "glottocode": "thai1261",
+    "latitude": 16.0,
+    "longitude": 101.0
+  },
+  {
+    "language_iso": "tgl",
+    "language_code_ud": "tl",
+    "language_name": "Tagalog",
+    "ud_treebank_ids": [
+      "tl_trg",
+      "tl_ugnayan"
+    ],
+    "wals_code": "tag",
+    "word_order_81A": "VSO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Austronesian",
+    "glottocode": "taga1270",
+    "latitude": 15.0,
+    "longitude": 121.0
+  },
+  {
+    "language_iso": "tn",
+    "language_code_ud": "tn",
+    "language_name": "tn",
+    "ud_treebank_ids": [
+      "tn_popapolelo"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "tpn",
+    "language_code_ud": "tpn",
+    "language_name": "tpn",
+    "ud_treebank_ids": [
+      "tpn_tudet"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "tur",
+    "language_code_ud": "tr",
+    "language_name": "Turkish",
+    "ud_treebank_ids": [
+      "tr_atis",
+      "tr_boun",
+      "tr_framenet",
+      "tr_gb",
+      "tr_imst",
+      "tr_kenet",
+      "tr_penn",
+      "tr_pud",
+      "tr_tourism",
+      "tr_tuecl"
+    ],
+    "wals_code": "tur",
+    "word_order_81A": "SOV",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 8,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Equ",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Altaic",
+    "glottocode": "nucl1301",
+    "latitude": 39.0,
+    "longitude": 35.0
+  },
+  {
+    "language_iso": "tt",
+    "language_code_ud": "tt",
+    "language_name": "tt",
+    "ud_treebank_ids": [
+      "tt_nmctt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "uig",
+    "language_code_ud": "ug",
+    "language_name": "Uyghur",
+    "ud_treebank_ids": [
+      "ug_udt"
+    ],
+    "wals_code": "uyg",
+    "word_order_81A": "SOV",
+    "case_count_49A": null,
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": "Altaic",
+    "glottocode": "uigh1240",
+    "latitude": 40.0,
+    "longitude": 80.0
+  },
+  {
+    "language_iso": "ukr",
+    "language_code_ud": "uk",
+    "language_name": "Ukrainian",
+    "ud_treebank_ids": [
+      "uk_iu",
+      "uk_parlamint"
+    ],
+    "wals_code": "ukr",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom",
+      "Voc"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "ukra1253",
+    "latitude": 49.0,
+    "longitude": 33.0
+  },
+  {
+    "language_iso": "urd",
+    "language_code_ud": "ur",
+    "language_name": "Urdu",
+    "ud_treebank_ids": [
+      "ur_udtb"
+    ],
+    "wals_code": "urd",
+    "word_order_81A": "SOV",
+    "case_count_49A": "2 cases",
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Acc",
+      "Acc,Dat",
+      "Acc,Erg",
+      "Acc,Gen",
+      "Acc,Ins",
+      "Nom"
+    ],
+    "language_family": "Indo-European",
+    "glottocode": "urdu1245",
+    "latitude": 25.0,
+    "longitude": 67.0
+  },
+  {
+    "language_iso": "urb",
+    "language_code_ud": "urb",
+    "language_name": "Urubú-Kaapor",
+    "ud_treebank_ids": [
+      "urb_tudet"
+    ],
+    "wals_code": "urk",
+    "word_order_81A": "SOV",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Tupian",
+    "glottocode": "urub1250",
+    "latitude": -2.33333333333,
+    "longitude": -46.5
+  },
+  {
+    "language_iso": "uzb",
+    "language_code_ud": "uz",
+    "language_name": "uz",
+    "ud_treebank_ids": [
+      "uz_tuecl",
+      "uz_ut",
+      "uz_uzudt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 6,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "vep",
+    "language_code_ud": "vep",
+    "language_name": "vep",
+    "ud_treebank_ids": [
+      "vep_vwt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "vie",
+    "language_code_ud": "vi",
+    "language_name": "Vietnamese",
+    "ud_treebank_ids": [
+      "vi_tuecl",
+      "vi_vtb"
+    ],
+    "wals_code": "vie",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Austro-Asiatic",
+    "glottocode": "viet1252",
+    "latitude": 10.5,
+    "longitude": 106.5
+  },
+  {
+    "language_iso": "wbp",
+    "language_code_ud": "wbp",
+    "language_name": "Warlpiri",
+    "ud_treebank_ids": [
+      "wbp_ufal"
+    ],
+    "wals_code": "wrl",
+    "word_order_81A": "No dominant order",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Pama-Nyungan",
+    "glottocode": "warl1254",
+    "latitude": -20.0,
+    "longitude": 132.333333333
+  },
+  {
+    "language_iso": "wol",
+    "language_code_ud": "wo",
+    "language_name": "Wolof",
+    "ud_treebank_ids": [
+      "wo_wtb"
+    ],
+    "wals_code": "wlf",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc",
+      "Gen",
+      "Nom"
+    ],
+    "language_family": "Niger-Congo",
+    "glottocode": "nucl1347",
+    "latitude": 15.25,
+    "longitude": -16.0
+  },
+  {
+    "language_iso": "wuu",
+    "language_code_ud": "wuu",
+    "language_name": "wuu",
+    "ud_treebank_ids": [
+      "wuu_shud"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "xav",
+    "language_code_ud": "xav",
+    "language_name": "xav",
+    "ud_treebank_ids": [
+      "xav_xdt"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "xcl",
+    "language_code_ud": "xcl",
+    "language_name": "xcl",
+    "ud_treebank_ids": [
+      "xcl_caval"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 7,
+    "ud_case_values": [
+      "Abl",
+      "Acc",
+      "Dat",
+      "Gen",
+      "Ins",
+      "Loc",
+      "Nom"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "xnr",
+    "language_code_ud": "xnr",
+    "language_name": "xnr",
+    "ud_treebank_ids": [
+      "xnr_kdtb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "xpg",
+    "language_code_ud": "xpg",
+    "language_name": "xpg",
+    "ud_treebank_ids": [
+      "xpg_kul"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "xum",
+    "language_code_ud": "xum",
+    "language_name": "xum",
+    "ud_treebank_ids": [
+      "xum_ikuvina"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "yi",
+    "language_code_ud": "yi",
+    "language_name": "yi",
+    "ud_treebank_ids": [
+      "yi_yitb"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "yor",
+    "language_code_ud": "yo",
+    "language_name": "Yoruba",
+    "ud_treebank_ids": [
+      "yo_ytb"
+    ],
+    "wals_code": "yor",
+    "word_order_81A": "SVO",
+    "case_count_49A": "No morphological case-marking",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Niger-Congo",
+    "glottocode": "yoru1245",
+    "latitude": 8.0,
+    "longitude": 4.33333333333
+  },
+  {
+    "language_iso": "yrk",
+    "language_code_ud": "yrk",
+    "language_name": "Nenets",
+    "ud_treebank_ids": [
+      "yrk_tundra"
+    ],
+    "wals_code": "ntu",
+    "word_order_81A": "SOV",
+    "case_count_49A": "6-7 cases",
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Uralic",
+    "glottocode": "nene1249",
+    "latitude": 70.0,
+    "longitude": 76.0
+  },
+  {
+    "language_iso": "yrl",
+    "language_code_ud": "yrl",
+    "language_name": "yrl",
+    "ud_treebank_ids": [
+      "yrl_complin"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 3,
+    "ud_case_values": [
+      "Acc,Nom",
+      "Dat",
+      "Gen"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "language_iso": "yue",
+    "language_code_ud": "yue",
+    "language_name": "Cantonese",
+    "ud_treebank_ids": [
+      "yue_hk"
+    ],
+    "wals_code": "cnt",
+    "word_order_81A": "SVO",
+    "case_count_49A": null,
+    "ud_case_richness": 0,
+    "ud_case_values": [],
+    "language_family": "Sino-Tibetan",
+    "glottocode": "yuec1235",
+    "latitude": 23.0,
+    "longitude": 113.0
+  },
+  {
+    "language_iso": "zho",
+    "language_code_ud": "zh",
+    "language_name": "zh",
+    "ud_treebank_ids": [
+      "zh_beginner",
+      "zh_cfl",
+      "zh_gsd",
+      "zh_gsdsimp",
+      "zh_hk",
+      "zh_patentchar",
+      "zh_pud"
+    ],
+    "wals_code": null,
+    "word_order_81A": null,
+    "case_count_49A": null,
+    "ud_case_richness": 1,
+    "ud_case_values": [
+      "Gen"
+    ],
+    "language_family": null,
+    "glottocode": null,
+    "latitude": null,
+    "longitude": null
+  }
+]

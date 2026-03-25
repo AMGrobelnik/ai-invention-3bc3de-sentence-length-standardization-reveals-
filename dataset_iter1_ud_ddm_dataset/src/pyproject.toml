@@ -1,0 +1,11 @@
+[project]
+name = "ud-treebank-ddm-dataset"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+    "datasets==4.4.1",
+    "numpy==2.2.6",
+    "pandas==2.3.3",
+    "loguru==0.7.3",
+    "psutil==7.1.3",
+]

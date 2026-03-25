@@ -1,0 +1,665 @@
+{
+  "metadata": {
+    "description": "Universal Dependencies per-dependency records for DDM analysis",
+    "source": "commul/universal_dependencies (HuggingFace)",
+    "num_treebanks": 20,
+    "num_records": 5713082,
+    "num_sentences": 305993,
+    "schema_version": "1.0",
+    "treebank_metadata": [
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "num_sentences": 4997,
+        "mean_sentence_length": 24.67,
+        "std_sentence_length": 12.3,
+        "num_case_values": 1,
+        "case_values": [
+          "Gen"
+        ]
+      },
+      {
+        "treebank_id": "ja_gsd",
+        "language_code": "ja",
+        "num_sentences": 8100,
+        "mean_sentence_length": 23.91,
+        "std_sentence_length": 14.48,
+        "num_case_values": 0,
+        "case_values": []
+      },
+      {
+        "treebank_id": "ar_padt",
+        "language_code": "ar",
+        "num_sentences": 7664,
+        "mean_sentence_length": 36.85,
+        "std_sentence_length": 27.22,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Gen",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "en_ewt",
+        "language_code": "en",
+        "num_sentences": 16622,
+        "mean_sentence_length": 15.33,
+        "std_sentence_length": 12.09,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Gen",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "de_gsd",
+        "language_code": "de",
+        "num_sentences": 15589,
+        "mean_sentence_length": 18.78,
+        "std_sentence_length": 10.09,
+        "num_case_values": 4,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Gen",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "hi_hdtb",
+        "language_code": "hi",
+        "num_sentences": 16649,
+        "mean_sentence_length": 21.12,
+        "std_sentence_length": 9.48,
+        "num_case_values": 7,
+        "case_values": [
+          "Acc",
+          "Acc,Dat",
+          "Acc,Erg",
+          "Acc,Gen",
+          "Acc,Ine",
+          "Acc,Ins",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "tr_imst",
+        "language_code": "tr",
+        "num_sentences": 5635,
+        "mean_sentence_length": 10.31,
+        "std_sentence_length": 7.51,
+        "num_case_values": 8,
+        "case_values": [
+          "Abl",
+          "Acc",
+          "Dat",
+          "Equ",
+          "Gen",
+          "Ins",
+          "Loc",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "ko_gsd",
+        "language_code": "ko",
+        "num_sentences": 6339,
+        "mean_sentence_length": 12.67,
+        "std_sentence_length": 9.05,
+        "num_case_values": 0,
+        "case_values": []
+      },
+      {
+        "treebank_id": "fi_tdt",
+        "language_code": "fi",
+        "num_sentences": 15136,
+        "mean_sentence_length": 13.36,
+        "std_sentence_length": 9.44,
+        "num_case_values": 15,
+        "case_values": [
+          "Abe",
+          "Abl",
+          "Acc",
+          "Ade",
+          "All",
+          "Com",
+          "Ela",
+          "Ess",
+          "Gen",
+          "Ill",
+          "Ine",
+          "Ins",
+          "Nom",
+          "Par",
+          "Tra"
+        ]
+      },
+      {
+        "treebank_id": "cs_cac",
+        "language_code": "cs",
+        "num_sentences": 24709,
+        "mean_sentence_length": 20.01,
+        "std_sentence_length": 13.23,
+        "num_case_values": 7,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Gen",
+          "Ins",
+          "Loc",
+          "Nom",
+          "Voc"
+        ]
+      },
+      {
+        "treebank_id": "pt_bosque",
+        "language_code": "pt",
+        "num_sentences": 9357,
+        "mean_sentence_length": 24.35,
+        "std_sentence_length": 16.57,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "es_ancora",
+        "language_code": "es",
+        "num_sentences": 17662,
+        "mean_sentence_length": 31.71,
+        "std_sentence_length": 17.24,
+        "num_case_values": 6,
+        "case_values": [
+          "Acc",
+          "Acc,Dat",
+          "Acc,Nom",
+          "Com",
+          "Dat",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "fr_gsd",
+        "language_code": "fr",
+        "num_sentences": 16342,
+        "mean_sentence_length": 24.5,
+        "std_sentence_length": 13.67,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "hu_szeged",
+        "language_code": "hu",
+        "num_sentences": 1800,
+        "mean_sentence_length": 23.35,
+        "std_sentence_length": 12.19,
+        "num_case_values": 22,
+        "case_values": [
+          "Abl",
+          "Abs",
+          "Acc",
+          "Ade",
+          "All",
+          "Cau",
+          "Dat",
+          "Del",
+          "Dis",
+          "Ela",
+          "Ess",
+          "Gen",
+          "Ill",
+          "Ine",
+          "Ins",
+          "Loc",
+          "Nom",
+          "Sbl",
+          "Sup",
+          "Tem",
+          "Ter",
+          "Tra"
+        ]
+      },
+      {
+        "treebank_id": "it_isdt",
+        "language_code": "it",
+        "num_sentences": 14167,
+        "mean_sentence_length": 21.06,
+        "std_sentence_length": 15.23,
+        "num_case_values": 0,
+        "case_values": []
+      },
+      {
+        "treebank_id": "ta_ttb",
+        "language_code": "ta",
+        "num_sentences": 600,
+        "mean_sentence_length": 15.97,
+        "std_sentence_length": 8.21,
+        "num_case_values": 7,
+        "case_values": [
+          "Acc",
+          "Com",
+          "Dat",
+          "Gen",
+          "Ins",
+          "Loc",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "eu_bdt",
+        "language_code": "eu",
+        "num_sentences": 8993,
+        "mean_sentence_length": 13.5,
+        "std_sentence_length": 6.42,
+        "num_case_values": 15,
+        "case_values": [
+          "Abl",
+          "Abs",
+          "All",
+          "Ben",
+          "Cau",
+          "Com",
+          "Dat",
+          "Erg",
+          "Ess",
+          "Gen",
+          "Ine",
+          "Ins",
+          "Lat",
+          "Loc",
+          "Par"
+        ]
+      },
+      {
+        "treebank_id": "he_htb",
+        "language_code": "he",
+        "num_sentences": 6143,
+        "mean_sentence_length": 26.08,
+        "std_sentence_length": 14.89,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Gen",
+          "Tem"
+        ]
+      },
+      {
+        "treebank_id": "pl_pdb",
+        "language_code": "pl",
+        "num_sentences": 22152,
+        "mean_sentence_length": 15.8,
+        "std_sentence_length": 9.71,
+        "num_case_values": 7,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Gen",
+          "Ins",
+          "Loc",
+          "Nom",
+          "Voc"
+        ]
+      },
+      {
+        "treebank_id": "ru_syntagrus",
+        "language_code": "ru",
+        "num_sentences": 87337,
+        "mean_sentence_length": 17.35,
+        "std_sentence_length": 10.87,
+        "num_case_values": 8,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Gen",
+          "Ins",
+          "Loc",
+          "Nom",
+          "Par",
+          "Voc"
+        ]
+      }
+    ],
+    "sentence_metadata_sample": [
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_0",
+        "sentence_length": 40,
+        "num_dependencies": 39,
+        "mdd_observed": 5.4359,
+        "mdd_random_analytic": 13.6667,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_1",
+        "sentence_length": 29,
+        "num_dependencies": 28,
+        "mdd_observed": 3.5714,
+        "mdd_random_analytic": 10.0,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_2",
+        "sentence_length": 25,
+        "num_dependencies": 24,
+        "mdd_observed": 3.0833,
+        "mdd_random_analytic": 8.6667,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_3",
+        "sentence_length": 8,
+        "num_dependencies": 7,
+        "mdd_observed": 2.4286,
+        "mdd_random_analytic": 3.0,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_4",
+        "sentence_length": 19,
+        "num_dependencies": 18,
+        "mdd_observed": 4.4444,
+        "mdd_random_analytic": 6.6667,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_5",
+        "sentence_length": 22,
+        "num_dependencies": 21,
+        "mdd_observed": 2.8095,
+        "mdd_random_analytic": 7.6667,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_6",
+        "sentence_length": 55,
+        "num_dependencies": 54,
+        "mdd_observed": 5.4259,
+        "mdd_random_analytic": 18.6667,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_7",
+        "sentence_length": 21,
+        "num_dependencies": 20,
+        "mdd_observed": 2.7,
+        "mdd_random_analytic": 7.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_8",
+        "sentence_length": 39,
+        "num_dependencies": 38,
+        "mdd_observed": 6.8947,
+        "mdd_random_analytic": 13.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_9",
+        "sentence_length": 47,
+        "num_dependencies": 46,
+        "mdd_observed": 4.6087,
+        "mdd_random_analytic": 16.0,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_10",
+        "sentence_length": 65,
+        "num_dependencies": 64,
+        "mdd_observed": 4.8125,
+        "mdd_random_analytic": 22.0,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_11",
+        "sentence_length": 27,
+        "num_dependencies": 26,
+        "mdd_observed": 3.7692,
+        "mdd_random_analytic": 9.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_12",
+        "sentence_length": 31,
+        "num_dependencies": 30,
+        "mdd_observed": 3.8333,
+        "mdd_random_analytic": 10.6667,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_13",
+        "sentence_length": 36,
+        "num_dependencies": 35,
+        "mdd_observed": 3.7143,
+        "mdd_random_analytic": 12.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_14",
+        "sentence_length": 33,
+        "num_dependencies": 32,
+        "mdd_observed": 3.7188,
+        "mdd_random_analytic": 11.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_15",
+        "sentence_length": 68,
+        "num_dependencies": 67,
+        "mdd_observed": 5.209,
+        "mdd_random_analytic": 23.0,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_16",
+        "sentence_length": 45,
+        "num_dependencies": 44,
+        "mdd_observed": 5.9091,
+        "mdd_random_analytic": 15.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_17",
+        "sentence_length": 17,
+        "num_dependencies": 16,
+        "mdd_observed": 4.3125,
+        "mdd_random_analytic": 6.0,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_18",
+        "sentence_length": 18,
+        "num_dependencies": 17,
+        "mdd_observed": 2.6471,
+        "mdd_random_analytic": 6.3333,
+        "split": "train"
+      },
+      {
+        "treebank_id": "zh_gsd",
+        "language_code": "zh",
+        "sentence_id": "zh_gsd_train_19",
+        "sentence_length": 17,
+        "num_dependencies": 16,
+        "mdd_observed": 3.5,
+        "mdd_random_analytic": 6.0,
+        "split": "train"
+      }
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "ar_padt",
+      "examples": [
+        {
+          "input": "ar_padt|nsubj|X|VERB|13|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "ar_padt_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "ar_padt|obj|NOUN|VERB|13|Acc|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "ar_padt_train_0",
+          "metadata_tok_pos": 3
+        },
+        {
+          "input": "ar_padt|nmod|NOUN|NOUN|13|Gen|Acc",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "ar_padt_train_0",
+          "metadata_tok_pos": 4
+        }
+      ]
+    },
+    {
+      "dataset": "cs_cac",
+      "examples": [
+        {
+          "input": "cs_cac|amod|ADJ|NOUN|25|Nom|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "cs_cac_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "cs_cac|nsubj|NOUN|VERB|25|Nom|_",
+          "output": "2",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "cs_cac_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "cs_cac|nmod|NOUN|NOUN|25|Gen|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "cs_cac_train_0",
+          "metadata_tok_pos": 3
+        }
+      ]
+    },
+    {
+      "dataset": "de_gsd",
+      "examples": [
+        {
+          "input": "de_gsd|advmod|ADV|ADJ|16|_|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "de_gsd_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "de_gsd|amod|ADJ|NOUN|16|Nom|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "de_gsd_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "de_gsd|punct|PUNCT|NOUN|16|_|Nom",
+          "output": "2",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "de_gsd_train_0",
+          "metadata_tok_pos": 4
+        }
+      ]
+    },
+    {
+      "dataset": "en_ewt",
+      "examples": [
+        {
+          "input": "en_ewt|punct|PUNCT|PROPN|29|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "en_ewt_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "en_ewt|flat|PROPN|PROPN|29|_|_",
+          "output": "2",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "en_ewt_train_0",
+          "metadata_tok_pos": 3
+        },
+        {
+          "input": "en_ewt|punct|PUNCT|VERB|29|_|_",
+          "output": "3",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "en_ewt_train_0",
+          "metadata_tok_pos": 4
+        }
+      ]
+    },
+    {
+      "dataset": "es_ancora",
+      "examples": [
+        {
+          "input": "es_ancora|det|DET|NOUN|34|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "es_ancora_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "es_ancora|nsubj|NOUN|VERB|34|_|_",
+          "output": "7",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "es_ancora_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "es_ancora|case|ADP|NOUN|34|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "es_ancora_train_0",
+          "metadata_tok_pos": 3
+        }
+      ]
+    }
+  ]
+}
