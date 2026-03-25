@@ -1,0 +1,2938 @@
+{
+  "metadata": {
+    "method_name": "comprehensive_results_synthesis",
+    "description": "Bootstrap CI analysis of DDM standardization, Cox PH for case vs word order, and linking mechanism",
+    "n_bootstrap": 1000,
+    "results": {
+      "summary": {
+        "criterion_1_standardization": false,
+        "criterion_2_cox_case_vs_wo": false,
+        "criterion_3_linking_mechanism": true,
+        "overall_confirmed": false
+      },
+      "standardization_analysis": {
+        "criterion_1_rho": {
+          "value": 0.6764441906881171,
+          "p_value": 2.3957055151452515e-43,
+          "ci_95": [
+            0.5988870672340437,
+            0.7429453106291686
+          ],
+          "threshold": "< 0.85",
+          "pass": true
+        },
+        "criterion_1_cohens_d": {
+          "value": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "threshold": "> 0.5",
+          "pass": false
+        },
+        "mean_absolute_rank_shift": 52.71337579617835,
+        "n_treebanks": 314
+      },
+      "cox_analysis": {
+        "criterion_2_case_hr": {
+          "value": 1.002768147629208,
+          "ci_95": [
+            0.9942416429169345,
+            1.0102277299732505
+          ],
+          "p_value": 0.12227501313320979
+        },
+        "criterion_2_wo_max_hr": {
+          "value": 0.49871496511386454,
+          "ci_95": [
+            0.4317865568352504,
+            0.5767591266156821
+          ],
+          "p_value": 6.552494335867988e-98,
+          "word_order_variable": "wo_No dominant order"
+        },
+        "criterion_2_case_gt_wo": {
+          "case_effect_larger": false,
+          "case_p_lt_001": false,
+          "pass": false
+        },
+        "ph_assumption_holds": true,
+        "n_observations": 50000,
+        "n_bootstrap_successful": 1000,
+        "model": "Cox PH (penalizer=0.01)"
+      },
+      "linking_analysis": {
+        "criterion_3_linking": {
+          "corr_case_sentlen": {
+            "value": 0.14668237683126548,
+            "p_value": 0.05413583667930157,
+            "ci_95": [
+              0.0028153014441306716,
+              0.2990966783735541
+            ]
+          },
+          "corr_case_rankshift": {
+            "value": 0.13964171592240573,
+            "p_value": 0.0668958464922647,
+            "ci_95": [
+              -0.0033479060126308958,
+              0.2727621278556481
+            ]
+          },
+          "corr_sentlen_rankshift": {
+            "value": 0.40095196398354244,
+            "p_value": 4.5880174446162264e-08,
+            "ci_95": [
+              0.2634977406663013,
+              0.5336720326452365
+            ]
+          },
+          "all_positive": true,
+          "any_significant": true,
+          "pass": true
+        },
+        "n_languages": 173
+      },
+      "baseline": {
+        "method": "naive_ddm_ranking",
+        "description": "Baseline using naive (unstandardized) DDM — assumes sentence length has no confounding effect",
+        "mean_naive_ddm": 0.38741082802547766,
+        "std_naive_ddm": 0.14594669147119732,
+        "n_treebanks": 314
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ud_treebank_summaries",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"iso_code\": \"ab\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.2992, \"standardized_ddm\": 0.2444}",
+          "output": "{\"naive_rank\": 224, \"standardized_rank\": 209, \"rank_shift\": 15}",
+          "predict_baseline": "{\"rank\": 224}",
+          "predict_our_method": "{\"rank\": 209}",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"iso_code\": \"abq\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.1144, \"standardized_ddm\": 0.0224}",
+          "output": "{\"naive_rank\": 301, \"standardized_rank\": 301, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 301}",
+          "predict_our_method": "{\"rank\": 301}",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"iso_code\": \"af\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.5626, \"standardized_ddm\": 0.3695}",
+          "output": "{\"naive_rank\": 38, \"standardized_rank\": 104, \"rank_shift\": -66}",
+          "predict_baseline": "{\"rank\": 38}",
+          "predict_our_method": "{\"rank\": 104}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"aii_as\", \"iso_code\": \"aii\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.167, \"standardized_ddm\": 0.0182}",
+          "output": "{\"naive_rank\": 292, \"standardized_rank\": 303, \"rank_shift\": -11}",
+          "predict_baseline": "{\"rank\": 292}",
+          "predict_our_method": "{\"rank\": 303}",
+          "metadata_treebank_id": "aii_as",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"ajp_madar\", \"iso_code\": \"ajp\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.1509, \"standardized_ddm\": 0.039}",
+          "output": "{\"naive_rank\": 296, \"standardized_rank\": 291, \"rank_shift\": 5}",
+          "predict_baseline": "{\"rank\": 296}",
+          "predict_our_method": "{\"rank\": 291}",
+          "metadata_treebank_id": "ajp_madar",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"akk_pisandub\", \"iso_code\": \"akk\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3138, \"standardized_ddm\": 0.0161}",
+          "output": "{\"naive_rank\": 216, \"standardized_rank\": 305, \"rank_shift\": -89}",
+          "predict_baseline": "{\"rank\": 216}",
+          "predict_our_method": "{\"rank\": 305}",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"akk_riao\", \"iso_code\": \"akk\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.3187, \"standardized_ddm\": 0.2954}",
+          "output": "{\"naive_rank\": 212, \"standardized_rank\": 172, \"rank_shift\": 40}",
+          "predict_baseline": "{\"rank\": 212}",
+          "predict_our_method": "{\"rank\": 172}",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"aln_gps\", \"iso_code\": \"aln\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.4416, \"standardized_ddm\": 0.3152}",
+          "output": "{\"naive_rank\": 119, \"standardized_rank\": 162, \"rank_shift\": -43}",
+          "predict_baseline": "{\"rank\": 119}",
+          "predict_our_method": "{\"rank\": 162}",
+          "metadata_treebank_id": "aln_gps",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"am_att\", \"iso_code\": \"am\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.3689, \"standardized_ddm\": 0.2464}",
+          "output": "{\"naive_rank\": 180, \"standardized_rank\": 207, \"rank_shift\": -27}",
+          "predict_baseline": "{\"rank\": 180}",
+          "predict_our_method": "{\"rank\": 207}",
+          "metadata_treebank_id": "am_att",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"apu_ufpa\", \"iso_code\": \"apu\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.1911, \"standardized_ddm\": 0.0499}",
+          "output": "{\"naive_rank\": 284, \"standardized_rank\": 280, \"rank_shift\": 4}",
+          "predict_baseline": "{\"rank\": 284}",
+          "predict_our_method": "{\"rank\": 280}",
+          "metadata_treebank_id": "apu_ufpa",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"aqz_tudet\", \"iso_code\": \"aqz\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.1824, \"standardized_ddm\": 0.0591}",
+          "output": "{\"naive_rank\": 288, \"standardized_rank\": 273, \"rank_shift\": 15}",
+          "predict_baseline": "{\"rank\": 288}",
+          "predict_our_method": "{\"rank\": 273}",
+          "metadata_treebank_id": "aqz_tudet",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"ar_padt\", \"iso_code\": \"ar\", \"word_order\": \"VSO\", \"case_richness\": 3, \"naive_ddm\": 0.6225, \"standardized_ddm\": 0.4558}",
+          "output": "{\"naive_rank\": 10, \"standardized_rank\": 9, \"rank_shift\": 1}",
+          "predict_baseline": "{\"rank\": 10}",
+          "predict_our_method": "{\"rank\": 9}",
+          "metadata_treebank_id": "ar_padt",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"ar_pud\", \"iso_code\": \"ar\", \"word_order\": \"VSO\", \"case_richness\": 3, \"naive_ddm\": 0.5273, \"standardized_ddm\": 0.3434}",
+          "output": "{\"naive_rank\": 61, \"standardized_rank\": 136, \"rank_shift\": -75}",
+          "predict_baseline": "{\"rank\": 61}",
+          "predict_our_method": "{\"rank\": 136}",
+          "metadata_treebank_id": "ar_pud",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"arh_chibergis\", \"iso_code\": \"arh\", \"word_order\": \"SOV\", \"case_richness\": 3, \"naive_ddm\": 0.336, \"standardized_ddm\": 0.2375}",
+          "output": "{\"naive_rank\": 200, \"standardized_rank\": 213, \"rank_shift\": -13}",
+          "predict_baseline": "{\"rank\": 200}",
+          "predict_our_method": "{\"rank\": 213}",
+          "metadata_treebank_id": "arh_chibergis",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"arr_tudet\", \"iso_code\": \"arr\", \"word_order\": \"SOV\", \"case_richness\": 1, \"naive_ddm\": 0.0718, \"standardized_ddm\": 0.0377}",
+          "output": "{\"naive_rank\": 308, \"standardized_rank\": 293, \"rank_shift\": 15}",
+          "predict_baseline": "{\"rank\": 308}",
+          "predict_our_method": "{\"rank\": 293}",
+          "metadata_treebank_id": "arr_tudet",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"az_tuecl\", \"iso_code\": \"az\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.2379, \"standardized_ddm\": 0.0751}",
+          "output": "{\"naive_rank\": 267, \"standardized_rank\": 266, \"rank_shift\": 1}",
+          "predict_baseline": "{\"rank\": 267}",
+          "predict_our_method": "{\"rank\": 266}",
+          "metadata_treebank_id": "az_tuecl",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"azz_itml\", \"iso_code\": \"azz\", \"word_order\": NaN, \"case_richness\": 1, \"naive_ddm\": 0.2337, \"standardized_ddm\": 0.2264}",
+          "output": "{\"naive_rank\": 269, \"standardized_rank\": 221, \"rank_shift\": 48}",
+          "predict_baseline": "{\"rank\": 269}",
+          "predict_our_method": "{\"rank\": 221}",
+          "metadata_treebank_id": "azz_itml",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"bar_maibaam\", \"iso_code\": \"bar\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2645, \"standardized_ddm\": 0.2268}",
+          "output": "{\"naive_rank\": 248, \"standardized_rank\": 220, \"rank_shift\": 28}",
+          "predict_baseline": "{\"rank\": 248}",
+          "predict_our_method": "{\"rank\": 220}",
+          "metadata_treebank_id": "bar_maibaam",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"be_hse\", \"iso_code\": \"be\", \"word_order\": \"No dominant order\", \"case_richness\": 7, \"naive_ddm\": 0.3523, \"standardized_ddm\": 0.4059}",
+          "output": "{\"naive_rank\": 192, \"standardized_rank\": 47, \"rank_shift\": 145}",
+          "predict_baseline": "{\"rank\": 192}",
+          "predict_our_method": "{\"rank\": 47}",
+          "metadata_treebank_id": "be_hse",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"iso_code\": \"bej\", \"word_order\": \"SOV\", \"case_richness\": 3, \"naive_ddm\": 0.5072, \"standardized_ddm\": 0.4387}",
+          "output": "{\"naive_rank\": 72, \"standardized_rank\": 14, \"rank_shift\": 58}",
+          "predict_baseline": "{\"rank\": 72}",
+          "predict_our_method": "{\"rank\": 14}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"bg_btb\", \"iso_code\": \"bg\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.3928, \"standardized_ddm\": 0.3861}",
+          "output": "{\"naive_rank\": 159, \"standardized_rank\": 79, \"rank_shift\": 80}",
+          "predict_baseline": "{\"rank\": 159}",
+          "predict_our_method": "{\"rank\": 79}",
+          "metadata_treebank_id": "bg_btb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"bho_bhtb\", \"iso_code\": \"bho\", \"word_order\": \"SOV\", \"case_richness\": 4, \"naive_ddm\": 0.4863, \"standardized_ddm\": 0.2491}",
+          "output": "{\"naive_rank\": 90, \"standardized_rank\": 205, \"rank_shift\": -115}",
+          "predict_baseline": "{\"rank\": 90}",
+          "predict_our_method": "{\"rank\": 205}",
+          "metadata_treebank_id": "bho_bhtb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\", \"iso_code\": \"bm\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.3487, \"standardized_ddm\": 0.2982}",
+          "output": "{\"naive_rank\": 196, \"standardized_rank\": 171, \"rank_shift\": 25}",
+          "predict_baseline": "{\"rank\": 196}",
+          "predict_our_method": "{\"rank\": 171}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"bn_bru\", \"iso_code\": \"bn\", \"word_order\": \"SOV\", \"case_richness\": 3, \"naive_ddm\": 0.2284, \"standardized_ddm\": 0.0248}",
+          "output": "{\"naive_rank\": 270, \"standardized_rank\": 298, \"rank_shift\": -28}",
+          "predict_baseline": "{\"rank\": 270}",
+          "predict_our_method": "{\"rank\": 298}",
+          "metadata_treebank_id": "bn_bru",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\", \"iso_code\": \"bor\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2797, \"standardized_ddm\": 0.4194}",
+          "output": "{\"naive_rank\": 236, \"standardized_rank\": 27, \"rank_shift\": 209}",
+          "predict_baseline": "{\"rank\": 236}",
+          "predict_our_method": "{\"rank\": 27}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"br_keb\", \"iso_code\": \"br\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.2785, \"standardized_ddm\": 0.2405}",
+          "output": "{\"naive_rank\": 238, \"standardized_rank\": 210, \"rank_shift\": 28}",
+          "predict_baseline": "{\"rank\": 238}",
+          "predict_our_method": "{\"rank\": 210}",
+          "metadata_treebank_id": "br_keb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\", \"iso_code\": \"bxr\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.4021, \"standardized_ddm\": 0.3543}",
+          "output": "{\"naive_rank\": 152, \"standardized_rank\": 123, \"rank_shift\": 29}",
+          "predict_baseline": "{\"rank\": 152}",
+          "predict_our_method": "{\"rank\": 123}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\", \"iso_code\": \"ca\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.6343, \"standardized_ddm\": 0.4128}",
+          "output": "{\"naive_rank\": 8, \"standardized_rank\": 38, \"rank_shift\": -30}",
+          "predict_baseline": "{\"rank\": 8}",
+          "predict_our_method": "{\"rank\": 38}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ceb_gja\", \"iso_code\": \"ceb\", \"word_order\": \"VSO\", \"case_richness\": 2, \"naive_ddm\": 0.0225, \"standardized_ddm\": 0.0124}",
+          "output": "{\"naive_rank\": 312, \"standardized_rank\": 308, \"rank_shift\": 4}",
+          "predict_baseline": "{\"rank\": 312}",
+          "predict_our_method": "{\"rank\": 308}",
+          "metadata_treebank_id": "ceb_gja",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"ckb_mukri\", \"iso_code\": \"ckb\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.1834, \"standardized_ddm\": 0.0488}",
+          "output": "{\"naive_rank\": 287, \"standardized_rank\": 282, \"rank_shift\": 5}",
+          "predict_baseline": "{\"rank\": 287}",
+          "predict_our_method": "{\"rank\": 282}",
+          "metadata_treebank_id": "ckb_mukri",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ckt_hse\", \"iso_code\": \"ckt\", \"word_order\": \"No dominant order\", \"case_richness\": 0, \"naive_ddm\": 0.1872, \"standardized_ddm\": 0.1197}",
+          "output": "{\"naive_rank\": 285, \"standardized_rank\": 251, \"rank_shift\": 34}",
+          "predict_baseline": "{\"rank\": 285}",
+          "predict_our_method": "{\"rank\": 251}",
+          "metadata_treebank_id": "ckt_hse",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"cop_bohairic\", \"iso_code\": \"cop\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.6483, \"standardized_ddm\": 0.2914}",
+          "output": "{\"naive_rank\": 7, \"standardized_rank\": 177, \"rank_shift\": -170}",
+          "predict_baseline": "{\"rank\": 7}",
+          "predict_our_method": "{\"rank\": 177}",
+          "metadata_treebank_id": "cop_bohairic",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"cop_scriptorium\", \"iso_code\": \"cop\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5535, \"standardized_ddm\": 0.3791}",
+          "output": "{\"naive_rank\": 41, \"standardized_rank\": 93, \"rank_shift\": -52}",
+          "predict_baseline": "{\"rank\": 41}",
+          "predict_our_method": "{\"rank\": 93}",
+          "metadata_treebank_id": "cop_scriptorium",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"cpg_tuecl\", \"iso_code\": \"cpg\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.1783, \"standardized_ddm\": 0.1283}",
+          "output": "{\"naive_rank\": 289, \"standardized_rank\": 247, \"rank_shift\": 41}",
+          "predict_baseline": "{\"rank\": 289}",
+          "predict_our_method": "{\"rank\": 247}",
+          "metadata_treebank_id": "cpg_tuecl",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\", \"iso_code\": \"cs\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.4798, \"standardized_ddm\": 0.3954}",
+          "output": "{\"naive_rank\": 94, \"standardized_rank\": 62, \"rank_shift\": 32}",
+          "predict_baseline": "{\"rank\": 94}",
+          "predict_our_method": "{\"rank\": 62}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cltt\", \"iso_code\": \"cs\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.5778, \"standardized_ddm\": 0.3808}",
+          "output": "{\"naive_rank\": 28, \"standardized_rank\": 88, \"rank_shift\": -60}",
+          "predict_baseline": "{\"rank\": 28}",
+          "predict_our_method": "{\"rank\": 88}",
+          "metadata_treebank_id": "cs_cltt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_fictree\", \"iso_code\": \"cs\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.3134, \"standardized_ddm\": 0.3399}",
+          "output": "{\"naive_rank\": 217, \"standardized_rank\": 141, \"rank_shift\": 76}",
+          "predict_baseline": "{\"rank\": 217}",
+          "predict_our_method": "{\"rank\": 141}",
+          "metadata_treebank_id": "cs_fictree",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\", \"iso_code\": \"cs\", \"word_order\": \"SVO\", \"case_richness\": 7, \"naive_ddm\": 0.3905, \"standardized_ddm\": 0.374}",
+          "output": "{\"naive_rank\": 163, \"standardized_rank\": 98, \"rank_shift\": 64}",
+          "predict_baseline": "{\"rank\": 163}",
+          "predict_our_method": "{\"rank\": 98}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_poetry\", \"iso_code\": \"cs\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.3998, \"standardized_ddm\": 0.1071}",
+          "output": "{\"naive_rank\": 154, \"standardized_rank\": 255, \"rank_shift\": -101}",
+          "predict_baseline": "{\"rank\": 154}",
+          "predict_our_method": "{\"rank\": 255}",
+          "metadata_treebank_id": "cs_poetry",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pud\", \"iso_code\": \"cs\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.4886, \"standardized_ddm\": 0.3301}",
+          "output": "{\"naive_rank\": 87, \"standardized_rank\": 158, \"rank_shift\": -71}",
+          "predict_baseline": "{\"rank\": 87}",
+          "predict_our_method": "{\"rank\": 158}",
+          "metadata_treebank_id": "cs_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"ctn_ctntb\", \"iso_code\": \"ctn\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.2899, \"standardized_ddm\": 0.2174}",
+          "output": "{\"naive_rank\": 230, \"standardized_rank\": 223, \"rank_shift\": 7}",
+          "predict_baseline": "{\"rank\": 230}",
+          "predict_our_method": "{\"rank\": 223}",
+          "metadata_treebank_id": "ctn_ctntb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"cu_proiel\", \"iso_code\": \"cu\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.303, \"standardized_ddm\": 0.4303}",
+          "output": "{\"naive_rank\": 223, \"standardized_rank\": 21, \"rank_shift\": 202}",
+          "predict_baseline": "{\"rank\": 223}",
+          "predict_our_method": "{\"rank\": 21}",
+          "metadata_treebank_id": "cu_proiel",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"cy_ccg\", \"iso_code\": \"cy\", \"word_order\": \"VSO\", \"case_richness\": 0, \"naive_ddm\": 0.4978, \"standardized_ddm\": 0.3847}",
+          "output": "{\"naive_rank\": 83, \"standardized_rank\": 82, \"rank_shift\": 1}",
+          "predict_baseline": "{\"rank\": 83}",
+          "predict_our_method": "{\"rank\": 82}",
+          "metadata_treebank_id": "cy_ccg",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\", \"iso_code\": \"da\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4399, \"standardized_ddm\": 0.3759}",
+          "output": "{\"naive_rank\": 122, \"standardized_rank\": 96, \"rank_shift\": 26}",
+          "predict_baseline": "{\"rank\": 122}",
+          "predict_our_method": "{\"rank\": 96}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"de_gsd\", \"iso_code\": \"de\", \"word_order\": \"No dominant order\", \"case_richness\": 4, \"naive_ddm\": 0.4288, \"standardized_ddm\": 0.3675}",
+          "output": "{\"naive_rank\": 135, \"standardized_rank\": 113, \"rank_shift\": 22}",
+          "predict_baseline": "{\"rank\": 135}",
+          "predict_our_method": "{\"rank\": 113}",
+          "metadata_treebank_id": "de_gsd",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"de_hdt\", \"iso_code\": \"de\", \"word_order\": \"No dominant order\", \"case_richness\": 4, \"naive_ddm\": 0.4086, \"standardized_ddm\": 0.3517}",
+          "output": "{\"naive_rank\": 148, \"standardized_rank\": 129, \"rank_shift\": 19}",
+          "predict_baseline": "{\"rank\": 148}",
+          "predict_our_method": "{\"rank\": 129}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"de_lit\", \"iso_code\": \"de\", \"word_order\": \"No dominant order\", \"case_richness\": 4, \"naive_ddm\": 0.4375, \"standardized_ddm\": 0.3433}",
+          "output": "{\"naive_rank\": 125, \"standardized_rank\": 137, \"rank_shift\": -12}",
+          "predict_baseline": "{\"rank\": 125}",
+          "predict_our_method": "{\"rank\": 137}",
+          "metadata_treebank_id": "de_lit",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"de_pud\", \"iso_code\": \"de\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.4534, \"standardized_ddm\": 0.2805}",
+          "output": "{\"naive_rank\": 109, \"standardized_rank\": 186, \"rank_shift\": -77}",
+          "predict_baseline": "{\"rank\": 109}",
+          "predict_our_method": "{\"rank\": 186}",
+          "metadata_treebank_id": "de_pud",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"egy_ujaen\", \"iso_code\": \"egy\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3907, \"standardized_ddm\": 0.4086}",
+          "output": "{\"naive_rank\": 162, \"standardized_rank\": 40, \"rank_shift\": 121}",
+          "predict_baseline": "{\"rank\": 162}",
+          "predict_our_method": "{\"rank\": 40}",
+          "metadata_treebank_id": "egy_ujaen",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"el_cretan\", \"iso_code\": \"el\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.3217, \"standardized_ddm\": 0.1599}",
+          "output": "{\"naive_rank\": 210, \"standardized_rank\": 236, \"rank_shift\": -26}",
+          "predict_baseline": "{\"rank\": 210}",
+          "predict_our_method": "{\"rank\": 236}",
+          "metadata_treebank_id": "el_cretan",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"el_gdt\", \"iso_code\": \"el\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.5566, \"standardized_ddm\": 0.4081}",
+          "output": "{\"naive_rank\": 39, \"standardized_rank\": 42, \"rank_shift\": -3}",
+          "predict_baseline": "{\"rank\": 39}",
+          "predict_our_method": "{\"rank\": 42}",
+          "metadata_treebank_id": "el_gdt",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"el_gud\", \"iso_code\": \"el\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.3685, \"standardized_ddm\": 0.3289}",
+          "output": "{\"naive_rank\": 181, \"standardized_rank\": 159, \"rank_shift\": 22}",
+          "predict_baseline": "{\"rank\": 181}",
+          "predict_our_method": "{\"rank\": 159}",
+          "metadata_treebank_id": "el_gud",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"el_lesbian\", \"iso_code\": \"el\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.2721, \"standardized_ddm\": 0.1795}",
+          "output": "{\"naive_rank\": 244, \"standardized_rank\": 232, \"rank_shift\": 11}",
+          "predict_baseline": "{\"rank\": 244}",
+          "predict_our_method": "{\"rank\": 232}",
+          "metadata_treebank_id": "el_lesbian",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"el_messinian\", \"iso_code\": \"el\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.1522, \"standardized_ddm\": 0.0392}",
+          "output": "{\"naive_rank\": 295, \"standardized_rank\": 290, \"rank_shift\": 5}",
+          "predict_baseline": "{\"rank\": 295}",
+          "predict_our_method": "{\"rank\": 290}",
+          "metadata_treebank_id": "el_messinian",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"eme_tudet\", \"iso_code\": \"eme\", \"word_order\": \"SOV\", \"case_richness\": 2, \"naive_ddm\": 0.1093, \"standardized_ddm\": 0.0586}",
+          "output": "{\"naive_rank\": 303, \"standardized_rank\": 274, \"rank_shift\": 29}",
+          "predict_baseline": "{\"rank\": 303}",
+          "predict_our_method": "{\"rank\": 274}",
+          "metadata_treebank_id": "eme_tudet",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"en_atis\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.4546, \"standardized_ddm\": 0.3635}",
+          "output": "{\"naive_rank\": 108, \"standardized_rank\": 117, \"rank_shift\": -9}",
+          "predict_baseline": "{\"rank\": 108}",
+          "predict_our_method": "{\"rank\": 117}",
+          "metadata_treebank_id": "en_atis",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.1662, \"standardized_ddm\": 0.2783}",
+          "output": "{\"naive_rank\": 293, \"standardized_rank\": 188, \"rank_shift\": 105}",
+          "predict_baseline": "{\"rank\": 293}",
+          "predict_our_method": "{\"rank\": 188}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"en_ctetex\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5486, \"standardized_ddm\": 0.08}",
+          "output": "{\"naive_rank\": 45, \"standardized_rank\": 265, \"rank_shift\": -220}",
+          "predict_baseline": "{\"rank\": 45}",
+          "predict_our_method": "{\"rank\": 265}",
+          "metadata_treebank_id": "en_ctetex",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.2541, \"standardized_ddm\": 0.2776}",
+          "output": "{\"naive_rank\": 256, \"standardized_rank\": 190, \"rank_shift\": 66}",
+          "predict_baseline": "{\"rank\": 256}",
+          "predict_our_method": "{\"rank\": 190}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"en_ewt\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4051, \"standardized_ddm\": 0.3858}",
+          "output": "{\"naive_rank\": 150, \"standardized_rank\": 80, \"rank_shift\": 70}",
+          "predict_baseline": "{\"rank\": 150}",
+          "predict_our_method": "{\"rank\": 80}",
+          "metadata_treebank_id": "en_ewt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.3093, \"standardized_ddm\": 0.3013}",
+          "output": "{\"naive_rank\": 220, \"standardized_rank\": 168, \"rank_shift\": 52}",
+          "predict_baseline": "{\"rank\": 220}",
+          "predict_our_method": "{\"rank\": 168}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4355, \"standardized_ddm\": 0.3933}",
+          "output": "{\"naive_rank\": 130, \"standardized_rank\": 66, \"rank_shift\": 64}",
+          "predict_baseline": "{\"rank\": 130}",
+          "predict_our_method": "{\"rank\": 66}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gumreddit\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4084, \"standardized_ddm\": 0.326}",
+          "output": "{\"naive_rank\": 149, \"standardized_rank\": 160, \"rank_shift\": -11}",
+          "predict_baseline": "{\"rank\": 149}",
+          "predict_our_method": "{\"rank\": 160}",
+          "metadata_treebank_id": "en_gumreddit",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4559, \"standardized_ddm\": 0.4007}",
+          "output": "{\"naive_rank\": 107, \"standardized_rank\": 55, \"rank_shift\": 52}",
+          "predict_baseline": "{\"rank\": 107}",
+          "predict_our_method": "{\"rank\": 55}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"en_littleprince\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.3252, \"standardized_ddm\": 0.2512}",
+          "output": "{\"naive_rank\": 206, \"standardized_rank\": 204, \"rank_shift\": 2}",
+          "predict_baseline": "{\"rank\": 206}",
+          "predict_our_method": "{\"rank\": 204}",
+          "metadata_treebank_id": "en_littleprince",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"en_partut\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5292, \"standardized_ddm\": 0.3833}",
+          "output": "{\"naive_rank\": 58, \"standardized_rank\": 85, \"rank_shift\": -27}",
+          "predict_baseline": "{\"rank\": 58}",
+          "predict_our_method": "{\"rank\": 85}",
+          "metadata_treebank_id": "en_partut",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"en_pronouns\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.2668, \"standardized_ddm\": 0.0977}",
+          "output": "{\"naive_rank\": 246, \"standardized_rank\": 258, \"rank_shift\": -12}",
+          "predict_baseline": "{\"rank\": 246}",
+          "predict_our_method": "{\"rank\": 258}",
+          "metadata_treebank_id": "en_pronouns",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"en_pud\", \"iso_code\": \"en\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.5321, \"standardized_ddm\": 0.3351}",
+          "output": "{\"naive_rank\": 56, \"standardized_rank\": 152, \"rank_shift\": -96}",
+          "predict_baseline": "{\"rank\": 56}",
+          "predict_our_method": "{\"rank\": 152}",
+          "metadata_treebank_id": "en_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\", \"iso_code\": \"eo\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.16, \"standardized_ddm\": 0.0082}",
+          "output": "{\"naive_rank\": 294, \"standardized_rank\": 311, \"rank_shift\": -17}",
+          "predict_baseline": "{\"rank\": 294}",
+          "predict_our_method": "{\"rank\": 311}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\", \"iso_code\": \"es\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.6124, \"standardized_ddm\": 0.4086}",
+          "output": "{\"naive_rank\": 15, \"standardized_rank\": 40, \"rank_shift\": -25}",
+          "predict_baseline": "{\"rank\": 15}",
+          "predict_our_method": "{\"rank\": 40}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"es_coser\", \"iso_code\": \"es\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.2905, \"standardized_ddm\": 0.2279}",
+          "output": "{\"naive_rank\": 229, \"standardized_rank\": 219, \"rank_shift\": 10}",
+          "predict_baseline": "{\"rank\": 229}",
+          "predict_our_method": "{\"rank\": 219}",
+          "metadata_treebank_id": "es_coser",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"es_gsd\", \"iso_code\": \"es\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.5936, \"standardized_ddm\": 0.4188}",
+          "output": "{\"naive_rank\": 24, \"standardized_rank\": 30, \"rank_shift\": -6}",
+          "predict_baseline": "{\"rank\": 24}",
+          "predict_our_method": "{\"rank\": 30}",
+          "metadata_treebank_id": "es_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"es_pud\", \"iso_code\": \"es\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.5771, \"standardized_ddm\": 0.3449}",
+          "output": "{\"naive_rank\": 29, \"standardized_rank\": 135, \"rank_shift\": -106}",
+          "predict_baseline": "{\"rank\": 29}",
+          "predict_our_method": "{\"rank\": 135}",
+          "metadata_treebank_id": "es_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"ess_sli\", \"iso_code\": \"ess\", \"word_order\": \"No dominant order\", \"case_richness\": 4, \"naive_ddm\": 0.2644, \"standardized_ddm\": 0.1121}",
+          "output": "{\"naive_rank\": 249, \"standardized_rank\": 254, \"rank_shift\": -5}",
+          "predict_baseline": "{\"rank\": 249}",
+          "predict_our_method": "{\"rank\": 254}",
+          "metadata_treebank_id": "ess_sli",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"et_edt\", \"iso_code\": \"et\", \"word_order\": NaN, \"case_richness\": 8, \"naive_ddm\": 0.3701, \"standardized_ddm\": 0.3763}",
+          "output": "{\"naive_rank\": 177, \"standardized_rank\": 95, \"rank_shift\": 82}",
+          "predict_baseline": "{\"rank\": 177}",
+          "predict_our_method": "{\"rank\": 95}",
+          "metadata_treebank_id": "et_edt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"et_ewt\", \"iso_code\": \"et\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.3266, \"standardized_ddm\": 0.3422}",
+          "output": "{\"naive_rank\": 205, \"standardized_rank\": 138, \"rank_shift\": 67}",
+          "predict_baseline": "{\"rank\": 205}",
+          "predict_our_method": "{\"rank\": 138}",
+          "metadata_treebank_id": "et_ewt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\", \"iso_code\": \"eu\", \"word_order\": \"SOV\", \"case_richness\": 11, \"naive_ddm\": 0.4102, \"standardized_ddm\": 0.3684}",
+          "output": "{\"naive_rank\": 146, \"standardized_rank\": 109, \"rank_shift\": 37}",
+          "predict_baseline": "{\"rank\": 146}",
+          "predict_our_method": "{\"rank\": 109}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 11
+        },
+        {
+          "input": "{\"treebank_id\": \"fa_perdt\", \"iso_code\": \"fa\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.436, \"standardized_ddm\": 0.4076}",
+          "output": "{\"naive_rank\": 129, \"standardized_rank\": 45, \"rank_shift\": 84}",
+          "predict_baseline": "{\"rank\": 129}",
+          "predict_our_method": "{\"rank\": 45}",
+          "metadata_treebank_id": "fa_perdt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fa_seraji\", \"iso_code\": \"fa\", \"word_order\": \"SOV\", \"case_richness\": 2, \"naive_ddm\": 0.4854, \"standardized_ddm\": 0.3694}",
+          "output": "{\"naive_rank\": 91, \"standardized_rank\": 106, \"rank_shift\": -15}",
+          "predict_baseline": "{\"rank\": 91}",
+          "predict_our_method": "{\"rank\": 106}",
+          "metadata_treebank_id": "fa_seraji",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"fi_ftb\", \"iso_code\": \"fi\", \"word_order\": \"SVO\", \"case_richness\": 9, \"naive_ddm\": 0.4019, \"standardized_ddm\": 0.4354}",
+          "output": "{\"naive_rank\": 153, \"standardized_rank\": 17, \"rank_shift\": 136}",
+          "predict_baseline": "{\"rank\": 153}",
+          "predict_our_method": "{\"rank\": 17}",
+          "metadata_treebank_id": "fi_ftb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 9
+        },
+        {
+          "input": "{\"treebank_id\": \"fi_ood\", \"iso_code\": \"fi\", \"word_order\": \"SVO\", \"case_richness\": 7, \"naive_ddm\": 0.2586, \"standardized_ddm\": 0.2488}",
+          "output": "{\"naive_rank\": 254, \"standardized_rank\": 206, \"rank_shift\": 48}",
+          "predict_baseline": "{\"rank\": 254}",
+          "predict_our_method": "{\"rank\": 206}",
+          "metadata_treebank_id": "fi_ood",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"fi_pud\", \"iso_code\": \"fi\", \"word_order\": \"SVO\", \"case_richness\": 7, \"naive_ddm\": 0.4403, \"standardized_ddm\": 0.3001}",
+          "output": "{\"naive_rank\": 121, \"standardized_rank\": 170, \"rank_shift\": -49}",
+          "predict_baseline": "{\"rank\": 121}",
+          "predict_our_method": "{\"rank\": 170}",
+          "metadata_treebank_id": "fi_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"fi_tdt\", \"iso_code\": \"fi\", \"word_order\": \"SVO\", \"case_richness\": 8, \"naive_ddm\": 0.365, \"standardized_ddm\": 0.3788}",
+          "output": "{\"naive_rank\": 184, \"standardized_rank\": 94, \"rank_shift\": 90}",
+          "predict_baseline": "{\"rank\": 184}",
+          "predict_our_method": "{\"rank\": 94}",
+          "metadata_treebank_id": "fi_tdt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"fo_farpahc\", \"iso_code\": \"fo\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.65, \"standardized_ddm\": 0.5109}",
+          "output": "{\"naive_rank\": 5, \"standardized_rank\": 4, \"rank_shift\": 1}",
+          "predict_baseline": "{\"rank\": 5}",
+          "predict_our_method": "{\"rank\": 4}",
+          "metadata_treebank_id": "fo_farpahc",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"fo_oft\", \"iso_code\": \"fo\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.2633, \"standardized_ddm\": 0.1756}",
+          "output": "{\"naive_rank\": 250, \"standardized_rank\": 234, \"rank_shift\": 16}",
+          "predict_baseline": "{\"rank\": 250}",
+          "predict_our_method": "{\"rank\": 234}",
+          "metadata_treebank_id": "fo_oft",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_alts\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5717, \"standardized_ddm\": 0.3894}",
+          "output": "{\"naive_rank\": 33, \"standardized_rank\": 74, \"rank_shift\": -41}",
+          "predict_baseline": "{\"rank\": 33}",
+          "predict_our_method": "{\"rank\": 74}",
+          "metadata_treebank_id": "fr_alts",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_fqb\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.3184, \"standardized_ddm\": 0.2334}",
+          "output": "{\"naive_rank\": 213, \"standardized_rank\": 214, \"rank_shift\": -1}",
+          "predict_baseline": "{\"rank\": 213}",
+          "predict_our_method": "{\"rank\": 214}",
+          "metadata_treebank_id": "fr_fqb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_gsd\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5762, \"standardized_ddm\": 0.4332}",
+          "output": "{\"naive_rank\": 31, \"standardized_rank\": 18, \"rank_shift\": 13}",
+          "predict_baseline": "{\"rank\": 31}",
+          "predict_our_method": "{\"rank\": 18}",
+          "metadata_treebank_id": "fr_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.3814, \"standardized_ddm\": 0.3606}",
+          "output": "{\"naive_rank\": 168, \"standardized_rank\": 120, \"rank_shift\": 48}",
+          "predict_baseline": "{\"rank\": 168}",
+          "predict_our_method": "{\"rank\": 120}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_partut\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5493, \"standardized_ddm\": 0.3732}",
+          "output": "{\"naive_rank\": 44, \"standardized_rank\": 100, \"rank_shift\": -56}",
+          "predict_baseline": "{\"rank\": 44}",
+          "predict_our_method": "{\"rank\": 100}",
+          "metadata_treebank_id": "fr_partut",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_poitevindivital\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.4487, \"standardized_ddm\": 0.0492}",
+          "output": "{\"naive_rank\": 111, \"standardized_rank\": 281, \"rank_shift\": -170}",
+          "predict_baseline": "{\"rank\": 111}",
+          "predict_our_method": "{\"rank\": 281}",
+          "metadata_treebank_id": "fr_poitevindivital",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_pud\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5968, \"standardized_ddm\": 0.3655}",
+          "output": "{\"naive_rank\": 21, \"standardized_rank\": 115, \"rank_shift\": -94}",
+          "predict_baseline": "{\"rank\": 21}",
+          "predict_our_method": "{\"rank\": 115}",
+          "metadata_treebank_id": "fr_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_rhapsodie\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.355, \"standardized_ddm\": 0.3711}",
+          "output": "{\"naive_rank\": 190, \"standardized_rank\": 102, \"rank_shift\": 88}",
+          "predict_baseline": "{\"rank\": 190}",
+          "predict_our_method": "{\"rank\": 102}",
+          "metadata_treebank_id": "fr_rhapsodie",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_sequoia\", \"iso_code\": \"fr\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5215, \"standardized_ddm\": 0.4142}",
+          "output": "{\"naive_rank\": 64, \"standardized_rank\": 34, \"rank_shift\": 30}",
+          "predict_baseline": "{\"rank\": 64}",
+          "predict_our_method": "{\"rank\": 34}",
+          "metadata_treebank_id": "fr_sequoia",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"frm_altm\", \"iso_code\": \"frm\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3116, \"standardized_ddm\": 0.0136}",
+          "output": "{\"naive_rank\": 218, \"standardized_rank\": 306, \"rank_shift\": -88}",
+          "predict_baseline": "{\"rank\": 218}",
+          "predict_our_method": "{\"rank\": 306}",
+          "metadata_treebank_id": "frm_altm",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"frm_profiterole\", \"iso_code\": \"frm\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.4331, \"standardized_ddm\": 0.3868}",
+          "output": "{\"naive_rank\": 132, \"standardized_rank\": 76, \"rank_shift\": 56}",
+          "predict_baseline": "{\"rank\": 132}",
+          "predict_our_method": "{\"rank\": 76}",
+          "metadata_treebank_id": "frm_profiterole",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fro_altm\", \"iso_code\": \"fro\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.4433, \"standardized_ddm\": 0.2847}",
+          "output": "{\"naive_rank\": 115, \"standardized_rank\": 183, \"rank_shift\": -68}",
+          "predict_baseline": "{\"rank\": 115}",
+          "predict_our_method": "{\"rank\": 183}",
+          "metadata_treebank_id": "fro_altm",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"fro_profiterole\", \"iso_code\": \"fro\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3172, \"standardized_ddm\": 0.3819}",
+          "output": "{\"naive_rank\": 215, \"standardized_rank\": 87, \"rank_shift\": 128}",
+          "predict_baseline": "{\"rank\": 215}",
+          "predict_our_method": "{\"rank\": 87}",
+          "metadata_treebank_id": "fro_profiterole",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ga_cadhan\", \"iso_code\": \"ga\", \"word_order\": \"VSO\", \"case_richness\": 2, \"naive_ddm\": 0.5957, \"standardized_ddm\": 0.0241}",
+          "output": "{\"naive_rank\": 22, \"standardized_rank\": 299, \"rank_shift\": -277}",
+          "predict_baseline": "{\"rank\": 22}",
+          "predict_our_method": "{\"rank\": 299}",
+          "metadata_treebank_id": "ga_cadhan",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"ga_idt\", \"iso_code\": \"ga\", \"word_order\": \"VSO\", \"case_richness\": 2, \"naive_ddm\": 0.4985, \"standardized_ddm\": 0.3514}",
+          "output": "{\"naive_rank\": 82, \"standardized_rank\": 130, \"rank_shift\": -48}",
+          "predict_baseline": "{\"rank\": 82}",
+          "predict_our_method": "{\"rank\": 130}",
+          "metadata_treebank_id": "ga_idt",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"ga_twittirish\", \"iso_code\": \"ga\", \"word_order\": \"VSO\", \"case_richness\": 0, \"naive_ddm\": 0.3985, \"standardized_ddm\": 0.2782}",
+          "output": "{\"naive_rank\": 155, \"standardized_rank\": 189, \"rank_shift\": -34}",
+          "predict_baseline": "{\"rank\": 155}",
+          "predict_our_method": "{\"rank\": 189}",
+          "metadata_treebank_id": "ga_twittirish",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gd_arcosg\", \"iso_code\": \"gd\", \"word_order\": \"VSO\", \"case_richness\": 3, \"naive_ddm\": 0.4576, \"standardized_ddm\": 0.4218}",
+          "output": "{\"naive_rank\": 106, \"standardized_rank\": 23, \"rank_shift\": 83}",
+          "predict_baseline": "{\"rank\": 106}",
+          "predict_our_method": "{\"rank\": 23}",
+          "metadata_treebank_id": "gd_arcosg",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"gl_ctg\", \"iso_code\": \"gl\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.6979, \"standardized_ddm\": 0.2056}",
+          "output": "{\"naive_rank\": 1, \"standardized_rank\": 226, \"rank_shift\": -225}",
+          "predict_baseline": "{\"rank\": 1}",
+          "predict_our_method": "{\"rank\": 226}",
+          "metadata_treebank_id": "gl_ctg",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gl_pud\", \"iso_code\": \"gl\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.5765, \"standardized_ddm\": 0.3479}",
+          "output": "{\"naive_rank\": 30, \"standardized_rank\": 133, \"rank_shift\": -103}",
+          "predict_baseline": "{\"rank\": 30}",
+          "predict_our_method": "{\"rank\": 133}",
+          "metadata_treebank_id": "gl_pud",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"gl_treegal\", \"iso_code\": \"gl\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.5029, \"standardized_ddm\": 0.3912}",
+          "output": "{\"naive_rank\": 77, \"standardized_rank\": 70, \"rank_shift\": 7}",
+          "predict_baseline": "{\"rank\": 77}",
+          "predict_our_method": "{\"rank\": 70}",
+          "metadata_treebank_id": "gl_treegal",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"gn_oldtudet\", \"iso_code\": \"gn\", \"word_order\": NaN, \"case_richness\": 1, \"naive_ddm\": 0.0593, \"standardized_ddm\": 0.0087}",
+          "output": "{\"naive_rank\": 310, \"standardized_rank\": 310, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 310}",
+          "predict_our_method": "{\"rank\": 310}",
+          "metadata_treebank_id": "gn_oldtudet",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"got_proiel\", \"iso_code\": \"got\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3368, \"standardized_ddm\": 0.3921}",
+          "output": "{\"naive_rank\": 199, \"standardized_rank\": 67, \"rank_shift\": 132}",
+          "predict_baseline": "{\"rank\": 199}",
+          "predict_our_method": "{\"rank\": 67}",
+          "metadata_treebank_id": "got_proiel",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"grc_perseus\", \"iso_code\": \"grc\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.3305, \"standardized_ddm\": 0.3362}",
+          "output": "{\"naive_rank\": 202, \"standardized_rank\": 146, \"rank_shift\": 55}",
+          "predict_baseline": "{\"rank\": 202}",
+          "predict_our_method": "{\"rank\": 146}",
+          "metadata_treebank_id": "grc_perseus",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"grc_proiel\", \"iso_code\": \"grc\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3491, \"standardized_ddm\": 0.4029}",
+          "output": "{\"naive_rank\": 195, \"standardized_rank\": 52, \"rank_shift\": 143}",
+          "predict_baseline": "{\"rank\": 195}",
+          "predict_our_method": "{\"rank\": 52}",
+          "metadata_treebank_id": "grc_proiel",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"grc_ptnk\", \"iso_code\": \"grc\", \"word_order\": NaN, \"case_richness\": 8, \"naive_ddm\": 0.6644, \"standardized_ddm\": 0.408}",
+          "output": "{\"naive_rank\": 3, \"standardized_rank\": 44, \"rank_shift\": -41}",
+          "predict_baseline": "{\"rank\": 3}",
+          "predict_our_method": "{\"rank\": 44}",
+          "metadata_treebank_id": "grc_ptnk",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"gsw_divital\", \"iso_code\": \"gsw\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.328, \"standardized_ddm\": 0.2872}",
+          "output": "{\"naive_rank\": 204, \"standardized_rank\": 180, \"rank_shift\": 24}",
+          "predict_baseline": "{\"rank\": 204}",
+          "predict_our_method": "{\"rank\": 180}",
+          "metadata_treebank_id": "gsw_divital",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gsw_uzh\", \"iso_code\": \"gsw\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3787, \"standardized_ddm\": 0.0396}",
+          "output": "{\"naive_rank\": 169, \"standardized_rank\": 289, \"rank_shift\": -119}",
+          "predict_baseline": "{\"rank\": 169}",
+          "predict_our_method": "{\"rank\": 289}",
+          "metadata_treebank_id": "gsw_uzh",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gu_gujtb\", \"iso_code\": \"gu\", \"word_order\": \"SOV\", \"case_richness\": 5, \"naive_ddm\": 0.2921, \"standardized_ddm\": 0.1126}",
+          "output": "{\"naive_rank\": 228, \"standardized_rank\": 253, \"rank_shift\": -25}",
+          "predict_baseline": "{\"rank\": 228}",
+          "predict_our_method": "{\"rank\": 253}",
+          "metadata_treebank_id": "gu_gujtb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"gub_tudet\", \"iso_code\": \"gub\", \"word_order\": \"VSO\", \"case_richness\": 4, \"naive_ddm\": 0.1101, \"standardized_ddm\": 0.1283}",
+          "output": "{\"naive_rank\": 302, \"standardized_rank\": 247, \"rank_shift\": 54}",
+          "predict_baseline": "{\"rank\": 302}",
+          "predict_our_method": "{\"rank\": 247}",
+          "metadata_treebank_id": "gub_tudet",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"gun_dooley\", \"iso_code\": \"gun\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3524, \"standardized_ddm\": 0.2585}",
+          "output": "{\"naive_rank\": 191, \"standardized_rank\": 199, \"rank_shift\": -8}",
+          "predict_baseline": "{\"rank\": 191}",
+          "predict_our_method": "{\"rank\": 199}",
+          "metadata_treebank_id": "gun_dooley",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gv_cadhan\", \"iso_code\": \"gv\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.0601, \"standardized_ddm\": 0.1599}",
+          "output": "{\"naive_rank\": 309, \"standardized_rank\": 236, \"rank_shift\": 72}",
+          "predict_baseline": "{\"rank\": 309}",
+          "predict_our_method": "{\"rank\": 236}",
+          "metadata_treebank_id": "gv_cadhan",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gwi_tuecl\", \"iso_code\": \"gwi\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2349, \"standardized_ddm\": 0.0431}",
+          "output": "{\"naive_rank\": 268, \"standardized_rank\": 286, \"rank_shift\": -18}",
+          "predict_baseline": "{\"rank\": 268}",
+          "predict_our_method": "{\"rank\": 286}",
+          "metadata_treebank_id": "gwi_tuecl",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"gya_autogramm\", \"iso_code\": \"gya\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.251, \"standardized_ddm\": 0.1441}",
+          "output": "{\"naive_rank\": 258, \"standardized_rank\": 244, \"rank_shift\": 14}",
+          "predict_baseline": "{\"rank\": 258}",
+          "predict_our_method": "{\"rank\": 244}",
+          "metadata_treebank_id": "gya_autogramm",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ha_northernautogramm\", \"iso_code\": \"ha\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.2778, \"standardized_ddm\": 0.1795}",
+          "output": "{\"naive_rank\": 239, \"standardized_rank\": 232, \"rank_shift\": 6}",
+          "predict_baseline": "{\"rank\": 239}",
+          "predict_our_method": "{\"rank\": 232}",
+          "metadata_treebank_id": "ha_northernautogramm",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"ha_southernautogramm\", \"iso_code\": \"ha\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.2633, \"standardized_ddm\": 0.2651}",
+          "output": "{\"naive_rank\": 250, \"standardized_rank\": 197, \"rank_shift\": 53}",
+          "predict_baseline": "{\"rank\": 250}",
+          "predict_our_method": "{\"rank\": 197}",
+          "metadata_treebank_id": "ha_southernautogramm",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"ha_westernautogramm\", \"iso_code\": \"ha\", \"word_order\": \"SVO\", \"case_richness\": 1, \"naive_ddm\": 0.4865, \"standardized_ddm\": 0.3614}",
+          "output": "{\"naive_rank\": 89, \"standardized_rank\": 119, \"rank_shift\": -30}",
+          "predict_baseline": "{\"rank\": 89}",
+          "predict_our_method": "{\"rank\": 119}",
+          "metadata_treebank_id": "ha_westernautogramm",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"hbo_ptnk\", \"iso_code\": \"hbo\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.547, \"standardized_ddm\": 0.3524}",
+          "output": "{\"naive_rank\": 47, \"standardized_rank\": 126, \"rank_shift\": -79}",
+          "predict_baseline": "{\"rank\": 47}",
+          "predict_our_method": "{\"rank\": 126}",
+          "metadata_treebank_id": "hbo_ptnk",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"he_htb\", \"iso_code\": \"he\", \"word_order\": \"SVO\", \"case_richness\": 1, \"naive_ddm\": 0.567, \"standardized_ddm\": 0.4131}",
+          "output": "{\"naive_rank\": 34, \"standardized_rank\": 37, \"rank_shift\": -3}",
+          "predict_baseline": "{\"rank\": 34}",
+          "predict_our_method": "{\"rank\": 37}",
+          "metadata_treebank_id": "he_htb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"he_iahltknesset\", \"iso_code\": \"he\", \"word_order\": \"SVO\", \"case_richness\": 1, \"naive_ddm\": 0.4868, \"standardized_ddm\": 0.402}",
+          "output": "{\"naive_rank\": 88, \"standardized_rank\": 54, \"rank_shift\": 34}",
+          "predict_baseline": "{\"rank\": 88}",
+          "predict_our_method": "{\"rank\": 54}",
+          "metadata_treebank_id": "he_iahltknesset",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"he_iahltwiki\", \"iso_code\": \"he\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.6084, \"standardized_ddm\": 0.4413}",
+          "output": "{\"naive_rank\": 16, \"standardized_rank\": 11, \"rank_shift\": 5}",
+          "predict_baseline": "{\"rank\": 16}",
+          "predict_our_method": "{\"rank\": 11}",
+          "metadata_treebank_id": "he_iahltwiki",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"hi_hdtb\", \"iso_code\": \"hi\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.5204, \"standardized_ddm\": 0.4322}",
+          "output": "{\"naive_rank\": 65, \"standardized_rank\": 20, \"rank_shift\": 45}",
+          "predict_baseline": "{\"rank\": 65}",
+          "predict_our_method": "{\"rank\": 20}",
+          "metadata_treebank_id": "hi_hdtb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"hi_pud\", \"iso_code\": \"hi\", \"word_order\": \"SOV\", \"case_richness\": 3, \"naive_ddm\": 0.5338, \"standardized_ddm\": 0.3362}",
+          "output": "{\"naive_rank\": 55, \"standardized_rank\": 146, \"rank_shift\": -91}",
+          "predict_baseline": "{\"rank\": 55}",
+          "predict_our_method": "{\"rank\": 146}",
+          "metadata_treebank_id": "hi_pud",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"hit_hittb\", \"iso_code\": \"hit\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.0033, \"standardized_ddm\": -0.0021}",
+          "output": "{\"naive_rank\": 313, \"standardized_rank\": 313, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 313}",
+          "predict_our_method": "{\"rank\": 313}",
+          "metadata_treebank_id": "hit_hittb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"hr_set\", \"iso_code\": \"hr\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.5304, \"standardized_ddm\": 0.4116}",
+          "output": "{\"naive_rank\": 57, \"standardized_rank\": 39, \"rank_shift\": 18}",
+          "predict_baseline": "{\"rank\": 57}",
+          "predict_our_method": "{\"rank\": 39}",
+          "metadata_treebank_id": "hr_set",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"hsb_ufal\", \"iso_code\": \"hsb\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.3787, \"standardized_ddm\": 0.2658}",
+          "output": "{\"naive_rank\": 169, \"standardized_rank\": 195, \"rank_shift\": -25}",
+          "predict_baseline": "{\"rank\": 169}",
+          "predict_our_method": "{\"rank\": 195}",
+          "metadata_treebank_id": "hsb_ufal",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ht_adolphe\", \"iso_code\": \"ht\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.5545, \"standardized_ddm\": 0.4133}",
+          "output": "{\"naive_rank\": 40, \"standardized_rank\": 36, \"rank_shift\": 4}",
+          "predict_baseline": "{\"rank\": 40}",
+          "predict_our_method": "{\"rank\": 36}",
+          "metadata_treebank_id": "ht_adolphe",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"hu_szeged\", \"iso_code\": \"hu\", \"word_order\": \"No dominant order\", \"case_richness\": 8, \"naive_ddm\": 0.5084, \"standardized_ddm\": 0.3916}",
+          "output": "{\"naive_rank\": 71, \"standardized_rank\": 69, \"rank_shift\": 2}",
+          "predict_baseline": "{\"rank\": 71}",
+          "predict_our_method": "{\"rank\": 69}",
+          "metadata_treebank_id": "hu_szeged",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"hy_armtdp\", \"iso_code\": \"hy\", \"word_order\": \"No dominant order\", \"case_richness\": 5, \"naive_ddm\": 0.4373, \"standardized_ddm\": 0.3908}",
+          "output": "{\"naive_rank\": 126, \"standardized_rank\": 71, \"rank_shift\": 55}",
+          "predict_baseline": "{\"rank\": 126}",
+          "predict_our_method": "{\"rank\": 71}",
+          "metadata_treebank_id": "hy_armtdp",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"hy_bsut\", \"iso_code\": \"hy\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.4327, \"standardized_ddm\": 0.3837}",
+          "output": "{\"naive_rank\": 133, \"standardized_rank\": 84, \"rank_shift\": 49}",
+          "predict_baseline": "{\"rank\": 133}",
+          "predict_our_method": "{\"rank\": 84}",
+          "metadata_treebank_id": "hy_bsut",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"hyw_armtdp\", \"iso_code\": \"hyw\", \"word_order\": \"SOV\", \"case_richness\": 5, \"naive_ddm\": 0.4428, \"standardized_ddm\": 0.3955}",
+          "output": "{\"naive_rank\": 117, \"standardized_rank\": 61, \"rank_shift\": 56}",
+          "predict_baseline": "{\"rank\": 117}",
+          "predict_our_method": "{\"rank\": 61}",
+          "metadata_treebank_id": "hyw_armtdp",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"id_csui\", \"iso_code\": \"id\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5993, \"standardized_ddm\": 0.3135}",
+          "output": "{\"naive_rank\": 19, \"standardized_rank\": 163, \"rank_shift\": -144}",
+          "predict_baseline": "{\"rank\": 19}",
+          "predict_our_method": "{\"rank\": 163}",
+          "metadata_treebank_id": "id_csui",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"id_gsd\", \"iso_code\": \"id\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5512, \"standardized_ddm\": 0.4397}",
+          "output": "{\"naive_rank\": 43, \"standardized_rank\": 12, \"rank_shift\": 31}",
+          "predict_baseline": "{\"rank\": 43}",
+          "predict_our_method": "{\"rank\": 12}",
+          "metadata_treebank_id": "id_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"id_pud\", \"iso_code\": \"id\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.537, \"standardized_ddm\": 0.3523}",
+          "output": "{\"naive_rank\": 53, \"standardized_rank\": 127, \"rank_shift\": -74}",
+          "predict_baseline": "{\"rank\": 53}",
+          "predict_our_method": "{\"rank\": 127}",
+          "metadata_treebank_id": "id_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"is_gc\", \"iso_code\": \"is\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.4956, \"standardized_ddm\": 0.3919}",
+          "output": "{\"naive_rank\": 85, \"standardized_rank\": 68, \"rank_shift\": 17}",
+          "predict_baseline": "{\"rank\": 85}",
+          "predict_our_method": "{\"rank\": 68}",
+          "metadata_treebank_id": "is_gc",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\", \"iso_code\": \"is\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.597, \"standardized_ddm\": 0.5336}",
+          "output": "{\"naive_rank\": 20, \"standardized_rank\": 2, \"rank_shift\": 18}",
+          "predict_baseline": "{\"rank\": 20}",
+          "predict_our_method": "{\"rank\": 2}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"is_modern\", \"iso_code\": \"is\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.6165, \"standardized_ddm\": 0.5257}",
+          "output": "{\"naive_rank\": 13, \"standardized_rank\": 3, \"rank_shift\": 10}",
+          "predict_baseline": "{\"rank\": 13}",
+          "predict_our_method": "{\"rank\": 3}",
+          "metadata_treebank_id": "is_modern",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"is_pud\", \"iso_code\": \"is\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.5131, \"standardized_ddm\": 0.3395}",
+          "output": "{\"naive_rank\": 70, \"standardized_rank\": 142, \"rank_shift\": -72}",
+          "predict_baseline": "{\"rank\": 70}",
+          "predict_our_method": "{\"rank\": 142}",
+          "metadata_treebank_id": "is_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"it_isdt\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5015, \"standardized_ddm\": 0.415}",
+          "output": "{\"naive_rank\": 78, \"standardized_rank\": 33, \"rank_shift\": 45}",
+          "predict_baseline": "{\"rank\": 78}",
+          "predict_our_method": "{\"rank\": 33}",
+          "metadata_treebank_id": "it_isdt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_kiparlaforest\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.2585, \"standardized_ddm\": 0.2299}",
+          "output": "{\"naive_rank\": 255, \"standardized_rank\": 217, \"rank_shift\": 38}",
+          "predict_baseline": "{\"rank\": 255}",
+          "predict_our_method": "{\"rank\": 217}",
+          "metadata_treebank_id": "it_kiparlaforest",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_markit\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.6222, \"standardized_ddm\": 0.37}",
+          "output": "{\"naive_rank\": 11, \"standardized_rank\": 103, \"rank_shift\": -92}",
+          "predict_baseline": "{\"rank\": 11}",
+          "predict_our_method": "{\"rank\": 103}",
+          "metadata_treebank_id": "it_markit",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_old\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.627, \"standardized_ddm\": 0.2576}",
+          "output": "{\"naive_rank\": 9, \"standardized_rank\": 200, \"rank_shift\": -191}",
+          "predict_baseline": "{\"rank\": 9}",
+          "predict_our_method": "{\"rank\": 200}",
+          "metadata_treebank_id": "it_old",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_parlamint\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5062, \"standardized_ddm\": 0.3109}",
+          "output": "{\"naive_rank\": 76, \"standardized_rank\": 164, \"rank_shift\": -88}",
+          "predict_baseline": "{\"rank\": 76}",
+          "predict_our_method": "{\"rank\": 164}",
+          "metadata_treebank_id": "it_parlamint",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_partut\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.566, \"standardized_ddm\": 0.3992}",
+          "output": "{\"naive_rank\": 35, \"standardized_rank\": 56, \"rank_shift\": -21}",
+          "predict_baseline": "{\"rank\": 35}",
+          "predict_our_method": "{\"rank\": 56}",
+          "metadata_treebank_id": "it_partut",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_postwita\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.4769, \"standardized_ddm\": 0.3352}",
+          "output": "{\"naive_rank\": 97, \"standardized_rank\": 150, \"rank_shift\": -53}",
+          "predict_baseline": "{\"rank\": 97}",
+          "predict_our_method": "{\"rank\": 150}",
+          "metadata_treebank_id": "it_postwita",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_pud\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.5728, \"standardized_ddm\": 0.3583}",
+          "output": "{\"naive_rank\": 32, \"standardized_rank\": 121, \"rank_shift\": -89}",
+          "predict_baseline": "{\"rank\": 32}",
+          "predict_our_method": "{\"rank\": 121}",
+          "metadata_treebank_id": "it_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"it_twittiro\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5361, \"standardized_ddm\": 0.2941}",
+          "output": "{\"naive_rank\": 54, \"standardized_rank\": 174, \"rank_shift\": -120}",
+          "predict_baseline": "{\"rank\": 54}",
+          "predict_our_method": "{\"rank\": 174}",
+          "metadata_treebank_id": "it_twittiro",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_valico\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.3934, \"standardized_ddm\": 0.2292}",
+          "output": "{\"naive_rank\": 157, \"standardized_rank\": 218, \"rank_shift\": -60}",
+          "predict_baseline": "{\"rank\": 157}",
+          "predict_our_method": "{\"rank\": 218}",
+          "metadata_treebank_id": "it_valico",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"it_vit\", \"iso_code\": \"it\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5471, \"standardized_ddm\": 0.4026}",
+          "output": "{\"naive_rank\": 46, \"standardized_rank\": 53, \"rank_shift\": -7}",
+          "predict_baseline": "{\"rank\": 46}",
+          "predict_our_method": "{\"rank\": 53}",
+          "metadata_treebank_id": "it_vit",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\", \"iso_code\": \"ja\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.5013, \"standardized_ddm\": 0.4694}",
+          "output": "{\"naive_rank\": 79, \"standardized_rank\": 8, \"rank_shift\": 71}",
+          "predict_baseline": "{\"rank\": 79}",
+          "predict_our_method": "{\"rank\": 8}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_gsd\", \"iso_code\": \"ja\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.6159, \"standardized_ddm\": 0.5046}",
+          "output": "{\"naive_rank\": 14, \"standardized_rank\": 5, \"rank_shift\": 9}",
+          "predict_baseline": "{\"rank\": 14}",
+          "predict_our_method": "{\"rank\": 5}",
+          "metadata_treebank_id": "ja_gsd",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_gsdluw\", \"iso_code\": \"ja\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.5636, \"standardized_ddm\": 0.5009}",
+          "output": "{\"naive_rank\": 37, \"standardized_rank\": 6, \"rank_shift\": 31}",
+          "predict_baseline": "{\"rank\": 37}",
+          "predict_our_method": "{\"rank\": 6}",
+          "metadata_treebank_id": "ja_gsdluw",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_pud\", \"iso_code\": \"ja\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.6793, \"standardized_ddm\": 0.3351}",
+          "output": "{\"naive_rank\": 2, \"standardized_rank\": 152, \"rank_shift\": -150}",
+          "predict_baseline": "{\"rank\": 2}",
+          "predict_our_method": "{\"rank\": 152}",
+          "metadata_treebank_id": "ja_pud",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_pudluw\", \"iso_code\": \"ja\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.6216, \"standardized_ddm\": 0.3674}",
+          "output": "{\"naive_rank\": 12, \"standardized_rank\": 114, \"rank_shift\": -102}",
+          "predict_baseline": "{\"rank\": 12}",
+          "predict_our_method": "{\"rank\": 114}",
+          "metadata_treebank_id": "ja_pudluw",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"jv_csui\", \"iso_code\": \"jv\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.4326, \"standardized_ddm\": 0.3518}",
+          "output": "{\"naive_rank\": 134, \"standardized_rank\": 128, \"rank_shift\": 6}",
+          "predict_baseline": "{\"rank\": 134}",
+          "predict_our_method": "{\"rank\": 128}",
+          "metadata_treebank_id": "jv_csui",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ka_glc\", \"iso_code\": \"ka\", \"word_order\": \"SOV\", \"case_richness\": 6, \"naive_ddm\": 0.4971, \"standardized_ddm\": 0.3982}",
+          "output": "{\"naive_rank\": 84, \"standardized_rank\": 58, \"rank_shift\": 26}",
+          "predict_baseline": "{\"rank\": 84}",
+          "predict_our_method": "{\"rank\": 58}",
+          "metadata_treebank_id": "ka_glc",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ka_gnc\", \"iso_code\": \"ka\", \"word_order\": \"SOV\", \"case_richness\": 5, \"naive_ddm\": 0.3193, \"standardized_ddm\": 0.3109}",
+          "output": "{\"naive_rank\": 211, \"standardized_rank\": 164, \"rank_shift\": 46}",
+          "predict_baseline": "{\"rank\": 211}",
+          "predict_our_method": "{\"rank\": 164}",
+          "metadata_treebank_id": "ka_gnc",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\", \"iso_code\": \"kk\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3693, \"standardized_ddm\": 0.2869}",
+          "output": "{\"naive_rank\": 179, \"standardized_rank\": 181, \"rank_shift\": -2}",
+          "predict_baseline": "{\"rank\": 179}",
+          "predict_our_method": "{\"rank\": 181}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"kmr_kurmanji\", \"iso_code\": \"kmr\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.3767, \"standardized_ddm\": 0.2379}",
+          "output": "{\"naive_rank\": 172, \"standardized_rank\": 211, \"rank_shift\": -39}",
+          "predict_baseline": "{\"rank\": 172}",
+          "predict_our_method": "{\"rank\": 211}",
+          "metadata_treebank_id": "kmr_kurmanji",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"ko_gsd\", \"iso_code\": \"ko\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.3977, \"standardized_ddm\": 0.4178}",
+          "output": "{\"naive_rank\": 156, \"standardized_rank\": 31, \"rank_shift\": 125}",
+          "predict_baseline": "{\"rank\": 156}",
+          "predict_our_method": "{\"rank\": 31}",
+          "metadata_treebank_id": "ko_gsd",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ko_kaist\", \"iso_code\": \"ko\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.4851, \"standardized_ddm\": 0.4217}",
+          "output": "{\"naive_rank\": 92, \"standardized_rank\": 24, \"rank_shift\": 68}",
+          "predict_baseline": "{\"rank\": 92}",
+          "predict_our_method": "{\"rank\": 24}",
+          "metadata_treebank_id": "ko_kaist",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ko_ksl\", \"iso_code\": \"ko\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.3766, \"standardized_ddm\": 0.4063}",
+          "output": "{\"naive_rank\": 173, \"standardized_rank\": 46, \"rank_shift\": 127}",
+          "predict_baseline": "{\"rank\": 173}",
+          "predict_our_method": "{\"rank\": 46}",
+          "metadata_treebank_id": "ko_ksl",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ko_littleprince\", \"iso_code\": \"ko\", \"word_order\": \"SOV\", \"case_richness\": 2, \"naive_ddm\": 0.3674, \"standardized_ddm\": 0.2914}",
+          "output": "{\"naive_rank\": 182, \"standardized_rank\": 177, \"rank_shift\": 4}",
+          "predict_baseline": "{\"rank\": 182}",
+          "predict_our_method": "{\"rank\": 177}",
+          "metadata_treebank_id": "ko_littleprince",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"ko_pud\", \"iso_code\": \"ko\", \"word_order\": \"SOV\", \"case_richness\": 2, \"naive_ddm\": 0.5247, \"standardized_ddm\": 0.365}",
+          "output": "{\"naive_rank\": 62, \"standardized_rank\": 116, \"rank_shift\": -54}",
+          "predict_baseline": "{\"rank\": 62}",
+          "predict_our_method": "{\"rank\": 116}",
+          "metadata_treebank_id": "ko_pud",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"koi_uh\", \"iso_code\": \"koi\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.2152, \"standardized_ddm\": 0.0471}",
+          "output": "{\"naive_rank\": 277, \"standardized_rank\": 283, \"rank_shift\": -6}",
+          "predict_baseline": "{\"rank\": 277}",
+          "predict_our_method": "{\"rank\": 283}",
+          "metadata_treebank_id": "koi_uh",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"kpv_ikdp\", \"iso_code\": \"kpv\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.2141, \"standardized_ddm\": 0.0749}",
+          "output": "{\"naive_rank\": 279, \"standardized_rank\": 267, \"rank_shift\": 12}",
+          "predict_baseline": "{\"rank\": 279}",
+          "predict_our_method": "{\"rank\": 267}",
+          "metadata_treebank_id": "kpv_ikdp",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"kpv_lattice\", \"iso_code\": \"kpv\", \"word_order\": \"SVO\", \"case_richness\": 8, \"naive_ddm\": 0.3179, \"standardized_ddm\": 0.2522}",
+          "output": "{\"naive_rank\": 214, \"standardized_rank\": 203, \"rank_shift\": 11}",
+          "predict_baseline": "{\"rank\": 214}",
+          "predict_our_method": "{\"rank\": 203}",
+          "metadata_treebank_id": "kpv_lattice",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"krl_kkpp\", \"iso_code\": \"krl\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.35, \"standardized_ddm\": 0.1476}",
+          "output": "{\"naive_rank\": 193, \"standardized_rank\": 241, \"rank_shift\": -48}",
+          "predict_baseline": "{\"rank\": 193}",
+          "predict_our_method": "{\"rank\": 241}",
+          "metadata_treebank_id": "krl_kkpp",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"ky_ktmu\", \"iso_code\": \"ky\", \"word_order\": NaN, \"case_richness\": 12, \"naive_ddm\": 0.4385, \"standardized_ddm\": 0.2704}",
+          "output": "{\"naive_rank\": 124, \"standardized_rank\": 194, \"rank_shift\": -70}",
+          "predict_baseline": "{\"rank\": 124}",
+          "predict_our_method": "{\"rank\": 194}",
+          "metadata_treebank_id": "ky_ktmu",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 12
+        },
+        {
+          "input": "{\"treebank_id\": \"ky_tuecl\", \"iso_code\": \"ky\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.2732, \"standardized_ddm\": 0.0963}",
+          "output": "{\"naive_rank\": 243, \"standardized_rank\": 260, \"rank_shift\": -17}",
+          "predict_baseline": "{\"rank\": 243}",
+          "predict_our_method": "{\"rank\": 260}",
+          "metadata_treebank_id": "ky_tuecl",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"la_circse\", \"iso_code\": \"la\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3403, \"standardized_ddm\": 0.3327}",
+          "output": "{\"naive_rank\": 198, \"standardized_rank\": 154, \"rank_shift\": 43}",
+          "predict_baseline": "{\"rank\": 198}",
+          "predict_our_method": "{\"rank\": 154}",
+          "metadata_treebank_id": "la_circse",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"la_ittb\", \"iso_code\": \"la\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.4124, \"standardized_ddm\": 0.3717}",
+          "output": "{\"naive_rank\": 144, \"standardized_rank\": 101, \"rank_shift\": 43}",
+          "predict_baseline": "{\"rank\": 144}",
+          "predict_our_method": "{\"rank\": 101}",
+          "metadata_treebank_id": "la_ittb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"la_llct\", \"iso_code\": \"la\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.4464, \"standardized_ddm\": 0.3895}",
+          "output": "{\"naive_rank\": 113, \"standardized_rank\": 73, \"rank_shift\": 40}",
+          "predict_baseline": "{\"rank\": 113}",
+          "predict_our_method": "{\"rank\": 73}",
+          "metadata_treebank_id": "la_llct",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"la_perseus\", \"iso_code\": \"la\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.2988, \"standardized_ddm\": 0.2844}",
+          "output": "{\"naive_rank\": 225, \"standardized_rank\": 184, \"rank_shift\": 41}",
+          "predict_baseline": "{\"rank\": 225}",
+          "predict_our_method": "{\"rank\": 184}",
+          "metadata_treebank_id": "la_perseus",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"la_proiel\", \"iso_code\": \"la\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.3287, \"standardized_ddm\": 0.4137}",
+          "output": "{\"naive_rank\": 203, \"standardized_rank\": 35, \"rank_shift\": 168}",
+          "predict_baseline": "{\"rank\": 203}",
+          "predict_our_method": "{\"rank\": 35}",
+          "metadata_treebank_id": "la_proiel",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"la_udante\", \"iso_code\": \"la\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.5467, \"standardized_ddm\": 0.3525}",
+          "output": "{\"naive_rank\": 48, \"standardized_rank\": 125, \"rank_shift\": -77}",
+          "predict_baseline": "{\"rank\": 48}",
+          "predict_our_method": "{\"rank\": 125}",
+          "metadata_treebank_id": "la_udante",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"lij_glt\", \"iso_code\": \"lij\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3249, \"standardized_ddm\": 0.1455}",
+          "output": "{\"naive_rank\": 207, \"standardized_rank\": 243, \"rank_shift\": -36}",
+          "predict_baseline": "{\"rank\": 207}",
+          "predict_our_method": "{\"rank\": 243}",
+          "metadata_treebank_id": "lij_glt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"lt_alksnis\", \"iso_code\": \"lt\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.4407, \"standardized_ddm\": 0.3805}",
+          "output": "{\"naive_rank\": 120, \"standardized_rank\": 89, \"rank_shift\": 31}",
+          "predict_baseline": "{\"rank\": 120}",
+          "predict_our_method": "{\"rank\": 89}",
+          "metadata_treebank_id": "lt_alksnis",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"lt_hse\", \"iso_code\": \"lt\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.4655, \"standardized_ddm\": 0.1466}",
+          "output": "{\"naive_rank\": 103, \"standardized_rank\": 242, \"rank_shift\": -139}",
+          "predict_baseline": "{\"rank\": 103}",
+          "predict_our_method": "{\"rank\": 242}",
+          "metadata_treebank_id": "lt_hse",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"lv_lvtb\", \"iso_code\": \"lv\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.4229, \"standardized_ddm\": 0.3938}",
+          "output": "{\"naive_rank\": 139, \"standardized_rank\": 65, \"rank_shift\": 74}",
+          "predict_baseline": "{\"rank\": 139}",
+          "predict_our_method": "{\"rank\": 65}",
+          "metadata_treebank_id": "lv_lvtb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"lzh_kyoto\", \"iso_code\": \"lzh\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.2275, \"standardized_ddm\": 0.2947}",
+          "output": "{\"naive_rank\": 271, \"standardized_rank\": 173, \"rank_shift\": 98}",
+          "predict_baseline": "{\"rank\": 271}",
+          "predict_our_method": "{\"rank\": 173}",
+          "metadata_treebank_id": "lzh_kyoto",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"lzh_tuecl\", \"iso_code\": \"lzh\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.2234, \"standardized_ddm\": 0.061}",
+          "output": "{\"naive_rank\": 274, \"standardized_rank\": 271, \"rank_shift\": 3}",
+          "predict_baseline": "{\"rank\": 274}",
+          "predict_our_method": "{\"rank\": 271}",
+          "metadata_treebank_id": "lzh_tuecl",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"mdf_jr\", \"iso_code\": \"mdf\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.2764, \"standardized_ddm\": 0.1862}",
+          "output": "{\"naive_rank\": 242, \"standardized_rank\": 231, \"rank_shift\": 11}",
+          "predict_baseline": "{\"rank\": 242}",
+          "predict_our_method": "{\"rank\": 231}",
+          "metadata_treebank_id": "mdf_jr",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"mk_mtb\", \"iso_code\": \"mk\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.1743, \"standardized_ddm\": 0.0561}",
+          "output": "{\"naive_rank\": 290, \"standardized_rank\": 276, \"rank_shift\": 14}",
+          "predict_baseline": "{\"rank\": 290}",
+          "predict_our_method": "{\"rank\": 276}",
+          "metadata_treebank_id": "mk_mtb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"ml_ufal\", \"iso_code\": \"ml\", \"word_order\": \"SOV\", \"case_richness\": 6, \"naive_ddm\": 0.3608, \"standardized_ddm\": 0.1534}",
+          "output": "{\"naive_rank\": 188, \"standardized_rank\": 239, \"rank_shift\": -51}",
+          "predict_baseline": "{\"rank\": 188}",
+          "predict_our_method": "{\"rank\": 239}",
+          "metadata_treebank_id": "ml_ufal",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"mr_ufal\", \"iso_code\": \"mr\", \"word_order\": \"SOV\", \"case_richness\": 8, \"naive_ddm\": 0.3234, \"standardized_ddm\": 0.2037}",
+          "output": "{\"naive_rank\": 209, \"standardized_rank\": 227, \"rank_shift\": -18}",
+          "predict_baseline": "{\"rank\": 209}",
+          "predict_our_method": "{\"rank\": 227}",
+          "metadata_treebank_id": "mr_ufal",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"mt_mudt\", \"iso_code\": \"mt\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.4772, \"standardized_ddm\": 0.3838}",
+          "output": "{\"naive_rank\": 96, \"standardized_rank\": 83, \"rank_shift\": 13}",
+          "predict_baseline": "{\"rank\": 96}",
+          "predict_our_method": "{\"rank\": 83}",
+          "metadata_treebank_id": "mt_mudt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"myu_tudet\", \"iso_code\": \"myu\", \"word_order\": \"SOV\", \"case_richness\": 1, \"naive_ddm\": 0.1849, \"standardized_ddm\": 0.0549}",
+          "output": "{\"naive_rank\": 286, \"standardized_rank\": 277, \"rank_shift\": 9}",
+          "predict_baseline": "{\"rank\": 286}",
+          "predict_our_method": "{\"rank\": 277}",
+          "metadata_treebank_id": "myu_tudet",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"myv_jr\", \"iso_code\": \"myv\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.2776, \"standardized_ddm\": 0.2789}",
+          "output": "{\"naive_rank\": 240, \"standardized_rank\": 187, \"rank_shift\": 53}",
+          "predict_baseline": "{\"rank\": 240}",
+          "predict_our_method": "{\"rank\": 187}",
+          "metadata_treebank_id": "myv_jr",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\", \"iso_code\": \"naq\", \"word_order\": \"SOV\", \"case_richness\": 2, \"naive_ddm\": 0.1679, \"standardized_ddm\": 0.2177}",
+          "output": "{\"naive_rank\": 291, \"standardized_rank\": 222, \"rank_shift\": 69}",
+          "predict_baseline": "{\"rank\": 291}",
+          "predict_our_method": "{\"rank\": 222}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"nds_lsdc\", \"iso_code\": \"nds\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3777, \"standardized_ddm\": 0.2877}",
+          "output": "{\"naive_rank\": 171, \"standardized_rank\": 179, \"rank_shift\": -8}",
+          "predict_baseline": "{\"rank\": 171}",
+          "predict_our_method": "{\"rank\": 179}",
+          "metadata_treebank_id": "nds_lsdc",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"nhi_itml\", \"iso_code\": \"nhi\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.295, \"standardized_ddm\": 0.2377}",
+          "output": "{\"naive_rank\": 226, \"standardized_rank\": 212, \"rank_shift\": 14}",
+          "predict_baseline": "{\"rank\": 226}",
+          "predict_our_method": "{\"rank\": 212}",
+          "metadata_treebank_id": "nhi_itml",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"nl_alpino\", \"iso_code\": \"nl\", \"word_order\": \"No dominant order\", \"case_richness\": 2, \"naive_ddm\": 0.3499, \"standardized_ddm\": 0.3462}",
+          "output": "{\"naive_rank\": 194, \"standardized_rank\": 134, \"rank_shift\": 60}",
+          "predict_baseline": "{\"rank\": 194}",
+          "predict_our_method": "{\"rank\": 134}",
+          "metadata_treebank_id": "nl_alpino",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"nl_lassysmall\", \"iso_code\": \"nl\", \"word_order\": \"No dominant order\", \"case_richness\": 2, \"naive_ddm\": 0.4278, \"standardized_ddm\": 0.3695}",
+          "output": "{\"naive_rank\": 136, \"standardized_rank\": 104, \"rank_shift\": 31}",
+          "predict_baseline": "{\"rank\": 136}",
+          "predict_our_method": "{\"rank\": 104}",
+          "metadata_treebank_id": "nl_lassysmall",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"nmf_suansu\", \"iso_code\": \"nmf\", \"word_order\": \"SOV\", \"case_richness\": 9, \"naive_ddm\": 0.1406, \"standardized_ddm\": 0.081}",
+          "output": "{\"naive_rank\": 298, \"standardized_rank\": 264, \"rank_shift\": 34}",
+          "predict_baseline": "{\"rank\": 298}",
+          "predict_our_method": "{\"rank\": 264}",
+          "metadata_treebank_id": "nmf_suansu",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 9
+        },
+        {
+          "input": "{\"treebank_id\": \"no_bokmaal\", \"iso_code\": \"no\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4101, \"standardized_ddm\": 0.3863}",
+          "output": "{\"naive_rank\": 147, \"standardized_rank\": 77, \"rank_shift\": 70}",
+          "predict_baseline": "{\"rank\": 147}",
+          "predict_our_method": "{\"rank\": 77}",
+          "metadata_treebank_id": "no_bokmaal",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"no_nynorsk\", \"iso_code\": \"no\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4429, \"standardized_ddm\": 0.3889}",
+          "output": "{\"naive_rank\": 116, \"standardized_rank\": 75, \"rank_shift\": 41}",
+          "predict_baseline": "{\"rank\": 116}",
+          "predict_our_method": "{\"rank\": 75}",
+          "metadata_treebank_id": "no_nynorsk",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"oc_ttb\", \"iso_code\": \"oc\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.545, \"standardized_ddm\": 0.4882}",
+          "output": "{\"naive_rank\": 50, \"standardized_rank\": 7, \"rank_shift\": 43}",
+          "predict_baseline": "{\"rank\": 50}",
+          "predict_our_method": "{\"rank\": 7}",
+          "metadata_treebank_id": "oc_ttb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"olo_kkpp\", \"iso_code\": \"olo\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3696, \"standardized_ddm\": 0.0458}",
+          "output": "{\"naive_rank\": 178, \"standardized_rank\": 284, \"rank_shift\": -106}",
+          "predict_baseline": "{\"rank\": 178}",
+          "predict_our_method": "{\"rank\": 284}",
+          "metadata_treebank_id": "olo_kkpp",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"or_odtb\", \"iso_code\": \"or\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3741, \"standardized_ddm\": 0.065}",
+          "output": "{\"naive_rank\": 176, \"standardized_rank\": 268, \"rank_shift\": -92}",
+          "predict_baseline": "{\"rank\": 176}",
+          "predict_our_method": "{\"rank\": 268}",
+          "metadata_treebank_id": "or_odtb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"orv_birchbark\", \"iso_code\": \"orv\", \"word_order\": NaN, \"case_richness\": 9, \"naive_ddm\": 0.2395, \"standardized_ddm\": 0.2717}",
+          "output": "{\"naive_rank\": 265, \"standardized_rank\": 193, \"rank_shift\": 72}",
+          "predict_baseline": "{\"rank\": 265}",
+          "predict_our_method": "{\"rank\": 193}",
+          "metadata_treebank_id": "orv_birchbark",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 9
+        },
+        {
+          "input": "{\"treebank_id\": \"orv_rnc\", \"iso_code\": \"orv\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.4685, \"standardized_ddm\": 0.374}",
+          "output": "{\"naive_rank\": 101, \"standardized_rank\": 98, \"rank_shift\": 2}",
+          "predict_baseline": "{\"rank\": 101}",
+          "predict_our_method": "{\"rank\": 98}",
+          "metadata_treebank_id": "orv_rnc",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"orv_ruthenian\", \"iso_code\": \"orv\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.442, \"standardized_ddm\": 0.3535}",
+          "output": "{\"naive_rank\": 118, \"standardized_rank\": 124, \"rank_shift\": -6}",
+          "predict_baseline": "{\"rank\": 118}",
+          "predict_our_method": "{\"rank\": 124}",
+          "metadata_treebank_id": "orv_ruthenian",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"orv_torot\", \"iso_code\": \"orv\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.3054, \"standardized_ddm\": 0.4328}",
+          "output": "{\"naive_rank\": 222, \"standardized_rank\": 19, \"rank_shift\": 203}",
+          "predict_baseline": "{\"rank\": 222}",
+          "predict_our_method": "{\"rank\": 19}",
+          "metadata_treebank_id": "orv_torot",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ota_boun\", \"iso_code\": \"ota\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.4342, \"standardized_ddm\": 0.3327}",
+          "output": "{\"naive_rank\": 131, \"standardized_rank\": 154, \"rank_shift\": -23}",
+          "predict_baseline": "{\"rank\": 131}",
+          "predict_our_method": "{\"rank\": 154}",
+          "metadata_treebank_id": "ota_boun",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"ota_dudu\", \"iso_code\": \"ota\", \"word_order\": NaN, \"case_richness\": 7, \"naive_ddm\": 0.324, \"standardized_ddm\": 0.2645}",
+          "output": "{\"naive_rank\": 208, \"standardized_rank\": 198, \"rank_shift\": 10}",
+          "predict_baseline": "{\"rank\": 208}",
+          "predict_our_method": "{\"rank\": 198}",
+          "metadata_treebank_id": "ota_dudu",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"pad_tuecl\", \"iso_code\": \"pad\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.0879, \"standardized_ddm\": 0.0189}",
+          "output": "{\"naive_rank\": 306, \"standardized_rank\": 302, \"rank_shift\": 4}",
+          "predict_baseline": "{\"rank\": 306}",
+          "predict_our_method": "{\"rank\": 302}",
+          "metadata_treebank_id": "pad_tuecl",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"pay_chibergis\", \"iso_code\": \"pay\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2673, \"standardized_ddm\": 0.194}",
+          "output": "{\"naive_rank\": 245, \"standardized_rank\": 228, \"rank_shift\": 17}",
+          "predict_baseline": "{\"rank\": 245}",
+          "predict_our_method": "{\"rank\": 228}",
+          "metadata_treebank_id": "pay_chibergis",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"pcm_nsc\", \"iso_code\": \"pcm\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.3636, \"standardized_ddm\": 0.3694}",
+          "output": "{\"naive_rank\": 187, \"standardized_rank\": 106, \"rank_shift\": 80}",
+          "predict_baseline": "{\"rank\": 187}",
+          "predict_our_method": "{\"rank\": 106}",
+          "metadata_treebank_id": "pcm_nsc",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"pl_lfg\", \"iso_code\": \"pl\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.2104, \"standardized_ddm\": 0.2318}",
+          "output": "{\"naive_rank\": 280, \"standardized_rank\": 216, \"rank_shift\": 64}",
+          "predict_baseline": "{\"rank\": 280}",
+          "predict_our_method": "{\"rank\": 216}",
+          "metadata_treebank_id": "pl_lfg",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"pl_mpdt\", \"iso_code\": \"pl\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.5066, \"standardized_ddm\": 0.3006}",
+          "output": "{\"naive_rank\": 74, \"standardized_rank\": 169, \"rank_shift\": -95}",
+          "predict_baseline": "{\"rank\": 74}",
+          "predict_our_method": "{\"rank\": 169}",
+          "metadata_treebank_id": "pl_mpdt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"pl_pdb\", \"iso_code\": \"pl\", \"word_order\": \"SVO\", \"case_richness\": 7, \"naive_ddm\": 0.4232, \"standardized_ddm\": 0.4041}",
+          "output": "{\"naive_rank\": 138, \"standardized_rank\": 50, \"rank_shift\": 88}",
+          "predict_baseline": "{\"rank\": 138}",
+          "predict_our_method": "{\"rank\": 50}",
+          "metadata_treebank_id": "pl_pdb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"pl_pud\", \"iso_code\": \"pl\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.5069, \"standardized_ddm\": 0.3355}",
+          "output": "{\"naive_rank\": 73, \"standardized_rank\": 149, \"rank_shift\": -76}",
+          "predict_baseline": "{\"rank\": 73}",
+          "predict_our_method": "{\"rank\": 149}",
+          "metadata_treebank_id": "pl_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"pro_corag\", \"iso_code\": \"pro\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.5516, \"standardized_ddm\": 0.3677}",
+          "output": "{\"naive_rank\": 42, \"standardized_rank\": 110, \"rank_shift\": -68}",
+          "predict_baseline": "{\"rank\": 42}",
+          "predict_our_method": "{\"rank\": 110}",
+          "metadata_treebank_id": "pro_corag",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"pt_bosque\", \"iso_code\": \"pt\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5403, \"standardized_ddm\": 0.4203}",
+          "output": "{\"naive_rank\": 51, \"standardized_rank\": 26, \"rank_shift\": 25}",
+          "predict_baseline": "{\"rank\": 51}",
+          "predict_our_method": "{\"rank\": 26}",
+          "metadata_treebank_id": "pt_bosque",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"pt_dantestocks\", \"iso_code\": \"pt\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4823, \"standardized_ddm\": 0.3417}",
+          "output": "{\"naive_rank\": 93, \"standardized_rank\": 139, \"rank_shift\": -46}",
+          "predict_baseline": "{\"rank\": 93}",
+          "predict_our_method": "{\"rank\": 139}",
+          "metadata_treebank_id": "pt_dantestocks",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"pt_gsd\", \"iso_code\": \"pt\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5884, \"standardized_ddm\": 0.4212}",
+          "output": "{\"naive_rank\": 26, \"standardized_rank\": 25, \"rank_shift\": 1}",
+          "predict_baseline": "{\"rank\": 26}",
+          "predict_our_method": "{\"rank\": 25}",
+          "metadata_treebank_id": "pt_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"pt_petrogold\", \"iso_code\": \"pt\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.6067, \"standardized_ddm\": 0.4549}",
+          "output": "{\"naive_rank\": 17, \"standardized_rank\": 10, \"rank_shift\": 7}",
+          "predict_baseline": "{\"rank\": 17}",
+          "predict_our_method": "{\"rank\": 10}",
+          "metadata_treebank_id": "pt_petrogold",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"pt_porttinari\", \"iso_code\": \"pt\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5382, \"standardized_ddm\": 0.3793}",
+          "output": "{\"naive_rank\": 52, \"standardized_rank\": 92, \"rank_shift\": -40}",
+          "predict_baseline": "{\"rank\": 52}",
+          "predict_our_method": "{\"rank\": 92}",
+          "metadata_treebank_id": "pt_porttinari",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"pt_pud\", \"iso_code\": \"pt\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5796, \"standardized_ddm\": 0.3503}",
+          "output": "{\"naive_rank\": 27, \"standardized_rank\": 131, \"rank_shift\": -104}",
+          "predict_baseline": "{\"rank\": 27}",
+          "predict_our_method": "{\"rank\": 131}",
+          "metadata_treebank_id": "pt_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"qaf_arabizi\", \"iso_code\": \"qaf\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.4744, \"standardized_ddm\": 0.3579}",
+          "output": "{\"naive_rank\": 98, \"standardized_rank\": 122, \"rank_shift\": -24}",
+          "predict_baseline": "{\"rank\": 98}",
+          "predict_our_method": "{\"rank\": 122}",
+          "metadata_treebank_id": "qaf_arabizi",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"qfn_fame\", \"iso_code\": \"qfn\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2768, \"standardized_ddm\": 0.1605}",
+          "output": "{\"naive_rank\": 241, \"standardized_rank\": 235, \"rank_shift\": 6}",
+          "predict_baseline": "{\"rank\": 241}",
+          "predict_our_method": "{\"rank\": 235}",
+          "metadata_treebank_id": "qfn_fame",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"qpm_philotis\", \"iso_code\": \"qpm\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.386, \"standardized_ddm\": 0.3377}",
+          "output": "{\"naive_rank\": 165, \"standardized_rank\": 144, \"rank_shift\": 21}",
+          "predict_baseline": "{\"rank\": 165}",
+          "predict_our_method": "{\"rank\": 144}",
+          "metadata_treebank_id": "qpm_philotis",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"qtd_sagt\", \"iso_code\": \"qtd\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3832, \"standardized_ddm\": 0.337}",
+          "output": "{\"naive_rank\": 166, \"standardized_rank\": 145, \"rank_shift\": 21}",
+          "predict_baseline": "{\"rank\": 166}",
+          "predict_our_method": "{\"rank\": 145}",
+          "metadata_treebank_id": "qtd_sagt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"qte_tect\", \"iso_code\": \"qte\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2458, \"standardized_ddm\": 0.0405}",
+          "output": "{\"naive_rank\": 260, \"standardized_rank\": 288, \"rank_shift\": -28}",
+          "predict_baseline": "{\"rank\": 260}",
+          "predict_our_method": "{\"rank\": 288}",
+          "metadata_treebank_id": "qte_tect",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"quc_iu\", \"iso_code\": \"quc\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.1235, \"standardized_ddm\": 0.1516}",
+          "output": "{\"naive_rank\": 299, \"standardized_rank\": 240, \"rank_shift\": 59}",
+          "predict_baseline": "{\"rank\": 299}",
+          "predict_our_method": "{\"rank\": 240}",
+          "metadata_treebank_id": "quc_iu",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\", \"iso_code\": \"ro\", \"word_order\": \"SVO\", \"case_richness\": 7, \"naive_ddm\": 0.4932, \"standardized_ddm\": 0.3804}",
+          "output": "{\"naive_rank\": 86, \"standardized_rank\": 90, \"rank_shift\": -4}",
+          "predict_baseline": "{\"rank\": 86}",
+          "predict_our_method": "{\"rank\": 90}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_rrt\", \"iso_code\": \"ro\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.564, \"standardized_ddm\": 0.4151}",
+          "output": "{\"naive_rank\": 36, \"standardized_rank\": 32, \"rank_shift\": 4}",
+          "predict_baseline": "{\"rank\": 36}",
+          "predict_our_method": "{\"rank\": 32}",
+          "metadata_treebank_id": "ro_rrt",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_simonero\", \"iso_code\": \"ro\", \"word_order\": \"SVO\", \"case_richness\": 4, \"naive_ddm\": 0.6489, \"standardized_ddm\": 0.4045}",
+          "output": "{\"naive_rank\": 6, \"standardized_rank\": 49, \"rank_shift\": -43}",
+          "predict_baseline": "{\"rank\": 6}",
+          "predict_our_method": "{\"rank\": 49}",
+          "metadata_treebank_id": "ro_simonero",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_tuecl\", \"iso_code\": \"ro\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.3763, \"standardized_ddm\": 0.0579}",
+          "output": "{\"naive_rank\": 174, \"standardized_rank\": 275, \"rank_shift\": -101}",
+          "predict_baseline": "{\"rank\": 174}",
+          "predict_our_method": "{\"rank\": 275}",
+          "metadata_treebank_id": "ro_tuecl",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_gsd\", \"iso_code\": \"ru\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.4992, \"standardized_ddm\": 0.419}",
+          "output": "{\"naive_rank\": 80, \"standardized_rank\": 28, \"rank_shift\": 52}",
+          "predict_baseline": "{\"rank\": 80}",
+          "predict_our_method": "{\"rank\": 28}",
+          "metadata_treebank_id": "ru_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_poetry\", \"iso_code\": \"ru\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.3414, \"standardized_ddm\": 0.3405}",
+          "output": "{\"naive_rank\": 197, \"standardized_rank\": 140, \"rank_shift\": 57}",
+          "predict_baseline": "{\"rank\": 197}",
+          "predict_our_method": "{\"rank\": 140}",
+          "metadata_treebank_id": "ru_poetry",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_pud\", \"iso_code\": \"ru\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.5199, \"standardized_ddm\": 0.3489}",
+          "output": "{\"naive_rank\": 66, \"standardized_rank\": 132, \"rank_shift\": -66}",
+          "predict_baseline": "{\"rank\": 66}",
+          "predict_our_method": "{\"rank\": 132}",
+          "metadata_treebank_id": "ru_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\", \"iso_code\": \"ru\", \"word_order\": \"SVO\", \"case_richness\": 7, \"naive_ddm\": 0.4455, \"standardized_ddm\": 0.4081}",
+          "output": "{\"naive_rank\": 114, \"standardized_rank\": 42, \"rank_shift\": 71}",
+          "predict_baseline": "{\"rank\": 114}",
+          "predict_our_method": "{\"rank\": 42}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\", \"iso_code\": \"ru\", \"word_order\": \"SVO\", \"case_richness\": 8, \"naive_ddm\": 0.3823, \"standardized_ddm\": 0.4034}",
+          "output": "{\"naive_rank\": 167, \"standardized_rank\": 51, \"rank_shift\": 116}",
+          "predict_baseline": "{\"rank\": 167}",
+          "predict_our_method": "{\"rank\": 51}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"sa_ufal\", \"iso_code\": \"sa\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.1934, \"standardized_ddm\": 0.0853}",
+          "output": "{\"naive_rank\": 283, \"standardized_rank\": 262, \"rank_shift\": 21}",
+          "predict_baseline": "{\"rank\": 283}",
+          "predict_our_method": "{\"rank\": 262}",
+          "metadata_treebank_id": "sa_ufal",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"sa_vedic\", \"iso_code\": \"sa\", \"word_order\": NaN, \"case_richness\": 8, \"naive_ddm\": 0.2142, \"standardized_ddm\": 0.3849}",
+          "output": "{\"naive_rank\": 278, \"standardized_rank\": 81, \"rank_shift\": 197}",
+          "predict_baseline": "{\"rank\": 278}",
+          "predict_our_method": "{\"rank\": 81}",
+          "metadata_treebank_id": "sa_vedic",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"sab_chibergis\", \"iso_code\": \"sab\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2265, \"standardized_ddm\": 0.1131}",
+          "output": "{\"naive_rank\": 272, \"standardized_rank\": 252, \"rank_shift\": 20}",
+          "predict_baseline": "{\"rank\": 272}",
+          "predict_our_method": "{\"rank\": 252}",
+          "metadata_treebank_id": "sab_chibergis",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"sah_yktdt\", \"iso_code\": \"sah\", \"word_order\": \"SOV\", \"case_richness\": 6, \"naive_ddm\": 0.1451, \"standardized_ddm\": 0.0385}",
+          "output": "{\"naive_rank\": 297, \"standardized_rank\": 292, \"rank_shift\": 5}",
+          "predict_baseline": "{\"rank\": 297}",
+          "predict_our_method": "{\"rank\": 292}",
+          "metadata_treebank_id": "sah_yktdt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"say_autogramm\", \"iso_code\": \"say\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3075, \"standardized_ddm\": 0.3078}",
+          "output": "{\"naive_rank\": 221, \"standardized_rank\": 167, \"rank_shift\": 54}",
+          "predict_baseline": "{\"rank\": 221}",
+          "predict_our_method": "{\"rank\": 167}",
+          "metadata_treebank_id": "say_autogramm",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"scn_stb\", \"iso_code\": \"scn\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.4585, \"standardized_ddm\": 0.2932}",
+          "output": "{\"naive_rank\": 105, \"standardized_rank\": 175, \"rank_shift\": -70}",
+          "predict_baseline": "{\"rank\": 105}",
+          "predict_our_method": "{\"rank\": 175}",
+          "metadata_treebank_id": "scn_stb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"sd_isra\", \"iso_code\": \"sd\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.466, \"standardized_ddm\": 0.4389}",
+          "output": "{\"naive_rank\": 102, \"standardized_rank\": 13, \"rank_shift\": 89}",
+          "predict_baseline": "{\"rank\": 102}",
+          "predict_our_method": "{\"rank\": 13}",
+          "metadata_treebank_id": "sd_isra",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"sdh_garrusi\", \"iso_code\": \"sdh\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2461, \"standardized_ddm\": 0.0975}",
+          "output": "{\"naive_rank\": 259, \"standardized_rank\": 259, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 259}",
+          "predict_our_method": "{\"rank\": 259}",
+          "metadata_treebank_id": "sdh_garrusi",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"sga_dipsgg\", \"iso_code\": \"sga\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.0741, \"standardized_ddm\": 0.0028}",
+          "output": "{\"naive_rank\": 307, \"standardized_rank\": 312, \"rank_shift\": -5}",
+          "predict_baseline": "{\"rank\": 307}",
+          "predict_our_method": "{\"rank\": 312}",
+          "metadata_treebank_id": "sga_dipsgg",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"si_stb\", \"iso_code\": \"si\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.4175, \"standardized_ddm\": 0.0596}",
+          "output": "{\"naive_rank\": 142, \"standardized_rank\": 272, \"rank_shift\": -130}",
+          "predict_baseline": "{\"rank\": 142}",
+          "predict_our_method": "{\"rank\": 272}",
+          "metadata_treebank_id": "si_stb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\", \"iso_code\": \"sjo\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.4371, \"standardized_ddm\": 0.3174}",
+          "output": "{\"naive_rank\": 127, \"standardized_rank\": 161, \"rank_shift\": -34}",
+          "predict_baseline": "{\"rank\": 127}",
+          "predict_our_method": "{\"rank\": 161}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"sk_snk\", \"iso_code\": \"sk\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.2827, \"standardized_ddm\": 0.3317}",
+          "output": "{\"naive_rank\": 234, \"standardized_rank\": 157, \"rank_shift\": 77}",
+          "predict_baseline": "{\"rank\": 234}",
+          "predict_our_method": "{\"rank\": 157}",
+          "metadata_treebank_id": "sk_snk",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"sl_ssj\", \"iso_code\": \"sl\", \"word_order\": \"SVO\", \"case_richness\": 6, \"naive_ddm\": 0.4652, \"standardized_ddm\": 0.3906}",
+          "output": "{\"naive_rank\": 104, \"standardized_rank\": 72, \"rank_shift\": 32}",
+          "predict_baseline": "{\"rank\": 104}",
+          "predict_our_method": "{\"rank\": 72}",
+          "metadata_treebank_id": "sl_ssj",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"sl_sst\", \"iso_code\": \"sl\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.3591, \"standardized_ddm\": 0.3633}",
+          "output": "{\"naive_rank\": 189, \"standardized_rank\": 118, \"rank_shift\": 71}",
+          "predict_baseline": "{\"rank\": 189}",
+          "predict_our_method": "{\"rank\": 118}",
+          "metadata_treebank_id": "sl_sst",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"sme_giella\", \"iso_code\": \"sme\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.2429, \"standardized_ddm\": 0.2532}",
+          "output": "{\"naive_rank\": 261, \"standardized_rank\": 202, \"rank_shift\": 59}",
+          "predict_baseline": "{\"rank\": 261}",
+          "predict_our_method": "{\"rank\": 202}",
+          "metadata_treebank_id": "sme_giella",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"sms_giellagas\", \"iso_code\": \"sms\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.2532, \"standardized_ddm\": 0.1318}",
+          "output": "{\"naive_rank\": 257, \"standardized_rank\": 246, \"rank_shift\": 11}",
+          "predict_baseline": "{\"rank\": 257}",
+          "predict_our_method": "{\"rank\": 246}",
+          "metadata_treebank_id": "sms_giellagas",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"sq_staf\", \"iso_code\": \"sq\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.1942, \"standardized_ddm\": 0.036}",
+          "output": "{\"naive_rank\": 282, \"standardized_rank\": 294, \"rank_shift\": -12}",
+          "predict_baseline": "{\"rank\": 282}",
+          "predict_our_method": "{\"rank\": 294}",
+          "metadata_treebank_id": "sq_staf",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"sq_tsa\", \"iso_code\": \"sq\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.4507, \"standardized_ddm\": 0.018}",
+          "output": "{\"naive_rank\": 110, \"standardized_rank\": 304, \"rank_shift\": -194}",
+          "predict_baseline": "{\"rank\": 110}",
+          "predict_our_method": "{\"rank\": 304}",
+          "metadata_treebank_id": "sq_tsa",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"sr_set\", \"iso_code\": \"sr\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.5456, \"standardized_ddm\": 0.425}",
+          "output": "{\"naive_rank\": 49, \"standardized_rank\": 22, \"rank_shift\": 27}",
+          "predict_baseline": "{\"rank\": 49}",
+          "predict_our_method": "{\"rank\": 22}",
+          "metadata_treebank_id": "sr_set",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"ssp_lse\", \"iso_code\": \"ssp\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.0972, \"standardized_ddm\": 0.044}",
+          "output": "{\"naive_rank\": 304, \"standardized_rank\": 285, \"rank_shift\": 19}",
+          "predict_baseline": "{\"rank\": 304}",
+          "predict_our_method": "{\"rank\": 285}",
+          "metadata_treebank_id": "ssp_lse",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"sv_lines\", \"iso_code\": \"sv\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4394, \"standardized_ddm\": 0.3943}",
+          "output": "{\"naive_rank\": 123, \"standardized_rank\": 64, \"rank_shift\": 59}",
+          "predict_baseline": "{\"rank\": 123}",
+          "predict_our_method": "{\"rank\": 64}",
+          "metadata_treebank_id": "sv_lines",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"sv_pud\", \"iso_code\": \"sv\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4986, \"standardized_ddm\": 0.3319}",
+          "output": "{\"naive_rank\": 81, \"standardized_rank\": 156, \"rank_shift\": -75}",
+          "predict_baseline": "{\"rank\": 81}",
+          "predict_our_method": "{\"rank\": 156}",
+          "metadata_treebank_id": "sv_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"sv_swell\", \"iso_code\": \"sv\", \"word_order\": \"SVO\", \"case_richness\": 2, \"naive_ddm\": 0.3914, \"standardized_ddm\": 0.2653}",
+          "output": "{\"naive_rank\": 161, \"standardized_rank\": 196, \"rank_shift\": -35}",
+          "predict_baseline": "{\"rank\": 161}",
+          "predict_our_method": "{\"rank\": 196}",
+          "metadata_treebank_id": "sv_swell",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"sv_talbanken\", \"iso_code\": \"sv\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.4217, \"standardized_ddm\": 0.3794}",
+          "output": "{\"naive_rank\": 141, \"standardized_rank\": 91, \"rank_shift\": 50}",
+          "predict_baseline": "{\"rank\": 141}",
+          "predict_our_method": "{\"rank\": 91}",
+          "metadata_treebank_id": "sv_talbanken",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"swl_sslc\", \"iso_code\": \"swl\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.2414, \"standardized_ddm\": 0.0938}",
+          "output": "{\"naive_rank\": 262, \"standardized_rank\": 261, \"rank_shift\": 1}",
+          "predict_baseline": "{\"rank\": 262}",
+          "predict_our_method": "{\"rank\": 261}",
+          "metadata_treebank_id": "swl_sslc",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_mwtt\", \"iso_code\": \"ta\", \"word_order\": \"SOV\", \"case_richness\": 5, \"naive_ddm\": 0.241, \"standardized_ddm\": 0.083}",
+          "output": "{\"naive_rank\": 263, \"standardized_rank\": 263, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 263}",
+          "predict_our_method": "{\"rank\": 263}",
+          "metadata_treebank_id": "ta_mwtt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\", \"iso_code\": \"ta\", \"word_order\": \"SOV\", \"case_richness\": 5, \"naive_ddm\": 0.5244, \"standardized_ddm\": 0.3351}",
+          "output": "{\"naive_rank\": 63, \"standardized_rank\": 152, \"rank_shift\": -89}",
+          "predict_baseline": "{\"rank\": 63}",
+          "predict_our_method": "{\"rank\": 152}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"te_mtg\", \"iso_code\": \"te\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.2615, \"standardized_ddm\": 0.1049}",
+          "output": "{\"naive_rank\": 252, \"standardized_rank\": 256, \"rank_shift\": -3}",
+          "predict_baseline": "{\"rank\": 252}",
+          "predict_our_method": "{\"rank\": 256}",
+          "metadata_treebank_id": "te_mtg",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"th_pud\", \"iso_code\": \"th\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.6592, \"standardized_ddm\": 0.4189}",
+          "output": "{\"naive_rank\": 4, \"standardized_rank\": 29, \"rank_shift\": -25}",
+          "predict_baseline": "{\"rank\": 4}",
+          "predict_our_method": "{\"rank\": 29}",
+          "metadata_treebank_id": "th_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"th_tud\", \"iso_code\": \"th\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5954, \"standardized_ddm\": 0.5357}",
+          "output": "{\"naive_rank\": 23, \"standardized_rank\": 1, \"rank_shift\": 22}",
+          "predict_baseline": "{\"rank\": 23}",
+          "predict_our_method": "{\"rank\": 1}",
+          "metadata_treebank_id": "th_tud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"tl_trg\", \"iso_code\": \"tl\", \"word_order\": \"VSO\", \"case_richness\": 2, \"naive_ddm\": -0.0715, \"standardized_ddm\": -0.0129}",
+          "output": "{\"naive_rank\": 314, \"standardized_rank\": 314, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 314}",
+          "predict_our_method": "{\"rank\": 314}",
+          "metadata_treebank_id": "tl_trg",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"tl_ugnayan\", \"iso_code\": \"tl\", \"word_order\": \"VSO\", \"case_richness\": 0, \"naive_ddm\": 0.2615, \"standardized_ddm\": 0.0325}",
+          "output": "{\"naive_rank\": 252, \"standardized_rank\": 296, \"rank_shift\": -43}",
+          "predict_baseline": "{\"rank\": 252}",
+          "predict_our_method": "{\"rank\": 296}",
+          "metadata_treebank_id": "tl_ugnayan",
+          "metadata_word_order": "VSO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"tpn_tudet\", \"iso_code\": \"tpn\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.2196, \"standardized_ddm\": 0.1569}",
+          "output": "{\"naive_rank\": 275, \"standardized_rank\": 238, \"rank_shift\": 37}",
+          "predict_baseline": "{\"rank\": 275}",
+          "predict_our_method": "{\"rank\": 238}",
+          "metadata_treebank_id": "tpn_tudet",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_atis\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.3646, \"standardized_ddm\": 0.2727}",
+          "output": "{\"naive_rank\": 185, \"standardized_rank\": 192, \"rank_shift\": -7}",
+          "predict_baseline": "{\"rank\": 185}",
+          "predict_our_method": "{\"rank\": 192}",
+          "metadata_treebank_id": "tr_atis",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_boun\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.4119, \"standardized_ddm\": 0.4369}",
+          "output": "{\"naive_rank\": 145, \"standardized_rank\": 15, \"rank_shift\": 130}",
+          "predict_baseline": "{\"rank\": 145}",
+          "predict_our_method": "{\"rank\": 15}",
+          "metadata_treebank_id": "tr_boun",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_framenet\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.3638, \"standardized_ddm\": 0.2331}",
+          "output": "{\"naive_rank\": 186, \"standardized_rank\": 215, \"rank_shift\": -29}",
+          "predict_baseline": "{\"rank\": 186}",
+          "predict_our_method": "{\"rank\": 215}",
+          "metadata_treebank_id": "tr_framenet",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_gb\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 6, \"naive_ddm\": 0.2893, \"standardized_ddm\": 0.1882}",
+          "output": "{\"naive_rank\": 231, \"standardized_rank\": 229, \"rank_shift\": 2}",
+          "predict_baseline": "{\"rank\": 231}",
+          "predict_our_method": "{\"rank\": 229}",
+          "metadata_treebank_id": "tr_gb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_imst\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 8, \"naive_ddm\": 0.3672, \"standardized_ddm\": 0.4053}",
+          "output": "{\"naive_rank\": 183, \"standardized_rank\": 48, \"rank_shift\": 135}",
+          "predict_baseline": "{\"rank\": 183}",
+          "predict_our_method": "{\"rank\": 48}",
+          "metadata_treebank_id": "tr_imst",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_kenet\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.422, \"standardized_ddm\": 0.3992}",
+          "output": "{\"naive_rank\": 140, \"standardized_rank\": 56, \"rank_shift\": 83}",
+          "predict_baseline": "{\"rank\": 140}",
+          "predict_our_method": "{\"rank\": 56}",
+          "metadata_treebank_id": "tr_kenet",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_penn\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.3934, \"standardized_ddm\": 0.2921}",
+          "output": "{\"naive_rank\": 157, \"standardized_rank\": 176, \"rank_shift\": -18}",
+          "predict_baseline": "{\"rank\": 157}",
+          "predict_our_method": "{\"rank\": 176}",
+          "metadata_treebank_id": "tr_penn",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_pud\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.5134, \"standardized_ddm\": 0.375}",
+          "output": "{\"naive_rank\": 69, \"standardized_rank\": 97, \"rank_shift\": -28}",
+          "predict_baseline": "{\"rank\": 69}",
+          "predict_our_method": "{\"rank\": 97}",
+          "metadata_treebank_id": "tr_pud",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_tourism\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 7, \"naive_ddm\": 0.2948, \"standardized_ddm\": 0.3105}",
+          "output": "{\"naive_rank\": 227, \"standardized_rank\": 166, \"rank_shift\": 61}",
+          "predict_baseline": "{\"rank\": 227}",
+          "predict_our_method": "{\"rank\": 166}",
+          "metadata_treebank_id": "tr_tourism",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 7
+        },
+        {
+          "input": "{\"treebank_id\": \"tr_tuecl\", \"iso_code\": \"tr\", \"word_order\": \"SOV\", \"case_richness\": 3, \"naive_ddm\": 0.2385, \"standardized_ddm\": 0.0613}",
+          "output": "{\"naive_rank\": 266, \"standardized_rank\": 270, \"rank_shift\": -4}",
+          "predict_baseline": "{\"rank\": 266}",
+          "predict_our_method": "{\"rank\": 270}",
+          "metadata_treebank_id": "tr_tuecl",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"tt_nmctt\", \"iso_code\": \"tt\", \"word_order\": \"SOV\", \"case_richness\": 3, \"naive_ddm\": 0.4477, \"standardized_ddm\": 0.0505}",
+          "output": "{\"naive_rank\": 112, \"standardized_rank\": 279, \"rank_shift\": -167}",
+          "predict_baseline": "{\"rank\": 112}",
+          "predict_our_method": "{\"rank\": 279}",
+          "metadata_treebank_id": "tt_nmctt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"ug_udt\", \"iso_code\": \"ug\", \"word_order\": \"SOV\", \"case_richness\": 6, \"naive_ddm\": 0.4032, \"standardized_ddm\": 0.3822}",
+          "output": "{\"naive_rank\": 151, \"standardized_rank\": 86, \"rank_shift\": 65}",
+          "predict_baseline": "{\"rank\": 151}",
+          "predict_our_method": "{\"rank\": 86}",
+          "metadata_treebank_id": "ug_udt",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"uk_iu\", \"iso_code\": \"uk\", \"word_order\": \"SVO\", \"case_richness\": 5, \"naive_ddm\": 0.4245, \"standardized_ddm\": 0.3976}",
+          "output": "{\"naive_rank\": 137, \"standardized_rank\": 59, \"rank_shift\": 78}",
+          "predict_baseline": "{\"rank\": 137}",
+          "predict_our_method": "{\"rank\": 59}",
+          "metadata_treebank_id": "uk_iu",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"uk_parlamint\", \"iso_code\": \"uk\", \"word_order\": \"SVO\", \"case_richness\": 8, \"naive_ddm\": 0.3752, \"standardized_ddm\": 0.395}",
+          "output": "{\"naive_rank\": 175, \"standardized_rank\": 63, \"rank_shift\": 112}",
+          "predict_baseline": "{\"rank\": 175}",
+          "predict_our_method": "{\"rank\": 63}",
+          "metadata_treebank_id": "uk_parlamint",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 8
+        },
+        {
+          "input": "{\"treebank_id\": \"ur_udtb\", \"iso_code\": \"ur\", \"word_order\": \"SOV\", \"case_richness\": 4, \"naive_ddm\": 0.6064, \"standardized_ddm\": 0.4368}",
+          "output": "{\"naive_rank\": 18, \"standardized_rank\": 16, \"rank_shift\": 2}",
+          "predict_baseline": "{\"rank\": 18}",
+          "predict_our_method": "{\"rank\": 16}",
+          "metadata_treebank_id": "ur_udtb",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"urb_tudet\", \"iso_code\": \"urb\", \"word_order\": \"SOV\", \"case_richness\": 1, \"naive_ddm\": 0.0245, \"standardized_ddm\": 0.0115}",
+          "output": "{\"naive_rank\": 311, \"standardized_rank\": 309, \"rank_shift\": 2}",
+          "predict_baseline": "{\"rank\": 311}",
+          "predict_our_method": "{\"rank\": 309}",
+          "metadata_treebank_id": "urb_tudet",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"uz_tuecl\", \"iso_code\": \"uz\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.241, \"standardized_ddm\": 0.0618}",
+          "output": "{\"naive_rank\": 263, \"standardized_rank\": 269, \"rank_shift\": -5}",
+          "predict_baseline": "{\"rank\": 263}",
+          "predict_our_method": "{\"rank\": 269}",
+          "metadata_treebank_id": "uz_tuecl",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"uz_ut\", \"iso_code\": \"uz\", \"word_order\": NaN, \"case_richness\": 6, \"naive_ddm\": 0.4127, \"standardized_ddm\": 0.2141}",
+          "output": "{\"naive_rank\": 143, \"standardized_rank\": 224, \"rank_shift\": -81}",
+          "predict_baseline": "{\"rank\": 143}",
+          "predict_our_method": "{\"rank\": 224}",
+          "metadata_treebank_id": "uz_ut",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 6
+        },
+        {
+          "input": "{\"treebank_id\": \"uz_uzudt\", \"iso_code\": \"uz\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.3871, \"standardized_ddm\": 0.2856}",
+          "output": "{\"naive_rank\": 164, \"standardized_rank\": 182, \"rank_shift\": -18}",
+          "predict_baseline": "{\"rank\": 164}",
+          "predict_our_method": "{\"rank\": 182}",
+          "metadata_treebank_id": "uz_uzudt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"vep_vwt\", \"iso_code\": \"vep\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.2183, \"standardized_ddm\": 0.0238}",
+          "output": "{\"naive_rank\": 276, \"standardized_rank\": 300, \"rank_shift\": -24}",
+          "predict_baseline": "{\"rank\": 276}",
+          "predict_our_method": "{\"rank\": 300}",
+          "metadata_treebank_id": "vep_vwt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_tuecl\", \"iso_code\": \"vi\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.4693, \"standardized_ddm\": 0.0331}",
+          "output": "{\"naive_rank\": 100, \"standardized_rank\": 295, \"rank_shift\": -195}",
+          "predict_baseline": "{\"rank\": 100}",
+          "predict_our_method": "{\"rank\": 295}",
+          "metadata_treebank_id": "vi_tuecl",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\", \"iso_code\": \"vi\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.4777, \"standardized_ddm\": 0.3862}",
+          "output": "{\"naive_rank\": 95, \"standardized_rank\": 78, \"rank_shift\": 17}",
+          "predict_baseline": "{\"rank\": 95}",
+          "predict_our_method": "{\"rank\": 78}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"wbp_ufal\", \"iso_code\": \"wbp\", \"word_order\": \"No dominant order\", \"case_richness\": 3, \"naive_ddm\": 0.1185, \"standardized_ddm\": 0.013}",
+          "output": "{\"naive_rank\": 300, \"standardized_rank\": 307, \"rank_shift\": -7}",
+          "predict_baseline": "{\"rank\": 300}",
+          "predict_our_method": "{\"rank\": 307}",
+          "metadata_treebank_id": "wbp_ufal",
+          "metadata_word_order": "No dominant order",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"wo_wtb\", \"iso_code\": \"wo\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5065, \"standardized_ddm\": 0.397}",
+          "output": "{\"naive_rank\": 75, \"standardized_rank\": 60, \"rank_shift\": 15}",
+          "predict_baseline": "{\"rank\": 75}",
+          "predict_our_method": "{\"rank\": 60}",
+          "metadata_treebank_id": "wo_wtb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"wuu_shud\", \"iso_code\": \"wuu\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.3099, \"standardized_ddm\": 0.1867}",
+          "output": "{\"naive_rank\": 219, \"standardized_rank\": 230, \"rank_shift\": -11}",
+          "predict_baseline": "{\"rank\": 219}",
+          "predict_our_method": "{\"rank\": 230}",
+          "metadata_treebank_id": "wuu_shud",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"xav_xdt\", \"iso_code\": \"xav\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.2083, \"standardized_ddm\": 0.0983}",
+          "output": "{\"naive_rank\": 281, \"standardized_rank\": 257, \"rank_shift\": 24}",
+          "predict_baseline": "{\"rank\": 281}",
+          "predict_our_method": "{\"rank\": 257}",
+          "metadata_treebank_id": "xav_xdt",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"xcl_caval\", \"iso_code\": \"xcl\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.4709, \"standardized_ddm\": 0.3691}",
+          "output": "{\"naive_rank\": 99, \"standardized_rank\": 108, \"rank_shift\": -9}",
+          "predict_baseline": "{\"rank\": 99}",
+          "predict_our_method": "{\"rank\": 108}",
+          "metadata_treebank_id": "xcl_caval",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"xnr_kdtb\", \"iso_code\": \"xnr\", \"word_order\": NaN, \"case_richness\": 2, \"naive_ddm\": 0.3319, \"standardized_ddm\": 0.128}",
+          "output": "{\"naive_rank\": 201, \"standardized_rank\": 249, \"rank_shift\": -48}",
+          "predict_baseline": "{\"rank\": 201}",
+          "predict_our_method": "{\"rank\": 249}",
+          "metadata_treebank_id": "xnr_kdtb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 2
+        },
+        {
+          "input": "{\"treebank_id\": \"xpg_kul\", \"iso_code\": \"xpg\", \"word_order\": NaN, \"case_richness\": 4, \"naive_ddm\": 0.4361, \"standardized_ddm\": 0.0514}",
+          "output": "{\"naive_rank\": 128, \"standardized_rank\": 278, \"rank_shift\": -150}",
+          "predict_baseline": "{\"rank\": 128}",
+          "predict_our_method": "{\"rank\": 278}",
+          "metadata_treebank_id": "xpg_kul",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 4
+        },
+        {
+          "input": "{\"treebank_id\": \"xum_ikuvina\", \"iso_code\": \"xum\", \"word_order\": NaN, \"case_richness\": 5, \"naive_ddm\": 0.0886, \"standardized_ddm\": 0.0431}",
+          "output": "{\"naive_rank\": 305, \"standardized_rank\": 286, \"rank_shift\": 18}",
+          "predict_baseline": "{\"rank\": 305}",
+          "predict_our_method": "{\"rank\": 286}",
+          "metadata_treebank_id": "xum_ikuvina",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 5
+        },
+        {
+          "input": "{\"treebank_id\": \"yi_yitb\", \"iso_code\": \"yi\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.226, \"standardized_ddm\": 0.2771}",
+          "output": "{\"naive_rank\": 273, \"standardized_rank\": 191, \"rank_shift\": 82}",
+          "predict_baseline": "{\"rank\": 273}",
+          "predict_our_method": "{\"rank\": 191}",
+          "metadata_treebank_id": "yi_yitb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"yo_ytb\", \"iso_code\": \"yo\", \"word_order\": \"SVO\", \"case_richness\": 3, \"naive_ddm\": 0.5901, \"standardized_ddm\": 0.1327}",
+          "output": "{\"naive_rank\": 25, \"standardized_rank\": 245, \"rank_shift\": -220}",
+          "predict_baseline": "{\"rank\": 25}",
+          "predict_our_method": "{\"rank\": 245}",
+          "metadata_treebank_id": "yo_ytb",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"yrk_tundra\", \"iso_code\": \"yrk\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.2818, \"standardized_ddm\": 0.1223}",
+          "output": "{\"naive_rank\": 235, \"standardized_rank\": 250, \"rank_shift\": -15}",
+          "predict_baseline": "{\"rank\": 235}",
+          "predict_our_method": "{\"rank\": 250}",
+          "metadata_treebank_id": "yrk_tundra",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"yrl_complin\", \"iso_code\": \"yrl\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.2791, \"standardized_ddm\": 0.3392}",
+          "output": "{\"naive_rank\": 237, \"standardized_rank\": 143, \"rank_shift\": 94}",
+          "predict_baseline": "{\"rank\": 237}",
+          "predict_our_method": "{\"rank\": 143}",
+          "metadata_treebank_id": "yrl_complin",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"iso_code\": \"yue\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.2834, \"standardized_ddm\": 0.2818}",
+          "output": "{\"naive_rank\": 233, \"standardized_rank\": 185, \"rank_shift\": 48}",
+          "predict_baseline": "{\"rank\": 233}",
+          "predict_our_method": "{\"rank\": 185}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_beginner\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.2885, \"standardized_ddm\": 0.2068}",
+          "output": "{\"naive_rank\": 232, \"standardized_rank\": 225, \"rank_shift\": 7}",
+          "predict_baseline": "{\"rank\": 232}",
+          "predict_our_method": "{\"rank\": 225}",
+          "metadata_treebank_id": "zh_beginner",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_cfl\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.3926, \"standardized_ddm\": 0.2542}",
+          "output": "{\"naive_rank\": 160, \"standardized_rank\": 201, \"rank_shift\": -41}",
+          "predict_baseline": "{\"rank\": 160}",
+          "predict_our_method": "{\"rank\": 201}",
+          "metadata_treebank_id": "zh_cfl",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_gsd\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5288, \"standardized_ddm\": 0.3676}",
+          "output": "{\"naive_rank\": 60, \"standardized_rank\": 112, \"rank_shift\": -52}",
+          "predict_baseline": "{\"rank\": 60}",
+          "predict_our_method": "{\"rank\": 112}",
+          "metadata_treebank_id": "zh_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_gsdsimp\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5291, \"standardized_ddm\": 0.3677}",
+          "output": "{\"naive_rank\": 59, \"standardized_rank\": 110, \"rank_shift\": -51}",
+          "predict_baseline": "{\"rank\": 59}",
+          "predict_our_method": "{\"rank\": 110}",
+          "metadata_treebank_id": "zh_gsdsimp",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.2648, \"standardized_ddm\": 0.246}",
+          "output": "{\"naive_rank\": 247, \"standardized_rank\": 208, \"rank_shift\": 39}",
+          "predict_baseline": "{\"rank\": 247}",
+          "predict_our_method": "{\"rank\": 208}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_patentchar\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5144, \"standardized_ddm\": 0.0266}",
+          "output": "{\"naive_rank\": 67, \"standardized_rank\": 297, \"rank_shift\": -230}",
+          "predict_baseline": "{\"rank\": 67}",
+          "predict_our_method": "{\"rank\": 297}",
+          "metadata_treebank_id": "zh_patentchar",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_pud\", \"iso_code\": \"zh\", \"word_order\": \"SVO\", \"case_richness\": 0, \"naive_ddm\": 0.5135, \"standardized_ddm\": 0.3356}",
+          "output": "{\"naive_rank\": 68, \"standardized_rank\": 148, \"rank_shift\": -80}",
+          "predict_baseline": "{\"rank\": 68}",
+          "predict_our_method": "{\"rank\": 148}",
+          "metadata_treebank_id": "zh_pud",
+          "metadata_word_order": "SVO",
+          "metadata_case_richness": 0
+        }
+      ]
+    }
+  ]
+}

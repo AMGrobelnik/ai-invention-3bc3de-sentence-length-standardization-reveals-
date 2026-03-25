@@ -1,0 +1,361 @@
+{
+  "metadata": {
+    "method_name": "linking_mechanism_case_richness_sentence_length_ddm_rank_shifts",
+    "description": "Tests whether case-rich languages have longer sentences AND larger rank shifts between naive/standardized DDM",
+    "n_treebanks": 314,
+    "correlations": [
+      {
+        "label": "case_richness vs mean_sentence_length",
+        "n": 314,
+        "spearman_rho": 0.0179,
+        "spearman_p": 0.7527073959373215,
+        "spearman_ci95": [
+          -0.093,
+          0.1231
+        ],
+        "pearson_r": -0.0216,
+        "pearson_p": 0.7023963969008413,
+        "pearson_ci95": [
+          -0.1267,
+          0.0805
+        ]
+      },
+      {
+        "label": "case_richness vs abs_rank_shift",
+        "n": 314,
+        "spearman_rho": 0.0636,
+        "spearman_p": 0.2611532772051511,
+        "spearman_ci95": [
+          -0.0493,
+          0.1756
+        ],
+        "pearson_r": 0.0454,
+        "pearson_p": 0.422702872543508,
+        "pearson_ci95": [
+          -0.0685,
+          0.1628
+        ]
+      },
+      {
+        "label": "mean_sentence_length vs abs_rank_shift",
+        "n": 314,
+        "spearman_rho": 0.2416,
+        "spearman_p": 1.4995436929433582e-05,
+        "spearman_ci95": [
+          0.1184,
+          0.3571
+        ],
+        "pearson_r": 0.1958,
+        "pearson_p": 0.0004846747261971802,
+        "pearson_ci95": [
+          0.0732,
+          0.3175
+        ]
+      }
+    ],
+    "regressions": [
+      {
+        "label": "abs_rank_shift ~ case_richness",
+        "n": 314,
+        "r_squared": 0.0021,
+        "adj_r_squared": -0.0011,
+        "f_stat": 0.6445,
+        "f_pvalue": 0.4227028725435275,
+        "coefficients": {
+          "const": {
+            "coef": 49.963467,
+            "se": 4.455518,
+            "t": 11.2138,
+            "p": 9.523891731035625e-25
+          },
+          "cr": {
+            "coef": 0.874844,
+            "se": 1.089745,
+            "t": 0.8028,
+            "p": 0.42270287254350775
+          }
+        }
+      },
+      {
+        "label": "abs_rank_shift ~ case_richness + mean_sentence_length",
+        "n": 314,
+        "r_squared": 0.0408,
+        "adj_r_squared": 0.0346,
+        "f_stat": 6.6129,
+        "f_pvalue": 0.0015396519728877772,
+        "coefficients": {
+          "const": {
+            "coef": 29.132245,
+            "se": 7.327936,
+            "t": 3.9755,
+            "p": 8.738063722405264e-05
+          },
+          "cr": {
+            "coef": 0.956948,
+            "se": 1.070356,
+            "t": 0.894,
+            "p": 0.3719881113721389
+          },
+          "msl": {
+            "coef": 1.437602,
+            "se": 0.405683,
+            "t": 3.5437,
+            "p": 0.0004551645521223174
+          }
+        }
+      },
+      {
+        "label": "mean_sentence_length ~ case_richness",
+        "n": 314,
+        "r_squared": 0.0005,
+        "adj_r_squared": -0.0027,
+        "f_stat": 0.1463,
+        "f_pvalue": 0.7023963969008765,
+        "coefficients": {
+          "const": {
+            "coef": 14.490252,
+            "se": 0.610571,
+            "t": 23.7323,
+            "p": 7.364064245194266e-72
+          },
+          "cr": {
+            "coef": -0.057112,
+            "se": 0.149335,
+            "t": -0.3824,
+            "p": 0.7023963969008388
+          }
+        }
+      }
+    ],
+    "group_analysis": [
+      {
+        "case_bin": "none(0)",
+        "n_treebanks": 83,
+        "mean_sentence_length": 14.32,
+        "mean_abs_rank_shift": 56.45,
+        "mean_signed_rank_shift": -16.09,
+        "mean_naive_ddm": 0.3977,
+        "mean_std_ddm": 0.2605,
+        "mean_case_richness": 0.0
+      },
+      {
+        "case_bin": "low(1-3)",
+        "n_treebanks": 104,
+        "mean_sentence_length": 14.41,
+        "mean_abs_rank_shift": 47.73,
+        "mean_signed_rank_shift": -6.35,
+        "mean_naive_ddm": 0.3718,
+        "mean_std_ddm": 0.2578,
+        "mean_case_richness": 2.37
+      },
+      {
+        "case_bin": "medium(4-6)",
+        "n_treebanks": 88,
+        "mean_sentence_length": 14.74,
+        "mean_abs_rank_shift": 50.35,
+        "mean_signed_rank_shift": 5.31,
+        "mean_naive_ddm": 0.3955,
+        "mean_std_ddm": 0.2903,
+        "mean_case_richness": 5.03
+      }
+    ],
+    "kruskal_wallis_tests": {
+      "msl": {
+        "H": 1.2591,
+        "p": 0.7388697981199219,
+        "n_groups": 4
+      },
+      "abs_rank_shift": {
+        "H": 3.1895,
+        "p": 0.36332553612309926,
+        "n_groups": 4
+      },
+      "signed_rank_shift": {
+        "H": 12.7561,
+        "p": 0.0051949009367040265,
+        "n_groups": 4
+      }
+    },
+    "family_analysis": [
+      {
+        "family": "Korean",
+        "n_treebanks": 5,
+        "mean_case_richness": 0.8,
+        "mean_sentence_length": 11.54,
+        "mean_abs_rank_shift": 75.7,
+        "mean_signed_rank_shift": 54.1,
+        "mean_naive_ddm": 0.4303,
+        "mean_std_ddm": 0.3804
+      },
+      {
+        "family": "Japanese",
+        "n_treebanks": 5,
+        "mean_case_richness": 0.0,
+        "mean_sentence_length": 21.79,
+        "mean_abs_rank_shift": 72.6,
+        "mean_signed_rank_shift": -28.2,
+        "mean_naive_ddm": 0.5963,
+        "mean_std_ddm": 0.4355
+      },
+      {
+        "family": "Sino-Tibetan",
+        "n_treebanks": 9,
+        "mean_case_richness": 1.78,
+        "mean_sentence_length": 14.94,
+        "mean_abs_rank_shift": 64.72,
+        "mean_signed_rank_shift": -36.28,
+        "mean_naive_ddm": 0.384,
+        "mean_std_ddm": 0.2408
+      }
+    ],
+    "robustness_n100": [
+      {
+        "label": "[robust] case_richness vs mean_sentence_length",
+        "n": 304,
+        "spearman_rho": -0.0128,
+        "spearman_p": 0.8243097527613886,
+        "spearman_ci95": [
+          -0.1255,
+          0.0995
+        ],
+        "pearson_r": -0.0492,
+        "pearson_p": 0.392389137267586,
+        "pearson_ci95": [
+          -0.1551,
+          0.0565
+        ]
+      },
+      {
+        "label": "[robust] case_richness vs abs_rank_shift",
+        "n": 304,
+        "spearman_rho": 0.0426,
+        "spearman_p": 0.4587832429551337,
+        "spearman_ci95": [
+          -0.0719,
+          0.1564
+        ],
+        "pearson_r": 0.025,
+        "pearson_p": 0.6643350558794305,
+        "pearson_ci95": [
+          -0.0911,
+          0.1446
+        ]
+      },
+      {
+        "label": "[robust] mean_sentence_length vs abs_rank_shift",
+        "n": 304,
+        "spearman_rho": 0.2045,
+        "spearman_p": 0.00033237021065834615,
+        "spearman_ci95": [
+          0.082,
+          0.3202
+        ],
+        "pearson_r": 0.1755,
+        "pearson_p": 0.002135010276190161,
+        "pearson_ci95": [
+          0.0451,
+          0.2987
+        ]
+      }
+    ],
+    "robustness_log_cr": [
+      {
+        "label": "log_case_richness vs msl",
+        "n": 314,
+        "spearman_rho": 0.0179,
+        "spearman_p": 0.7527073959373215,
+        "spearman_ci95": [
+          -0.093,
+          0.1231
+        ],
+        "pearson_r": -0.0015,
+        "pearson_p": 0.9785114599512016,
+        "pearson_ci95": [
+          -0.1125,
+          0.1054
+        ]
+      },
+      {
+        "label": "log_case_richness vs abs_rank_shift",
+        "n": 314,
+        "spearman_rho": 0.0636,
+        "spearman_p": 0.2611532772051511,
+        "spearman_ci95": [
+          -0.0493,
+          0.1756
+        ],
+        "pearson_r": 0.0085,
+        "pearson_p": 0.8803829027476672,
+        "pearson_ci95": [
+          -0.1057,
+          0.1243
+        ]
+      }
+    ],
+    "binary_case_tests": {
+      "msl": {
+        "no_case_mean": 14.3223,
+        "has_case_mean": 14.3066,
+        "n_no_case": 83,
+        "n_has_case": 231,
+        "mann_whitney_U": 9444.5,
+        "mann_whitney_p": 0.8419058235243568
+      },
+      "abs_rank_shift": {
+        "no_case_mean": 56.4518,
+        "has_case_mean": 51.3701,
+        "n_no_case": 83,
+        "n_has_case": 231,
+        "mann_whitney_U": 9919.5,
+        "mann_whitney_p": 0.6392718690953372
+      },
+      "signed_rank_shift": {
+        "no_case_mean": -16.0904,
+        "has_case_mean": 5.7814,
+        "n_no_case": 83,
+        "n_has_case": 231,
+        "mann_whitney_U": 7849.5,
+        "mann_whitney_p": 0.014373088429359655
+      }
+    },
+    "verdict": {
+      "linking_mechanism_supported": false,
+      "mediation_evidence": false,
+      "summary": "Case richness → sentence length: rho=0.0179, p=0.7527073959373215. Sentence length → rank shift: rho=0.2416, p=1.4995436929433582e-05. Mediation evidence: no. Overall: Mechanism NOT supported."
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ud_treebank_summaries",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"iso_code\": \"ab\", \"case_richness\": 0, \"mean_sentence_length\": 7.84, \"naive_ddm\": 0.2992, \"standardized_ddm\": 0.2444}",
+          "output": "{\"naive_rank\": 224, \"std_rank\": 209, \"abs_rank_shift\": 15.0, \"signed_rank_shift\": 15.0}",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_iso_code": "ab",
+          "metadata_case_richness": 0,
+          "metadata_abs_rank_shift": 15.0,
+          "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"iso_code\": \"abq\", \"case_richness\": 0, \"mean_sentence_length\": 4.47, \"naive_ddm\": 0.1144, \"standardized_ddm\": 0.0224}",
+          "output": "{\"naive_rank\": 301, \"std_rank\": 301, \"abs_rank_shift\": 0.0, \"signed_rank_shift\": 0.0}",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_iso_code": "abq",
+          "metadata_case_richness": 0,
+          "metadata_abs_rank_shift": 0.0,
+          "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"iso_code\": \"af\", \"case_richness\": 3, \"mean_sentence_length\": 23.33, \"naive_ddm\": 0.5626, \"standardized_ddm\": 0.3695}",
+          "output": "{\"naive_rank\": 38, \"std_rank\": 104, \"abs_rank_shift\": 66.5, \"signed_rank_shift\": -66.5}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_iso_code": "af",
+          "metadata_case_richness": 3,
+          "metadata_abs_rank_shift": 66.5,
+          "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+        }
+      ]
+    }
+  ]
+}

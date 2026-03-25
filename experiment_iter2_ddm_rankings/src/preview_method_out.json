@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "method_name": "Standardized DDM Rankings Analysis",
+    "description": "Compares naive vs sentence-length-standardized DDM rankings across 314 UD treebanks",
+    "primary_results": {
+      "spearman_rho": 0.6764,
+      "spearman_p": 2.3957055151452515e-43,
+      "cohens_d": 1.0463,
+      "n_treebanks": 314,
+      "mean_abs_rank_shift": 52.71,
+      "max_rank_shift": 277.0
+    },
+    "sensitivity": {
+      "median_ref": {
+        "reference_treebank": "fr_rhapsodie",
+        "spearman_rho_vs_naive": 0.8430041653727076,
+        "spearman_rho_vs_pooled_std": 0.6036568697354922
+      },
+      "written_ref": {
+        "spearman_rho_vs_naive": 0.8613752173654944,
+        "spearman_rho_vs_pooled_std": 0.6328876793674351
+      },
+      "uniform_ref": {
+        "spearman_rho_vs_naive": 0.8934683061998091,
+        "spearman_rho_vs_pooled_std": 0.826628497196687
+      }
+    },
+    "family_shifts_top10": [
+      {
+        "family": "Niger-Congo",
+        "n": 2,
+        "mean_rank_shift": 102.5,
+        "mean_abs_rank_shift": 117.5,
+        "mean_sent_len": 21.29,
+        "mean_case_richness": 3.0
+      },
+      {
+        "family": "Austro-Asiatic",
+        "n": 2,
+        "mean_rank_shift": 89.0,
+        "mean_abs_rank_shift": 106.0,
+        "mean_sent_len": 15.485,
+        "mean_case_richness": 0.0
+      },
+      {
+        "family": "Korean",
+        "n": 5,
+        "mean_rank_shift": -54.1,
+        "mean_abs_rank_shift": 75.7,
+        "mean_sent_len": 11.54,
+        "mean_case_richness": 0.8
+      }
+    ],
+    "linking_mechanism": {
+      "corr_case_sentlen": -0.12801000281202318,
+      "corr_case_rankshift": 0.028111152923116438,
+      "corr_sentlen_rankshift": 0.18672797675980077
+    },
+    "word_order_groups": {
+      "SOV": {
+        "n": 54,
+        "mean_naive_ddm": 0.37405740740740745,
+        "mean_std_ddm": 0.2667444444444444,
+        "mean_rank_shift": -5.444444444444445,
+        "mean_abs_rank_shift": 49.18518518518518
+      },
+      "unknown": {
+        "n": 110,
+        "mean_naive_ddm": 0.33382909090909085,
+        "mean_std_ddm": 0.2399418181818182,
+        "mean_rank_shift": -11.327272727272728,
+        "mean_abs_rank_shift": 49.663636363636364
+      },
+      "SVO": {
+        "n": 121,
+        "mean_naive_ddm": 0.448994214876033,
+        "mean_std_ddm": 0.31950082644628097,
+        "mean_rank_shift": 12.652892561983471,
+        "mean_abs_rank_shift": 59.710743801652896
+      },
+      "VSO": {
+        "n": 11,
+        "mean_naive_ddm": 0.3564090909090909,
+        "mean_std_ddm": 0.21997272727272724,
+        "mean_rank_shift": 30.363636363636363,
+        "mean_abs_rank_shift": 56.45454545454545
+      },
+      "No dominant order": {
+        "n": 18,
+        "mean_naive_ddm": 0.35988333333333333,
+        "mean_std_ddm": 0.2772833333333333,
+        "mean_rank_shift": -18.055555555555557,
+        "mean_abs_rank_shift": 32.611111111111114
+      }
+    },
+    "case_richness_groups": {
+      "0": {
+        "n": 94,
+        "mean_naive_ddm": 0.4019521276595745,
+        "mean_std_ddm": 0.2611851063829787,
+        "mean_rank_shift": 20.122340425531913,
+        "mean_abs_rank_shift": 60.069148936170215
+      },
+      "1-3": {
+        "n": 93,
+        "mean_naive_ddm": 0.3644204301075269,
+        "mean_std_ddm": 0.2567311827956989,
+        "mean_rank_shift": 1.118279569892473,
+        "mean_abs_rank_shift": 43.043010752688176
+      },
+      "4-6": {
+        "n": 88,
+        "mean_naive_ddm": 0.39552500000000007,
+        "mean_std_ddm": 0.2903454545454546,
+        "mean_rank_shift": -5.3125,
+        "mean_abs_rank_shift": 50.34659090909091
+      },
+      "7+": {
+        "n": 39,
+        "mean_naive_ddm": 0.38887692307692306,
+        "mean_std_ddm": 0.3305230769230769,
+        "mean_rank_shift": -39.17948717948718,
+        "mean_abs_rank_shift": 63.38461538461539
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ud_treebank_summaries",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"language_family\": \"Northwest Caucasian\", \"word_order\": \"SOV\", \"case_richness\": 0, \"n_sentences\": 1316, \"mean_sentence_length\": 7.84}",
+          "output": "{\"naive_ddm\": 0.2992, \"standardized_ddm\": 0.2444, \"naive_rank\": 224, \"std_rank\": 209, \"rank_shift\": -15, \"median_ref_std_ddm\": 0.33744531610690465, \"written_ref_std_ddm\": 0.33612966310766085, \"uniform...",
+          "predict_standardized_ddm": "{\"std_rank\": 209, \"standardized_ddm\": 0.2444, \"rank_shift\": -15}",
+          "predict_naive_ddm": "{\"naive_rank\": 224, \"naive_ddm\": 0.2992}",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_naive_rank": 224,
+          "metadata_std_rank": 209,
+          "metadata_rank_shift": -15,
+          "metadata_language_family": "Northwest Caucasian",
+          "metadata_word_order": "SOV"
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"language_family\": null, \"word_order\": null, \"case_richness\": 0, \"n_sentences\": 98, \"mean_sentence_length\": 4.47}",
+          "output": "{\"naive_ddm\": 0.1144, \"standardized_ddm\": 0.0224, \"naive_rank\": 301, \"std_rank\": 301, \"rank_shift\": 0, \"median_ref_std_ddm\": 0.11478220907521158, \"written_ref_std_ddm\": 0.11243577090887244, \"uniform_r...",
+          "predict_standardized_ddm": "{\"std_rank\": 301, \"standardized_ddm\": 0.0224, \"rank_shift\": 0}",
+          "predict_naive_ddm": "{\"naive_rank\": 301, \"naive_ddm\": 0.1144}",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_naive_rank": 301,
+          "metadata_std_rank": 301,
+          "metadata_rank_shift": 0,
+          "metadata_language_family": null,
+          "metadata_word_order": null
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"language_family\": null, \"word_order\": null, \"case_richness\": 3, \"n_sentences\": 1934, \"mean_sentence_length\": 23.33}",
+          "output": "{\"naive_ddm\": 0.5626, \"standardized_ddm\": 0.3695, \"naive_rank\": 38, \"std_rank\": 104, \"rank_shift\": 66, \"median_ref_std_ddm\": 0.40963765292798876, \"written_ref_std_ddm\": 0.4158327643839838, \"uniform_re...",
+          "predict_standardized_ddm": "{\"std_rank\": 104, \"standardized_ddm\": 0.3695, \"rank_shift\": 66}",
+          "predict_naive_ddm": "{\"naive_rank\": 38, \"naive_ddm\": 0.5626}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_naive_rank": 38,
+          "metadata_std_rank": 104,
+          "metadata_rank_shift": 66,
+          "metadata_language_family": null,
+          "metadata_word_order": null
+        }
+      ]
+    }
+  ]
+}

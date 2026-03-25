@@ -1,0 +1,13 @@
+[project]
+name = "exp-id5-it2"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy==2.4.3",
+    "pandas==3.0.1",
+    "scipy==1.17.1",
+    "lifelines==0.30.0",
+    "scikit-learn==1.8.0",
+    "loguru==0.7.3",
+    "psutil==7.2.2",
+]

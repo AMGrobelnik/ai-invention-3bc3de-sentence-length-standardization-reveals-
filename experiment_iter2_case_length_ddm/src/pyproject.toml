@@ -1,0 +1,15 @@
+[project]
+name = "exp-id3-it2-opus"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy==2.4.3",
+    "scipy==1.17.1",
+    "pandas==3.0.1",
+    "six==1.17.0",
+    "patsy==1.0.2",
+    "statsmodels==0.14.6",
+    "packaging==26.0",
+    "python-dateutil==2.9.0.post0",
+    "loguru==0.7.3",
+]

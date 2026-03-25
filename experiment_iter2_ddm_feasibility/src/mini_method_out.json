@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "method_name": "DDM_length_standardization_feasibility",
+    "description": "Feasibility check for inter-treebank DDM(n) variance at fixed sentence lengths",
+    "target_lengths": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "bin_half_width": 2,
+    "min_sentences": 10,
+    "num_treebanks": 20,
+    "num_sentences_total": 305012,
+    "spearman_rho_naive_vs_std": 0.554887,
+    "spearman_p_value": 0.011103504265934592,
+    "max_rank_change": 14,
+    "mean_pairwise_kl": 0.86242,
+    "feasibility_verdict": "PASS",
+    "feasibility_reason": "Meaningful DDM(n) variation across treebanks (mean CV=0.1264), diverse P(n) distributions (mean KL=0.8624), standardization changes rankings (rho=0.5549, max rank change=14)",
+    "variance_stats_by_n": {
+      "5": {
+        "mean": 0.17709891052808358,
+        "std": 0.06575508878590108,
+        "cv": 0.37129019365409327,
+        "min": 0.05855397148676167,
+        "max": 0.3216000000000001,
+        "range": 0.26304602851323844,
+        "num_treebanks": 20
+      },
+      "10": {
+        "mean": 0.36568743403355014,
+        "std": 0.04937849786109794,
+        "cv": 0.13502924428233892,
+        "min": 0.29359462892397015,
+        "max": 0.47676767676767695,
+        "range": 0.1831730478437068,
+        "num_treebanks": 20
+      },
+      "15": {
+        "mean": 0.4795348525662929,
+        "std": 0.04244037136100248,
+        "cv": 0.08850320499933911,
+        "min": 0.4012755102040817,
+        "max": 0.5954569327731093,
+        "range": 0.1941814225690276,
+        "num_treebanks": 20
+      },
+      "20": {
+        "mean": 0.5524750709494286,
+        "std": 0.03363017446403451,
+        "cv": 0.06087184061760659,
+        "min": 0.4865936026506945,
+        "max": 0.6376172090457805,
+        "range": 0.15102360639508594,
+        "num_treebanks": 20
+      },
+      "25": {
+        "mean": 0.609440323415333,
+        "std": 0.03228646140333732,
+        "cv": 0.05297723199935709,
+        "min": 0.5384615384615385,
+        "max": 0.6917575583620361,
+        "range": 0.15329601990049757,
+        "num_treebanks": 20
+      },
+      "30": {
+        "mean": 0.6484090660639356,
+        "std": 0.032279565717742494,
+        "cv": 0.049782718051261186,
+        "min": 0.5765616767168198,
+        "max": 0.7238164434471185,
+        "range": 0.1472547667302987,
+        "num_treebanks": 20
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ud_ddm_feasibility",
+      "examples": [
+        {
+          "input": "treebank=ar_padt",
+          "output": "{\"naive_ddm\": 0.729603, \"standardized_ddm\": 0.516023, \"ddm_at_target_lengths\": {\"5\": 0.179924, \"10\": 0.445946, \"15\": 0.505925, \"20\": 0.564649, \"25\": 0.626308, \"30\": 0.64576}, \"naive_rank\": 20, \"standardized_rank\": 18, \"rank_change\": -2}",
+          "metadata_treebank_id": "ar_padt",
+          "predict_naive_ddm": "0.729603",
+          "predict_standardized_ddm": "0.516023"
+        },
+        {
+          "input": "treebank=cs_cac",
+          "output": "{\"naive_ddm\": 0.573757, \"standardized_ddm\": 0.470533, \"ddm_at_target_lengths\": {\"5\": 0.058554, \"10\": 0.339345, \"15\": 0.463763, \"20\": 0.544307, \"25\": 0.612455, \"30\": 0.651673}, \"naive_rank\": 10, \"standardized_rank\": 6, \"rank_change\": -4}",
+          "metadata_treebank_id": "cs_cac",
+          "predict_naive_ddm": "0.573757",
+          "predict_standardized_ddm": "0.470533"
+        },
+        {
+          "input": "treebank=de_gsd",
+          "output": "{\"naive_ddm\": 0.49376, \"standardized_ddm\": 0.429311, \"ddm_at_target_lengths\": {\"5\": 0.166896, \"10\": 0.293595, \"15\": 0.401276, \"20\": 0.486594, \"25\": 0.538462, \"30\": 0.576562}, \"naive_rank\": 5, \"standardized_rank\": 1, \"rank_change\": -4}",
+          "metadata_treebank_id": "de_gsd",
+          "predict_naive_ddm": "0.49376",
+          "predict_standardized_ddm": "0.429311"
+        }
+      ]
+    }
+  ]
+}

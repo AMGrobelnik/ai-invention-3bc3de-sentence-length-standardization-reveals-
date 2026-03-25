@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "method_name": "DDM_length_standardization_feasibility",
+    "description": "Feasibility check for inter-treebank DDM(n) variance at fixed sentence lengths",
+    "target_lengths": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "bin_half_width": 2,
+    "min_sentences": 10,
+    "num_treebanks": 20,
+    "num_sentences_total": 305012,
+    "spearman_rho_naive_vs_std": 0.554887,
+    "spearman_p_value": 0.011103504265934592,
+    "max_rank_change": 14,
+    "mean_pairwise_kl": 0.86242,
+    "feasibility_verdict": "PASS",
+    "feasibility_reason": "Meaningful DDM(n) variation across treebanks (mean CV=0.1264), diverse P(n) distributions (mean KL=0.8624), standardization changes rankings (rho=0.5549, max rank change=14)",
+    "variance_stats_by_n": {
+      "5": {
+        "mean": 0.17709891052808358,
+        "std": 0.06575508878590108,
+        "cv": 0.37129019365409327,
+        "min": 0.05855397148676167,
+        "max": 0.3216000000000001,
+        "range": 0.26304602851323844,
+        "num_treebanks": 20
+      },
+      "10": {
+        "mean": 0.36568743403355014,
+        "std": 0.04937849786109794,
+        "cv": 0.13502924428233892,
+        "min": 0.29359462892397015,
+        "max": 0.47676767676767695,
+        "range": 0.1831730478437068,
+        "num_treebanks": 20
+      },
+      "15": {
+        "mean": 0.4795348525662929,
+        "std": 0.04244037136100248,
+        "cv": 0.08850320499933911,
+        "min": 0.4012755102040817,
+        "max": 0.5954569327731093,
+        "range": 0.1941814225690276,
+        "num_treebanks": 20
+      },
+      "20": {
+        "mean": 0.5524750709494286,
+        "std": 0.03363017446403451,
+        "cv": 0.06087184061760659,
+        "min": 0.4865936026506945,
+        "max": 0.6376172090457805,
+        "range": 0.15102360639508594,
+        "num_treebanks": 20
+      },
+      "25": {
+        "mean": 0.609440323415333,
+        "std": 0.03228646140333732,
+        "cv": 0.05297723199935709,
+        "min": 0.5384615384615385,
+        "max": 0.6917575583620361,
+        "range": 0.15329601990049757,
+        "num_treebanks": 20
+      },
+      "30": {
+        "mean": 0.6484090660639356,
+        "std": 0.032279565717742494,
+        "cv": 0.049782718051261186,
+        "min": 0.5765616767168198,
+        "max": 0.7238164434471185,
+        "range": 0.1472547667302987,
+        "num_treebanks": 20
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ud_ddm_feasibility",
+      "examples": [
+        {
+          "input": "treebank=ar_padt",
+          "output": "{\"naive_ddm\": 0.729603, \"standardized_ddm\": 0.516023, \"ddm_at_target_lengths\": {\"5\": 0.179924, \"10\": 0.445946, \"15\": 0.505925, \"20\": 0.564649, \"25\": 0.626308, \"30\": 0.64576}, \"naive_rank\": 20, \"standardized_rank\": 18, \"rank_change\": -2}",
+          "metadata_treebank_id": "ar_padt",
+          "predict_naive_ddm": "0.729603",
+          "predict_standardized_ddm": "0.516023"
+        },
+        {
+          "input": "treebank=cs_cac",
+          "output": "{\"naive_ddm\": 0.573757, \"standardized_ddm\": 0.470533, \"ddm_at_target_lengths\": {\"5\": 0.058554, \"10\": 0.339345, \"15\": 0.463763, \"20\": 0.544307, \"25\": 0.612455, \"30\": 0.651673}, \"naive_rank\": 10, \"standardized_rank\": 6, \"rank_change\": -4}",
+          "metadata_treebank_id": "cs_cac",
+          "predict_naive_ddm": "0.573757",
+          "predict_standardized_ddm": "0.470533"
+        },
+        {
+          "input": "treebank=de_gsd",
+          "output": "{\"naive_ddm\": 0.49376, \"standardized_ddm\": 0.429311, \"ddm_at_target_lengths\": {\"5\": 0.166896, \"10\": 0.293595, \"15\": 0.401276, \"20\": 0.486594, \"25\": 0.538462, \"30\": 0.576562}, \"naive_rank\": 5, \"standardized_rank\": 1, \"rank_change\": -4}",
+          "metadata_treebank_id": "de_gsd",
+          "predict_naive_ddm": "0.49376",
+          "predict_standardized_ddm": "0.429311"
+        },
+        {
+          "input": "treebank=en_ewt",
+          "output": "{\"naive_ddm\": 0.519934, \"standardized_ddm\": 0.458524, \"ddm_at_target_lengths\": {\"5\": 0.109928, \"10\": 0.306908, \"15\": 0.441542, \"20\": 0.532461, \"25\": 0.59575, \"30\": 0.645894}, \"naive_rank\": 7, \"standardized_rank\": 3, \"rank_change\": -4}",
+          "metadata_treebank_id": "en_ewt",
+          "predict_naive_ddm": "0.519934",
+          "predict_standardized_ddm": "0.458524"
+        },
+        {
+          "input": "treebank=es_ancora",
+          "output": "{\"naive_ddm\": 0.693997, \"standardized_ddm\": 0.480877, \"ddm_at_target_lengths\": {\"5\": 0.09058, \"10\": 0.325639, \"15\": 0.473478, \"20\": 0.558792, \"25\": 0.621249, \"30\": 0.660935}, \"naive_rank\": 18, \"standardized_rank\": 9, \"rank_change\": -9}",
+          "metadata_treebank_id": "es_ancora",
+          "predict_naive_ddm": "0.693997",
+          "predict_standardized_ddm": "0.480877"
+        },
+        {
+          "input": "treebank=eu_bdt",
+          "output": "{\"naive_ddm\": 0.461315, \"standardized_ddm\": 0.45841, \"ddm_at_target_lengths\": {\"5\": 0.191952, \"10\": 0.370614, \"15\": 0.461066, \"20\": 0.539481, \"25\": 0.584435, \"30\": 0.625401}, \"naive_rank\": 3, \"standardized_rank\": 2, \"rank_change\": -1}",
+          "metadata_treebank_id": "eu_bdt",
+          "predict_naive_ddm": "0.461315",
+          "predict_standardized_ddm": "0.45841"
+        },
+        {
+          "input": "treebank=fi_tdt",
+          "output": "{\"naive_ddm\": 0.45412, \"standardized_ddm\": 0.458791, \"ddm_at_target_lengths\": {\"5\": 0.132249, \"10\": 0.320925, \"15\": 0.440809, \"20\": 0.540795, \"25\": 0.594121, \"30\": 0.636474}, \"naive_rank\": 2, \"standardized_rank\": 4, \"rank_change\": 2}",
+          "metadata_treebank_id": "fi_tdt",
+          "predict_naive_ddm": "0.45412",
+          "predict_standardized_ddm": "0.458791"
+        },
+        {
+          "input": "treebank=fr_gsd",
+          "output": "{\"naive_ddm\": 0.643937, \"standardized_ddm\": 0.506903, \"ddm_at_target_lengths\": {\"5\": 0.162037, \"10\": 0.360901, \"15\": 0.494599, \"20\": 0.578175, \"25\": 0.634262, \"30\": 0.677355}, \"naive_rank\": 15, \"standardized_rank\": 17, \"rank_change\": 2}",
+          "metadata_treebank_id": "fr_gsd",
+          "predict_naive_ddm": "0.643937",
+          "predict_standardized_ddm": "0.506903"
+        },
+        {
+          "input": "treebank=he_htb",
+          "output": "{\"naive_ddm\": 0.646396, \"standardized_ddm\": 0.485484, \"ddm_at_target_lengths\": {\"5\": 0.151639, \"10\": 0.32227, \"15\": 0.479222, \"20\": 0.555552, \"25\": 0.629564, \"30\": 0.662235}, \"naive_rank\": 16, \"standardized_rank\": 10, \"rank_change\": -6}",
+          "metadata_treebank_id": "he_htb",
+          "predict_naive_ddm": "0.646396",
+          "predict_standardized_ddm": "0.485484"
+        },
+        {
+          "input": "treebank=hi_hdtb",
+          "output": "{\"naive_ddm\": 0.560156, \"standardized_ddm\": 0.488138, \"ddm_at_target_lengths\": {\"5\": 0.235577, \"10\": 0.388039, \"15\": 0.461533, \"20\": 0.525981, \"25\": 0.573376, \"30\": 0.615319}, \"naive_rank\": 9, \"standardized_rank\": 11, \"rank_change\": 2}",
+          "metadata_treebank_id": "hi_hdtb",
+          "predict_naive_ddm": "0.560156",
+          "predict_standardized_ddm": "0.488138"
+        },
+        {
+          "input": "treebank=hu_szeged",
+          "output": "{\"naive_ddm\": 0.57815, \"standardized_ddm\": 0.465836, \"ddm_at_target_lengths\": {\"5\": 0.25, \"10\": 0.373308, \"15\": 0.452927, \"20\": 0.508297, \"25\": 0.583934, \"30\": 0.633059}, \"naive_rank\": 11, \"standardized_rank\": 5, \"rank_change\": -6}",
+          "metadata_treebank_id": "hu_szeged",
+          "predict_naive_ddm": "0.57815",
+          "predict_standardized_ddm": "0.465836"
+        },
+        {
+          "input": "treebank=it_isdt",
+          "output": "{\"naive_ddm\": 0.612793, \"standardized_ddm\": 0.490417, \"ddm_at_target_lengths\": {\"5\": 0.124694, \"10\": 0.351159, \"15\": 0.487297, \"20\": 0.573514, \"25\": 0.632296, \"30\": 0.669562}, \"naive_rank\": 14, \"standardized_rank\": 12, \"rank_change\": -2}",
+          "metadata_treebank_id": "it_isdt",
+          "predict_naive_ddm": "0.612793",
+          "predict_standardized_ddm": "0.490417"
+        },
+        {
+          "input": "treebank=ja_gsd",
+          "output": "{\"naive_ddm\": 0.694153, \"standardized_ddm\": 0.56754, \"ddm_at_target_lengths\": {\"5\": 0.237069, \"10\": 0.442835, \"15\": 0.563077, \"20\": 0.637617, \"25\": 0.691758, \"30\": 0.723816}, \"naive_rank\": 19, \"standardized_rank\": 20, \"rank_change\": 1}",
+          "metadata_treebank_id": "ja_gsd",
+          "predict_naive_ddm": "0.694153",
+          "predict_standardized_ddm": "0.56754"
+        },
+        {
+          "input": "treebank=ko_gsd",
+          "output": "{\"naive_ddm\": 0.493406, \"standardized_ddm\": 0.495299, \"ddm_at_target_lengths\": {\"5\": 0.219083, \"10\": 0.424688, \"15\": 0.515253, \"20\": 0.558984, \"25\": 0.593483, \"30\": 0.608432}, \"naive_rank\": 4, \"standardized_rank\": 14, \"rank_change\": 10}",
+          "metadata_treebank_id": "ko_gsd",
+          "predict_naive_ddm": "0.493406",
+          "predict_standardized_ddm": "0.495299"
+        },
+        {
+          "input": "treebank=pl_pdb",
+          "output": "{\"naive_ddm\": 0.513785, \"standardized_ddm\": 0.475938, \"ddm_at_target_lengths\": {\"5\": 0.107292, \"10\": 0.333844, \"15\": 0.469723, \"20\": 0.556517, \"25\": 0.613001, \"30\": 0.664361}, \"naive_rank\": 6, \"standardized_rank\": 8, \"rank_change\": 2}",
+          "metadata_treebank_id": "pl_pdb",
+          "predict_naive_ddm": "0.513785",
+          "predict_standardized_ddm": "0.475938"
+        },
+        {
+          "input": "treebank=pt_bosque",
+          "output": "{\"naive_ddm\": 0.65066, \"standardized_ddm\": 0.492898, \"ddm_at_target_lengths\": {\"5\": 0.148148, \"10\": 0.346732, \"15\": 0.477786, \"20\": 0.565813, \"25\": 0.631362, \"30\": 0.6778}, \"naive_rank\": 17, \"standardized_rank\": 13, \"rank_change\": -4}",
+          "metadata_treebank_id": "pt_bosque",
+          "predict_naive_ddm": "0.65066",
+          "predict_standardized_ddm": "0.492898"
+        },
+        {
+          "input": "treebank=ru_syntagrus",
+          "output": "{\"naive_ddm\": 0.53754, \"standardized_ddm\": 0.47541, \"ddm_at_target_lengths\": {\"5\": 0.142602, \"10\": 0.333856, \"15\": 0.459884, \"20\": 0.544655, \"25\": 0.605361, \"30\": 0.649366}, \"naive_rank\": 8, \"standardized_rank\": 7, \"rank_change\": -1}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "predict_naive_ddm": "0.53754",
+          "predict_standardized_ddm": "0.47541"
+        },
+        {
+          "input": "treebank=ta_ttb",
+          "output": "{\"naive_ddm\": 0.584456, \"standardized_ddm\": 0.540533, \"ddm_at_target_lengths\": {\"5\": 0.3216, \"10\": 0.476768, \"15\": 0.595457, \"20\": 0.614772, \"25\": 0.650962, \"30\": 0.694427}, \"naive_rank\": 13, \"standardized_rank\": 19, \"rank_change\": 6}",
+          "metadata_treebank_id": "ta_ttb",
+          "predict_naive_ddm": "0.584456",
+          "predict_standardized_ddm": "0.540533"
+        },
+        {
+          "input": "treebank=tr_imst",
+          "output": "{\"naive_ddm\": 0.452776, \"standardized_ddm\": 0.496012, \"ddm_at_target_lengths\": {\"5\": 0.248714, \"10\": 0.411338, \"15\": 0.505062, \"20\": 0.556029, \"25\": 0.606771, \"30\": 0.638814}, \"naive_rank\": 1, \"standardized_rank\": 15, \"rank_change\": 14}",
+          "metadata_treebank_id": "tr_imst",
+          "predict_naive_ddm": "0.452776",
+          "predict_standardized_ddm": "0.496012"
+        },
+        {
+          "input": "treebank=zh_gsd",
+          "output": "{\"naive_ddm\": 0.579378, \"standardized_ddm\": 0.496164, \"ddm_at_target_lengths\": {\"5\": 0.263441, \"10\": 0.345041, \"15\": 0.441018, \"20\": 0.506519, \"25\": 0.569899, \"30\": 0.610937}, \"naive_rank\": 12, \"standardized_rank\": 16, \"rank_change\": 4}",
+          "metadata_treebank_id": "zh_gsd",
+          "predict_naive_ddm": "0.579378",
+          "predict_standardized_ddm": "0.496164"
+        }
+      ]
+    }
+  ]
+}

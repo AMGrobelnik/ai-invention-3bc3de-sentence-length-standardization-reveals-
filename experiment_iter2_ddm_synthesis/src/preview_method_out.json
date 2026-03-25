@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "method_name": "comprehensive_results_synthesis",
+    "description": "Bootstrap CI analysis of DDM standardization, Cox PH for case vs word order, and linking mechanism",
+    "n_bootstrap": 1000,
+    "results": {
+      "summary": {
+        "criterion_1_standardization": false,
+        "criterion_2_cox_case_vs_wo": false,
+        "criterion_3_linking_mechanism": true,
+        "overall_confirmed": false
+      },
+      "standardization_analysis": {
+        "criterion_1_rho": {
+          "value": 0.6764441906881171,
+          "p_value": 2.3957055151452515e-43,
+          "ci_95": [
+            0.5988870672340437,
+            0.7429453106291686
+          ],
+          "threshold": "< 0.85",
+          "pass": true
+        },
+        "criterion_1_cohens_d": {
+          "value": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "threshold": "> 0.5",
+          "pass": false
+        },
+        "mean_absolute_rank_shift": 52.71337579617835,
+        "n_treebanks": 314
+      },
+      "cox_analysis": {
+        "criterion_2_case_hr": {
+          "value": 1.002768147629208,
+          "ci_95": [
+            0.9942416429169345,
+            1.0102277299732505
+          ],
+          "p_value": 0.12227501313320979
+        },
+        "criterion_2_wo_max_hr": {
+          "value": 0.49871496511386454,
+          "ci_95": [
+            0.4317865568352504,
+            0.5767591266156821
+          ],
+          "p_value": 6.552494335867988e-98,
+          "word_order_variable": "wo_No dominant order"
+        },
+        "criterion_2_case_gt_wo": {
+          "case_effect_larger": false,
+          "case_p_lt_001": false,
+          "pass": false
+        },
+        "ph_assumption_holds": true,
+        "n_observations": 50000,
+        "n_bootstrap_successful": 1000,
+        "model": "Cox PH (penalizer=0.01)"
+      },
+      "linking_analysis": {
+        "criterion_3_linking": {
+          "corr_case_sentlen": {
+            "value": 0.14668237683126548,
+            "p_value": 0.05413583667930157,
+            "ci_95": [
+              0.0028153014441306716,
+              0.2990966783735541
+            ]
+          },
+          "corr_case_rankshift": {
+            "value": 0.13964171592240573,
+            "p_value": 0.0668958464922647,
+            "ci_95": [
+              -0.0033479060126308958,
+              0.2727621278556481
+            ]
+          },
+          "corr_sentlen_rankshift": {
+            "value": 0.40095196398354244,
+            "p_value": 4.5880174446162264e-08,
+            "ci_95": [
+              0.2634977406663013,
+              0.5336720326452365
+            ]
+          },
+          "all_positive": true,
+          "any_significant": true,
+          "pass": true
+        },
+        "n_languages": 173
+      },
+      "baseline": {
+        "method": "naive_ddm_ranking",
+        "description": "Baseline using naive (unstandardized) DDM — assumes sentence length has no confounding effect",
+        "mean_naive_ddm": 0.38741082802547766,
+        "std_naive_ddm": 0.14594669147119732,
+        "n_treebanks": 314
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ud_treebank_summaries",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"iso_code\": \"ab\", \"word_order\": \"SOV\", \"case_richness\": 0, \"naive_ddm\": 0.2992, \"standardized_ddm\": 0.2444}",
+          "output": "{\"naive_rank\": 224, \"standardized_rank\": 209, \"rank_shift\": 15}",
+          "predict_baseline": "{\"rank\": 224}",
+          "predict_our_method": "{\"rank\": 209}",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_word_order": "SOV",
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"iso_code\": \"abq\", \"word_order\": NaN, \"case_richness\": 0, \"naive_ddm\": 0.1144, \"standardized_ddm\": 0.0224}",
+          "output": "{\"naive_rank\": 301, \"standardized_rank\": 301, \"rank_shift\": 0}",
+          "predict_baseline": "{\"rank\": 301}",
+          "predict_our_method": "{\"rank\": 301}",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"iso_code\": \"af\", \"word_order\": NaN, \"case_richness\": 3, \"naive_ddm\": 0.5626, \"standardized_ddm\": 0.3695}",
+          "output": "{\"naive_rank\": 38, \"standardized_rank\": 104, \"rank_shift\": -66}",
+          "predict_baseline": "{\"rank\": 38}",
+          "predict_our_method": "{\"rank\": 104}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_word_order": NaN,
+          "metadata_case_richness": 3
+        }
+      ]
+    }
+  ]
+}
