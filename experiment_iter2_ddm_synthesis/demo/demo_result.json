@@ -1,0 +1,13 @@
+{
+  "id": "exp_id5_it2__opus",
+  "type": "code",
+  "title": "DDM Synthesis",
+  "summary": "Demonstrates the DDM (Dependency Distance Minimization) comprehensive results synthesis. Loads 25 treebank examples with naive/standardized DDM values, runs two analyses with bootstrap CIs: (1) standardization ranking divergence (Spearman \u03c1, Cohen's d), (2) linking mechanism correlation between case richness and rank shifts. Visualizes naive vs standardized DDM scatter, rank shifts by word order, and case richness vs rank shift magnitude.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_2/gen_art/exp_id5_it2__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id5_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id5_it2__opus/method_code_demo.ipynb"
+}

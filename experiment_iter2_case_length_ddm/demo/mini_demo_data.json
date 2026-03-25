@@ -1,0 +1,454 @@
+{
+  "examples": [
+    {
+      "input": "{\"treebank_id\": \"ab_abnc\", \"iso_code\": \"ab\", \"case_richness\": 0, \"mean_sentence_length\": 7.84, \"naive_ddm\": 0.2992, \"standardized_ddm\": 0.2444}",
+      "output": "{\"naive_rank\": 224, \"std_rank\": 209, \"abs_rank_shift\": 15.0, \"signed_rank_shift\": 15.0}",
+      "metadata_treebank_id": "ab_abnc",
+      "metadata_iso_code": "ab",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 15.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"akk_riao\", \"iso_code\": \"akk\", \"case_richness\": 3, \"mean_sentence_length\": 10.27, \"naive_ddm\": 0.3187, \"standardized_ddm\": 0.2954}",
+      "output": "{\"naive_rank\": 212, \"std_rank\": 172, \"abs_rank_shift\": 40.0, \"signed_rank_shift\": 40.0}",
+      "metadata_treebank_id": "akk_riao",
+      "metadata_iso_code": "akk",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 40.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ar_pud\", \"iso_code\": \"ar\", \"case_richness\": 3, \"mean_sentence_length\": 19.74, \"naive_ddm\": 0.5273, \"standardized_ddm\": 0.3434}",
+      "output": "{\"naive_rank\": 61, \"std_rank\": 136, \"abs_rank_shift\": 75.0, \"signed_rank_shift\": -75.0}",
+      "metadata_treebank_id": "ar_pud",
+      "metadata_iso_code": "ar",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 75.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"be_hse\", \"iso_code\": \"be\", \"case_richness\": 7, \"mean_sentence_length\": 12.32, \"naive_ddm\": 0.3523, \"standardized_ddm\": 0.4059}",
+      "output": "{\"naive_rank\": 192, \"std_rank\": 47, \"abs_rank_shift\": 145.0, \"signed_rank_shift\": 145.0}",
+      "metadata_treebank_id": "be_hse",
+      "metadata_iso_code": "be",
+      "metadata_case_richness": 7,
+      "metadata_abs_rank_shift": 145.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"high(7+)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"bor_bdt\", \"iso_code\": \"bor\", \"case_richness\": 0, \"mean_sentence_length\": 7.75, \"naive_ddm\": 0.2797, \"standardized_ddm\": 0.4194}",
+      "output": "{\"naive_rank\": 236, \"std_rank\": 27, \"abs_rank_shift\": 209.0, \"signed_rank_shift\": 209.0}",
+      "metadata_treebank_id": "bor_bdt",
+      "metadata_iso_code": "bor",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 209.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ckt_hse\", \"iso_code\": \"ckt\", \"case_richness\": 0, \"mean_sentence_length\": 5.98, \"naive_ddm\": 0.1872, \"standardized_ddm\": 0.1197}",
+      "output": "{\"naive_rank\": 285, \"std_rank\": 251, \"abs_rank_shift\": 34.0, \"signed_rank_shift\": 34.0}",
+      "metadata_treebank_id": "ckt_hse",
+      "metadata_iso_code": "ckt",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 34.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"cs_fictree\", \"iso_code\": \"cs\", \"case_richness\": 4, \"mean_sentence_length\": 13.16, \"naive_ddm\": 0.3134, \"standardized_ddm\": 0.3399}",
+      "output": "{\"naive_rank\": 217, \"std_rank\": 141, \"abs_rank_shift\": 76.0, \"signed_rank_shift\": 76.0}",
+      "metadata_treebank_id": "cs_fictree",
+      "metadata_iso_code": "cs",
+      "metadata_case_richness": 4,
+      "metadata_abs_rank_shift": 76.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"cy_ccg\", \"iso_code\": \"cy\", \"case_richness\": 0, \"mean_sentence_length\": 19.21, \"naive_ddm\": 0.4978, \"standardized_ddm\": 0.3847}",
+      "output": "{\"naive_rank\": 83, \"std_rank\": 82, \"abs_rank_shift\": 1.0, \"signed_rank_shift\": 1.0}",
+      "metadata_treebank_id": "cy_ccg",
+      "metadata_iso_code": "cy",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 1.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"egy_ujaen\", \"iso_code\": \"egy\", \"case_richness\": 5, \"mean_sentence_length\": 9.82, \"naive_ddm\": 0.3907, \"standardized_ddm\": 0.4086}",
+      "output": "{\"naive_rank\": 162, \"std_rank\": 40, \"abs_rank_shift\": 121.5, \"signed_rank_shift\": 121.5}",
+      "metadata_treebank_id": "egy_ujaen",
+      "metadata_iso_code": "egy",
+      "metadata_case_richness": 5,
+      "metadata_abs_rank_shift": 121.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"eme_tudet\", \"iso_code\": \"eme\", \"case_richness\": 2, \"mean_sentence_length\": 4.1, \"naive_ddm\": 0.1093, \"standardized_ddm\": 0.0586}",
+      "output": "{\"naive_rank\": 303, \"std_rank\": 274, \"abs_rank_shift\": 29.0, \"signed_rank_shift\": 29.0}",
+      "metadata_treebank_id": "eme_tudet",
+      "metadata_iso_code": "eme",
+      "metadata_case_richness": 2,
+      "metadata_abs_rank_shift": 29.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"en_gentle\", \"iso_code\": \"en\", \"case_richness\": 2, \"mean_sentence_length\": 11.68, \"naive_ddm\": 0.3093, \"standardized_ddm\": 0.3013}",
+      "output": "{\"naive_rank\": 220, \"std_rank\": 168, \"abs_rank_shift\": 52.0, \"signed_rank_shift\": 52.0}",
+      "metadata_treebank_id": "en_gentle",
+      "metadata_iso_code": "en",
+      "metadata_case_richness": 2,
+      "metadata_abs_rank_shift": 52.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"en_pronouns\", \"iso_code\": \"en\", \"case_richness\": 0, \"mean_sentence_length\": 5.91, \"naive_ddm\": 0.2668, \"standardized_ddm\": 0.0977}",
+      "output": "{\"naive_rank\": 246, \"std_rank\": 258, \"abs_rank_shift\": 12.0, \"signed_rank_shift\": -12.0}",
+      "metadata_treebank_id": "en_pronouns",
+      "metadata_iso_code": "en",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 12.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"es_pud\", \"iso_code\": \"es\", \"case_richness\": 4, \"mean_sentence_length\": 22.37, \"naive_ddm\": 0.5771, \"standardized_ddm\": 0.3449}",
+      "output": "{\"naive_rank\": 29, \"std_rank\": 135, \"abs_rank_shift\": 106.0, \"signed_rank_shift\": -106.0}",
+      "metadata_treebank_id": "es_pud",
+      "metadata_iso_code": "es",
+      "metadata_case_richness": 4,
+      "metadata_abs_rank_shift": 106.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"fa_seraji\", \"iso_code\": \"fa\", \"case_richness\": 2, \"mean_sentence_length\": 24.26, \"naive_ddm\": 0.4854, \"standardized_ddm\": 0.3694}",
+      "output": "{\"naive_rank\": 91, \"std_rank\": 106, \"abs_rank_shift\": 15.5, \"signed_rank_shift\": -15.5}",
+      "metadata_treebank_id": "fa_seraji",
+      "metadata_iso_code": "fa",
+      "metadata_case_richness": 2,
+      "metadata_abs_rank_shift": 15.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"fo_oft\", \"iso_code\": \"fo\", \"case_richness\": 4, \"mean_sentence_length\": 8.11, \"naive_ddm\": 0.2633, \"standardized_ddm\": 0.1756}",
+      "output": "{\"naive_rank\": 250, \"std_rank\": 234, \"abs_rank_shift\": 16.5, \"signed_rank_shift\": 16.5}",
+      "metadata_treebank_id": "fo_oft",
+      "metadata_iso_code": "fo",
+      "metadata_case_richness": 4,
+      "metadata_abs_rank_shift": 16.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"fr_poitevindivital\", \"iso_code\": \"fr\", \"case_richness\": 0, \"mean_sentence_length\": 13.49, \"naive_ddm\": 0.4487, \"standardized_ddm\": 0.0492}",
+      "output": "{\"naive_rank\": 111, \"std_rank\": 281, \"abs_rank_shift\": 170.0, \"signed_rank_shift\": -170.0}",
+      "metadata_treebank_id": "fr_poitevindivital",
+      "metadata_iso_code": "fr",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 170.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"fro_altm\", \"iso_code\": \"fro\", \"case_richness\": 0, \"mean_sentence_length\": 16.5, \"naive_ddm\": 0.4433, \"standardized_ddm\": 0.2847}",
+      "output": "{\"naive_rank\": 115, \"std_rank\": 183, \"abs_rank_shift\": 68.0, \"signed_rank_shift\": -68.0}",
+      "metadata_treebank_id": "fro_altm",
+      "metadata_iso_code": "fro",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 68.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"gl_ctg\", \"iso_code\": \"gl\", \"case_richness\": 3, \"mean_sentence_length\": 34.55, \"naive_ddm\": 0.6979, \"standardized_ddm\": 0.2056}",
+      "output": "{\"naive_rank\": 1, \"std_rank\": 226, \"abs_rank_shift\": 225.0, \"signed_rank_shift\": -225.0}",
+      "metadata_treebank_id": "gl_ctg",
+      "metadata_iso_code": "gl",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 225.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"grc_proiel\", \"iso_code\": \"grc\", \"case_richness\": 5, \"mean_sentence_length\": 12.62, \"naive_ddm\": 0.3491, \"standardized_ddm\": 0.4029}",
+      "output": "{\"naive_rank\": 195, \"std_rank\": 52, \"abs_rank_shift\": 143.0, \"signed_rank_shift\": 143.0}",
+      "metadata_treebank_id": "grc_proiel",
+      "metadata_iso_code": "grc",
+      "metadata_case_richness": 5,
+      "metadata_abs_rank_shift": 143.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"gun_dooley\", \"iso_code\": \"gun\", \"case_richness\": 0, \"mean_sentence_length\": 10.57, \"naive_ddm\": 0.3524, \"standardized_ddm\": 0.2585}",
+      "output": "{\"naive_rank\": 191, \"std_rank\": 199, \"abs_rank_shift\": 8.0, \"signed_rank_shift\": -8.0}",
+      "metadata_treebank_id": "gun_dooley",
+      "metadata_iso_code": "gun",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 8.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ha_westernautogramm\", \"iso_code\": \"ha\", \"case_richness\": 1, \"mean_sentence_length\": 15.54, \"naive_ddm\": 0.4865, \"standardized_ddm\": 0.3614}",
+      "output": "{\"naive_rank\": 89, \"std_rank\": 119, \"abs_rank_shift\": 30.0, \"signed_rank_shift\": -30.0}",
+      "metadata_treebank_id": "ha_westernautogramm",
+      "metadata_iso_code": "ha",
+      "metadata_case_richness": 1,
+      "metadata_abs_rank_shift": 30.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"hi_pud\", \"iso_code\": \"hi\", \"case_richness\": 3, \"mean_sentence_length\": 22.7, \"naive_ddm\": 0.5338, \"standardized_ddm\": 0.3362}",
+      "output": "{\"naive_rank\": 55, \"std_rank\": 146, \"abs_rank_shift\": 91.5, \"signed_rank_shift\": -91.5}",
+      "metadata_treebank_id": "hi_pud",
+      "metadata_iso_code": "hi",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 91.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"hy_armtdp\", \"iso_code\": \"hy\", \"case_richness\": 5, \"mean_sentence_length\": 17.76, \"naive_ddm\": 0.4373, \"standardized_ddm\": 0.3908}",
+      "output": "{\"naive_rank\": 126, \"std_rank\": 71, \"abs_rank_shift\": 55.0, \"signed_rank_shift\": 55.0}",
+      "metadata_treebank_id": "hy_armtdp",
+      "metadata_iso_code": "hy",
+      "metadata_case_richness": 5,
+      "metadata_abs_rank_shift": 55.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"is_gc\", \"iso_code\": \"is\", \"case_richness\": 4, \"mean_sentence_length\": 19.35, \"naive_ddm\": 0.4956, \"standardized_ddm\": 0.3919}",
+      "output": "{\"naive_rank\": 85, \"std_rank\": 68, \"abs_rank_shift\": 17.0, \"signed_rank_shift\": 17.0}",
+      "metadata_treebank_id": "is_gc",
+      "metadata_iso_code": "is",
+      "metadata_case_richness": 4,
+      "metadata_abs_rank_shift": 17.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"it_markit\", \"iso_code\": \"it\", \"case_richness\": 0, \"mean_sentence_length\": 28.14, \"naive_ddm\": 0.6222, \"standardized_ddm\": 0.37}",
+      "output": "{\"naive_rank\": 11, \"std_rank\": 103, \"abs_rank_shift\": 92.0, \"signed_rank_shift\": -92.0}",
+      "metadata_treebank_id": "it_markit",
+      "metadata_iso_code": "it",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 92.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"it_twittiro\", \"iso_code\": \"it\", \"case_richness\": 0, \"mean_sentence_length\": 20.76, \"naive_ddm\": 0.5361, \"standardized_ddm\": 0.2941}",
+      "output": "{\"naive_rank\": 54, \"std_rank\": 174, \"abs_rank_shift\": 120.0, \"signed_rank_shift\": -120.0}",
+      "metadata_treebank_id": "it_twittiro",
+      "metadata_iso_code": "it",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 120.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ja_pud\", \"iso_code\": \"ja\", \"case_richness\": 0, \"mean_sentence_length\": 27.44, \"naive_ddm\": 0.6793, \"standardized_ddm\": 0.3351}",
+      "output": "{\"naive_rank\": 2, \"std_rank\": 152, \"abs_rank_shift\": 150.0, \"signed_rank_shift\": -150.0}",
+      "metadata_treebank_id": "ja_pud",
+      "metadata_iso_code": "ja",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 150.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"kmr_kurmanji\", \"iso_code\": \"kmr\", \"case_richness\": 4, \"mean_sentence_length\": 12.83, \"naive_ddm\": 0.3767, \"standardized_ddm\": 0.2379}",
+      "output": "{\"naive_rank\": 172, \"std_rank\": 211, \"abs_rank_shift\": 39.0, \"signed_rank_shift\": -39.0}",
+      "metadata_treebank_id": "kmr_kurmanji",
+      "metadata_iso_code": "kmr",
+      "metadata_case_richness": 4,
+      "metadata_abs_rank_shift": 39.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"koi_uh\", \"iso_code\": \"koi\", \"case_richness\": 3, \"mean_sentence_length\": 5.32, \"naive_ddm\": 0.2152, \"standardized_ddm\": 0.0471}",
+      "output": "{\"naive_rank\": 277, \"std_rank\": 283, \"abs_rank_shift\": 6.0, \"signed_rank_shift\": -6.0}",
+      "metadata_treebank_id": "koi_uh",
+      "metadata_iso_code": "koi",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 6.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"la_circse\", \"iso_code\": \"la\", \"case_richness\": 5, \"mean_sentence_length\": 13.11, \"naive_ddm\": 0.3403, \"standardized_ddm\": 0.3327}",
+      "output": "{\"naive_rank\": 198, \"std_rank\": 154, \"abs_rank_shift\": 43.5, \"signed_rank_shift\": 43.5}",
+      "metadata_treebank_id": "la_circse",
+      "metadata_iso_code": "la",
+      "metadata_case_richness": 5,
+      "metadata_abs_rank_shift": 43.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"lij_glt\", \"iso_code\": \"lij\", \"case_richness\": 0, \"mean_sentence_length\": 11.5, \"naive_ddm\": 0.3249, \"standardized_ddm\": 0.1455}",
+      "output": "{\"naive_rank\": 207, \"std_rank\": 243, \"abs_rank_shift\": 36.0, \"signed_rank_shift\": -36.0}",
+      "metadata_treebank_id": "lij_glt",
+      "metadata_iso_code": "lij",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 36.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"mdf_jr\", \"iso_code\": \"mdf\", \"case_richness\": 6, \"mean_sentence_length\": 8.74, \"naive_ddm\": 0.2764, \"standardized_ddm\": 0.1862}",
+      "output": "{\"naive_rank\": 242, \"std_rank\": 231, \"abs_rank_shift\": 11.0, \"signed_rank_shift\": 11.0}",
+      "metadata_treebank_id": "mdf_jr",
+      "metadata_iso_code": "mdf",
+      "metadata_case_richness": 6,
+      "metadata_abs_rank_shift": 11.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"myv_jr\", \"iso_code\": \"myv\", \"case_richness\": 6, \"mean_sentence_length\": 9.26, \"naive_ddm\": 0.2776, \"standardized_ddm\": 0.2789}",
+      "output": "{\"naive_rank\": 240, \"std_rank\": 187, \"abs_rank_shift\": 53.0, \"signed_rank_shift\": 53.0}",
+      "metadata_treebank_id": "myv_jr",
+      "metadata_iso_code": "myv",
+      "metadata_case_richness": 6,
+      "metadata_abs_rank_shift": 53.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"nmf_suansu\", \"iso_code\": \"nmf\", \"case_richness\": 9, \"mean_sentence_length\": 5.1, \"naive_ddm\": 0.1406, \"standardized_ddm\": 0.081}",
+      "output": "{\"naive_rank\": 298, \"std_rank\": 264, \"abs_rank_shift\": 34.0, \"signed_rank_shift\": 34.0}",
+      "metadata_treebank_id": "nmf_suansu",
+      "metadata_iso_code": "nmf",
+      "metadata_case_richness": 9,
+      "metadata_abs_rank_shift": 34.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"high(7+)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"orv_birchbark\", \"iso_code\": \"orv\", \"case_richness\": 9, \"mean_sentence_length\": 8.44, \"naive_ddm\": 0.2395, \"standardized_ddm\": 0.2717}",
+      "output": "{\"naive_rank\": 265, \"std_rank\": 193, \"abs_rank_shift\": 72.0, \"signed_rank_shift\": 72.0}",
+      "metadata_treebank_id": "orv_birchbark",
+      "metadata_iso_code": "orv",
+      "metadata_case_richness": 9,
+      "metadata_abs_rank_shift": 72.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"high(7+)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"pad_tuecl\", \"iso_code\": \"pad\", \"case_richness\": 0, \"mean_sentence_length\": 4.3, \"naive_ddm\": 0.0879, \"standardized_ddm\": 0.0189}",
+      "output": "{\"naive_rank\": 306, \"std_rank\": 302, \"abs_rank_shift\": 4.0, \"signed_rank_shift\": 4.0}",
+      "metadata_treebank_id": "pad_tuecl",
+      "metadata_iso_code": "pad",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 4.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"pl_pud\", \"iso_code\": \"pl\", \"case_richness\": 6, \"mean_sentence_length\": 17.55, \"naive_ddm\": 0.5069, \"standardized_ddm\": 0.3355}",
+      "output": "{\"naive_rank\": 73, \"std_rank\": 149, \"abs_rank_shift\": 76.0, \"signed_rank_shift\": -76.0}",
+      "metadata_treebank_id": "pl_pud",
+      "metadata_iso_code": "pl",
+      "metadata_case_richness": 6,
+      "metadata_abs_rank_shift": 76.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"pt_porttinari\", \"iso_code\": \"pt\", \"case_richness\": 3, \"mean_sentence_length\": 19.8, \"naive_ddm\": 0.5382, \"standardized_ddm\": 0.3793}",
+      "output": "{\"naive_rank\": 52, \"std_rank\": 92, \"abs_rank_shift\": 40.0, \"signed_rank_shift\": -40.0}",
+      "metadata_treebank_id": "pt_porttinari",
+      "metadata_iso_code": "pt",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 40.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"qte_tect\", \"iso_code\": \"qte\", \"case_richness\": 0, \"mean_sentence_length\": 4.68, \"naive_ddm\": 0.2458, \"standardized_ddm\": 0.0405}",
+      "output": "{\"naive_rank\": 260, \"std_rank\": 288, \"abs_rank_shift\": 28.0, \"signed_rank_shift\": -28.0}",
+      "metadata_treebank_id": "qte_tect",
+      "metadata_iso_code": "qte",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 28.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ru_gsd\", \"iso_code\": \"ru\", \"case_richness\": 6, \"mean_sentence_length\": 18.37, \"naive_ddm\": 0.4992, \"standardized_ddm\": 0.419}",
+      "output": "{\"naive_rank\": 80, \"std_rank\": 28, \"abs_rank_shift\": 52.0, \"signed_rank_shift\": 52.0}",
+      "metadata_treebank_id": "ru_gsd",
+      "metadata_iso_code": "ru",
+      "metadata_case_richness": 6,
+      "metadata_abs_rank_shift": 52.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"sa_vedic\", \"iso_code\": \"sa\", \"case_richness\": 8, \"mean_sentence_length\": 7.78, \"naive_ddm\": 0.2142, \"standardized_ddm\": 0.3849}",
+      "output": "{\"naive_rank\": 278, \"std_rank\": 81, \"abs_rank_shift\": 197.0, \"signed_rank_shift\": 197.0}",
+      "metadata_treebank_id": "sa_vedic",
+      "metadata_iso_code": "sa",
+      "metadata_case_richness": 8,
+      "metadata_abs_rank_shift": 197.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"high(7+)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"sdh_garrusi\", \"iso_code\": \"sdh\", \"case_richness\": 0, \"mean_sentence_length\": 6.65, \"naive_ddm\": 0.2461, \"standardized_ddm\": 0.0975}",
+      "output": "{\"naive_rank\": 259, \"std_rank\": 259, \"abs_rank_shift\": 0.0, \"signed_rank_shift\": 0.0}",
+      "metadata_treebank_id": "sdh_garrusi",
+      "metadata_iso_code": "sdh",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 0.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"sl_sst\", \"iso_code\": \"sl\", \"case_richness\": 5, \"mean_sentence_length\": 16.15, \"naive_ddm\": 0.3591, \"standardized_ddm\": 0.3633}",
+      "output": "{\"naive_rank\": 189, \"std_rank\": 118, \"abs_rank_shift\": 71.0, \"signed_rank_shift\": 71.0}",
+      "metadata_treebank_id": "sl_sst",
+      "metadata_iso_code": "sl",
+      "metadata_case_richness": 5,
+      "metadata_abs_rank_shift": 71.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ssp_lse\", \"iso_code\": \"ssp\", \"case_richness\": 0, \"mean_sentence_length\": 4.23, \"naive_ddm\": 0.0972, \"standardized_ddm\": 0.044}",
+      "output": "{\"naive_rank\": 304, \"std_rank\": 285, \"abs_rank_shift\": 19.0, \"signed_rank_shift\": 19.0}",
+      "metadata_treebank_id": "ssp_lse",
+      "metadata_iso_code": "ssp",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 19.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"ta_mwtt\", \"iso_code\": \"ta\", \"case_richness\": 5, \"mean_sentence_length\": 4.8, \"naive_ddm\": 0.241, \"standardized_ddm\": 0.083}",
+      "output": "{\"naive_rank\": 263, \"std_rank\": 263, \"abs_rank_shift\": 0.5, \"signed_rank_shift\": 0.5}",
+      "metadata_treebank_id": "ta_mwtt",
+      "metadata_iso_code": "ta",
+      "metadata_case_richness": 5,
+      "metadata_abs_rank_shift": 0.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"tl_ugnayan\", \"iso_code\": \"tl\", \"case_richness\": 0, \"mean_sentence_length\": 10.18, \"naive_ddm\": 0.2615, \"standardized_ddm\": 0.0325}",
+      "output": "{\"naive_rank\": 252, \"std_rank\": 296, \"abs_rank_shift\": 43.5, \"signed_rank_shift\": -43.5}",
+      "metadata_treebank_id": "tl_ugnayan",
+      "metadata_iso_code": "tl",
+      "metadata_case_richness": 0,
+      "metadata_abs_rank_shift": 43.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"none(0)\", \"has_case\": false}"
+    },
+    {
+      "input": "{\"treebank_id\": \"tr_imst\", \"iso_code\": \"tr\", \"case_richness\": 8, \"mean_sentence_length\": 10.14, \"naive_ddm\": 0.3672, \"standardized_ddm\": 0.4053}",
+      "output": "{\"naive_rank\": 183, \"std_rank\": 48, \"abs_rank_shift\": 135.0, \"signed_rank_shift\": 135.0}",
+      "metadata_treebank_id": "tr_imst",
+      "metadata_iso_code": "tr",
+      "metadata_case_richness": 8,
+      "metadata_abs_rank_shift": 135.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"high(7+)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"tt_nmctt\", \"iso_code\": \"tt\", \"case_richness\": 3, \"mean_sentence_length\": 13.11, \"naive_ddm\": 0.4477, \"standardized_ddm\": 0.0505}",
+      "output": "{\"naive_rank\": 112, \"std_rank\": 279, \"abs_rank_shift\": 167.0, \"signed_rank_shift\": -167.0}",
+      "metadata_treebank_id": "tt_nmctt",
+      "metadata_iso_code": "tt",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 167.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"uz_tuecl\", \"iso_code\": \"uz\", \"case_richness\": 4, \"mean_sentence_length\": 5.08, \"naive_ddm\": 0.241, \"standardized_ddm\": 0.0618}",
+      "output": "{\"naive_rank\": 263, \"std_rank\": 269, \"abs_rank_shift\": 5.5, \"signed_rank_shift\": -5.5}",
+      "metadata_treebank_id": "uz_tuecl",
+      "metadata_iso_code": "uz",
+      "metadata_case_richness": 4,
+      "metadata_abs_rank_shift": 5.5,
+      "predict_linking_mechanism": "{\"case_bin\": \"medium(4-6)\", \"has_case\": true}"
+    },
+    {
+      "input": "{\"treebank_id\": \"wbp_ufal\", \"iso_code\": \"wbp\", \"case_richness\": 3, \"mean_sentence_length\": 5.57, \"naive_ddm\": 0.1185, \"standardized_ddm\": 0.013}",
+      "output": "{\"naive_rank\": 300, \"std_rank\": 307, \"abs_rank_shift\": 7.0, \"signed_rank_shift\": -7.0}",
+      "metadata_treebank_id": "wbp_ufal",
+      "metadata_iso_code": "wbp",
+      "metadata_case_richness": 3,
+      "metadata_abs_rank_shift": 7.0,
+      "predict_linking_mechanism": "{\"case_bin\": \"low(1-3)\", \"has_case\": true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "exp_id1_it2__opus",
+  "type": "code",
+  "title": "DDM Rankings",
+  "summary": "Demo notebook computes naive vs sentence-length-standardized DDM rankings across 30 UD treebanks (subset of 314). Calculates Spearman \u03c1, Cohen's d, mean rank shifts, language family shift analysis, and sensitivity analysis with 3 alternative reference distributions (median, written-only, uniform). Includes scatter plots of rank comparisons and rank shift distribution.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id1_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id1_it2__opus/method_code_demo.ipynb"
+}

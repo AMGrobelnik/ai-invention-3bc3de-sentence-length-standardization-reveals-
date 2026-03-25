@@ -1,0 +1,13 @@
+{
+  "id": "data_id4_it1__opus",
+  "type": "code",
+  "title": "UD+WALS Typology",
+  "summary": "Demonstrates the UD+WALS Typology dataset containing typological metadata for 186 UD languages. The notebook loads a mini subset (3 examples per dataset), parses the 3 dataset views (full typological profiles, word order prediction, UD case richness), displays them as tables, and visualizes word order distribution and case richness per language with matplotlib bar charts.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_1/gen_art/data_id4_it1__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/data_id4_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/data_id4_it1__opus/data_code_demo.ipynb"
+}

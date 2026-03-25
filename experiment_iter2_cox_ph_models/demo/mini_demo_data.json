@@ -1,0 +1,6032 @@
+[
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 6,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 39,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 27,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 34,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 23,
+    "distance": 13,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 28,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 9,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 18,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 37,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 32,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 5,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 11,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 37,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 9,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 5,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 11,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 10,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 5,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 22,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "nsubj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "en_ewt",
+    "deprel": "obj",
+    "sentence_length": 34,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 3,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 33,
+    "distance": 3,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 5,
+    "distance": 7,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 4,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 21,
+    "distance": 5,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 2,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 2,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 3,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 2,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 10,
+    "distance": 4,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 2,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 2,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 2,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 5,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 4,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "de_gsd",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 4.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 5,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 21,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 13,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 6,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 27,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 31,
+    "distance": 7,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 5,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 7,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 30,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 6,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 21,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 26,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 15,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 5,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 5,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "tr_imst",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SOV",
+    "language_family": "Turkic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 11,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 22,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 18,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 6,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 29,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 39,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 19,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 13,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 21,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 27,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 7,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 17,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 12,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 12,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 28,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 34,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 16,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 22,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "iobj",
+    "sentence_length": 29,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "ar_padt",
+    "deprel": "nsubj",
+    "sentence_length": 27,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "VSO",
+    "language_family": "Afro-Asiatic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 31,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 5,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 27,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 16,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 16,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 11,
+    "distance": 6,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 21,
+    "distance": 8,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 12,
+    "distance": 5,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 12,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 19,
+    "distance": 4,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 7,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 9,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 18,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 4,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 4,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 17,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 19,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 4,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 2,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "fi_tdt",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 3,
+    "case_richness": 15.0,
+    "word_order": "SVO",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 8,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 6,
+    "distance": 19,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 22,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 3,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 30,
+    "distance": 5,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 39,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 17,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 18,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 3,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 7,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 31,
+    "distance": 5,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 2,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 29,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "iobj",
+    "sentence_length": 37,
+    "distance": 3,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "hu_szeged",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 7,
+    "case_richness": 18.0,
+    "word_order": "No dominant order",
+    "language_family": "Uralic"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 5,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 34,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 9,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 5,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 12,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 16,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 29,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 36,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 9,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 19,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 19,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 14,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 30,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "obj",
+    "sentence_length": 5,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "ja_gsd",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Japanese"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 11,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 7,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 24,
+    "distance": 17,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 39,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 6,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 5,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 31,
+    "distance": 8,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 33,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 28,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 27,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 17,
+    "distance": 10,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 13,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 18,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 18,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 26,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 5,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 12,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 7,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 6,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 2,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 5,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 3,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 6,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 10,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "nsubj",
+    "sentence_length": 27,
+    "distance": 6,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 12,
+    "distance": 4,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 19,
+    "distance": 5,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "iobj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 8,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "cs_pdt",
+    "deprel": "obj",
+    "sentence_length": 5,
+    "distance": 1,
+    "case_richness": 7.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 18,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 10,
+    "distance": 6,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 23,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 18,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 19,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 27,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 6,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 3,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 10,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 5,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 38,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "nsubj",
+    "sentence_length": 21,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 4,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ru_syntagrus",
+    "deprel": "iobj",
+    "sentence_length": 36,
+    "distance": 2,
+    "case_richness": 6.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 8,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 40,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 21,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 28,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 26,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 37,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 13,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 15,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 19,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 35,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 29,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 35,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 22,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 19,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 13,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "nsubj",
+    "sentence_length": 40,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "ko_kaist",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SOV",
+    "language_family": "Koreanic"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 20,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 9,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 37,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 21,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 11,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 39,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 16,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 34,
+    "distance": 12,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 16,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 34,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 7,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 8,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 30,
+    "distance": 14,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 26,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 32,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 7,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 26,
+    "distance": 11,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 22,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 16,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 32,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 27,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 27,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 22,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 15,
+    "distance": 9,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 20,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 28,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 9,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 25,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 36,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 17,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 18,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 9,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 24,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 16,
+    "distance": 5,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 28,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 13,
+    "distance": 3,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 9,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 16,
+    "distance": 4,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 32,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "nsubj",
+    "sentence_length": 12,
+    "distance": 2,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "obj",
+    "sentence_length": 15,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 19,
+    "distance": 1,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "es_ancora",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 6,
+    "case_richness": 0.0,
+    "word_order": "SVO",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 24,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 37,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 26,
+    "distance": 4,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 7,
+    "distance": 3,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 10,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 21,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 31,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 14,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 3,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 20,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 33,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 31,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 25,
+    "distance": 5,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 25,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 36,
+    "distance": 11,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 36,
+    "distance": 4,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 6,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 18,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 8,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 35,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 11,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 28,
+    "distance": 3,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 7,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 40,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 23,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 33,
+    "distance": 3,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 12,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 30,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 40,
+    "distance": 6,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 17,
+    "distance": 2,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "nsubj",
+    "sentence_length": 13,
+    "distance": 3,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "obj",
+    "sentence_length": 38,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  },
+  {
+    "treebank_id": "hi_hdtb",
+    "deprel": "iobj",
+    "sentence_length": 37,
+    "distance": 1,
+    "case_richness": 3.0,
+    "word_order": "SOV",
+    "language_family": "Indo-European"
+  }
+]

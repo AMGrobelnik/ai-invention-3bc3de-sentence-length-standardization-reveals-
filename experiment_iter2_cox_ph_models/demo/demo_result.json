@@ -1,0 +1,13 @@
+{
+  "id": "exp_id2_it2__opus",
+  "type": "code",
+  "title": "Cox PH Models",
+  "summary": "Demo notebook fitting stratified Cox proportional hazards models on synthetic core-argument dependency records (670 records, 12 treebanks). Compares case richness vs word order typology effects on dependency distances. Three models: main (case+word order), case-only, word-order-only. Includes forest plot of hazard ratios and mean distance by word order visualization.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_2/gen_art/exp_id2_it2__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id2_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id2_it2__opus/method_code_demo.ipynb"
+}

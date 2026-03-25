@@ -1,0 +1,13 @@
+{
+  "id": "data_id5_it1__opus",
+  "type": "code",
+  "title": "UD DDM Dataset",
+  "summary": "Demo notebook loads pre-computed DDM (dependency distance minimization) statistics from 314 Universal Dependencies treebanks. Parses treebank summaries and core-argument dependency records into DataFrames, then visualizes DDM(n) curves by sentence length per treebank and compares naive vs. sentence-length-standardized DDM values. Uses mini dataset with 3 treebanks (Abkhaz, Abaza, Afrikaans) and 3 core-argument records.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_1/gen_art/data_id5_it1__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/data_id5_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/data_id5_it1__opus/data_code_demo.ipynb"
+}

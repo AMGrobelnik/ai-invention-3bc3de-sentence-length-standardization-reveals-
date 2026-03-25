@@ -1,0 +1,13 @@
+{
+  "id": "exp_id3_it2__opus",
+  "type": "code",
+  "title": "Case\u2192Length\u2192DDM",
+  "summary": "Demonstrates the Case Richness \u2192 Sentence Length \u2192 DDM Rank Shift linking mechanism analysis on 50 UD treebanks. Computes Spearman/Pearson correlations with bootstrap CIs, mediation-style OLS regressions, group-level Kruskal-Wallis tests by case richness bins, and a final verdict on whether the linking mechanism is supported. Includes scatter plots and bar chart visualization.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id3_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id3_it2__opus/method_code_demo.ipynb"
+}

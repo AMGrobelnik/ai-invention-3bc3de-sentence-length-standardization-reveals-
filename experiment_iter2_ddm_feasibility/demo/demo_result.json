@@ -1,0 +1,13 @@
+{
+  "id": "exp_id4_it2__opus",
+  "type": "code",
+  "title": "DDM Feasibility",
+  "summary": "Demo notebook analyzing inter-treebank DDM(n) variance at fixed sentence lengths. Loads pre-computed results for 10 treebanks, displays variance statistics (CV by sentence length), compares naive vs standardized DDM rankings via Spearman correlation, and visualizes DDM(n) curves and ranking scatter plots. Uses mini_demo_data.json with 10 treebank examples from the full 20-treebank feasibility analysis.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_2/gen_art/exp_id4_it2__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id4_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/exp_id4_it2__opus/method_code_demo.ipynb"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "data_id3_it1__opus",
+  "type": "code",
+  "title": "UD DDM Records",
+  "summary": "Demo notebook that loads pre-extracted Universal Dependencies dependency records (5 treebanks: Arabic, Czech, German, English, Spanish) and visualizes dependency distance distributions. Parses compact input format (treebank|deprel|POS|sentLen|case) into a DataFrame, displays treebank metadata with case inventories, and plots mean dependency distance by treebank alongside case richness correlation scatter.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/3_invention_loop/iter_1/gen_art/data_id3_it1__opus",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/data_id3_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_yqz/4_gen_paper_repo/data_id3_it1__opus/data_code_demo.ipynb"
+}

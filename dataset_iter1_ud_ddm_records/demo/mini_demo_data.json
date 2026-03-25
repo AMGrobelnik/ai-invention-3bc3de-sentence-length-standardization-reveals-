@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "description": "Universal Dependencies per-dependency records for DDM analysis",
+    "source": "commul/universal_dependencies (HuggingFace)",
+    "num_treebanks": 20,
+    "num_records": 5713082,
+    "num_sentences": 305993,
+    "schema_version": "1.0",
+    "treebank_metadata": [
+      {
+        "treebank_id": "ar_padt",
+        "language_code": "ar",
+        "num_sentences": 7664,
+        "mean_sentence_length": 36.85,
+        "std_sentence_length": 27.22,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Gen",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "en_ewt",
+        "language_code": "en",
+        "num_sentences": 16622,
+        "mean_sentence_length": 15.33,
+        "std_sentence_length": 12.09,
+        "num_case_values": 3,
+        "case_values": [
+          "Acc",
+          "Gen",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "de_gsd",
+        "language_code": "de",
+        "num_sentences": 15589,
+        "mean_sentence_length": 18.78,
+        "std_sentence_length": 10.09,
+        "num_case_values": 4,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Gen",
+          "Nom"
+        ]
+      },
+      {
+        "treebank_id": "cs_cac",
+        "language_code": "cs",
+        "num_sentences": 24709,
+        "mean_sentence_length": 20.01,
+        "std_sentence_length": 13.23,
+        "num_case_values": 7,
+        "case_values": [
+          "Acc",
+          "Dat",
+          "Gen",
+          "Ins",
+          "Loc",
+          "Nom",
+          "Voc"
+        ]
+      },
+      {
+        "treebank_id": "es_ancora",
+        "language_code": "es",
+        "num_sentences": 17662,
+        "mean_sentence_length": 31.71,
+        "std_sentence_length": 17.24,
+        "num_case_values": 6,
+        "case_values": [
+          "Acc",
+          "Acc,Dat",
+          "Acc,Nom",
+          "Com",
+          "Dat",
+          "Nom"
+        ]
+      }
+    ],
+    "sentence_metadata_sample": []
+  },
+  "datasets": [
+    {
+      "dataset": "ar_padt",
+      "examples": [
+        {
+          "input": "ar_padt|nsubj|X|VERB|13|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "ar_padt_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "ar_padt|obj|NOUN|VERB|13|Acc|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "ar_padt_train_0",
+          "metadata_tok_pos": 3
+        },
+        {
+          "input": "ar_padt|nmod|NOUN|NOUN|13|Gen|Acc",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "ar_padt_train_0",
+          "metadata_tok_pos": 4
+        }
+      ]
+    },
+    {
+      "dataset": "cs_cac",
+      "examples": [
+        {
+          "input": "cs_cac|amod|ADJ|NOUN|25|Nom|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "cs_cac_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "cs_cac|nsubj|NOUN|VERB|25|Nom|_",
+          "output": "2",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "cs_cac_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "cs_cac|nmod|NOUN|NOUN|25|Gen|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "cs_cac_train_0",
+          "metadata_tok_pos": 3
+        }
+      ]
+    },
+    {
+      "dataset": "de_gsd",
+      "examples": [
+        {
+          "input": "de_gsd|advmod|ADV|ADJ|16|_|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "de_gsd_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "de_gsd|amod|ADJ|NOUN|16|Nom|Nom",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "de_gsd_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "de_gsd|punct|PUNCT|NOUN|16|_|Nom",
+          "output": "2",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "de_gsd_train_0",
+          "metadata_tok_pos": 4
+        }
+      ]
+    },
+    {
+      "dataset": "en_ewt",
+      "examples": [
+        {
+          "input": "en_ewt|punct|PUNCT|PROPN|29|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "en_ewt_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "en_ewt|flat|PROPN|PROPN|29|_|_",
+          "output": "2",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "en_ewt_train_0",
+          "metadata_tok_pos": 3
+        },
+        {
+          "input": "en_ewt|punct|PUNCT|VERB|29|_|_",
+          "output": "3",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "en_ewt_train_0",
+          "metadata_tok_pos": 4
+        }
+      ]
+    },
+    {
+      "dataset": "es_ancora",
+      "examples": [
+        {
+          "input": "es_ancora|det|DET|NOUN|34|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "es_ancora_train_0",
+          "metadata_tok_pos": 1
+        },
+        {
+          "input": "es_ancora|nsubj|NOUN|VERB|34|_|_",
+          "output": "7",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "es_ancora_train_0",
+          "metadata_tok_pos": 2
+        },
+        {
+          "input": "es_ancora|case|ADP|NOUN|34|_|_",
+          "output": "1",
+          "metadata_fold": "train",
+          "metadata_sentence_id": "es_ancora_train_0",
+          "metadata_tok_pos": 3
+        }
+      ]
+    }
+  ]
+}
